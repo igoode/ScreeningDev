@@ -1,0 +1,66 @@
+<apex:component >
+	<!-- don't use id as there can be multiple rows-->
+    <div class="form-group">
+    	<label class="col-sm-3 control-label">Unit No</label>
+	    <div class="col-sm-9">
+	    	<input type="text" class="form-control" data-id="inputConUnitNo" placeholder="Unit No"  />
+	    </div>
+  	</div>
+  	<div class="form-group">
+    	<label class="col-sm-3 control-label">Street No</label>
+	    <div class="col-sm-9">
+	    	<input type="text" class="form-control" data-id="inputConStreetNo" placeholder="Street No" 
+	    			required="required"/>
+	    </div>
+  	</div>
+  	<div class="form-group">
+    	<label class="col-sm-3 control-label">Street Name</label>
+	    <div class="col-sm-9">
+	    	<input type="text" class="form-control" data-id="inputConStreetName" placeholder="Street Name" 
+	    			required="required"/>
+	    </div>
+  	</div>
+  	<div class="form-group">
+    	<label for="input0ConSuburb" class="col-sm-3 control-label">Suburb/town</label>
+	    <div class="col-sm-9">
+	    	<input type="text" class="form-control" data-id="inputConSuburb" placeholder="Suburb/town" 
+	    			required="required"/>
+	    </div>
+  	</div>
+  	<div class="form-group">
+    	<label class="col-sm-3 control-label">Country</label>
+	    <div class="col-sm-9">
+	    	<select data-id="selPrevCountry" class="form-control bfh-countries" data-country="AU" required="required"></select>	
+	    </div>
+  	</div>
+  	<div class="form-group">
+    	<label class="col-sm-3 control-label">State</label>
+	    <div class="col-sm-9">
+	    	<select data-id="selConState" class="form-control bfh-states" data-country="selPrevCountry" required="required"></select>	
+	    </div>
+  	</div>
+  	<div class="form-group">
+    	<label class="col-sm-3 control-label">Postcode</label>
+	    <div class="col-sm-9">
+	    	<input type="text" class="form-control" data-id="inputConPostcode" placeholder="Postcode" 
+	    			required="required"/>
+	    </div>
+  	</div>
+  	<div class="form-group">
+    	<label class="col-sm-3 control-label">Period of residence</label>
+    	<div class="container-fluid">
+	    	<div class="row">
+			    <div class="col-sm-3 input-append date" data-date-format="dd/mm/yyyy">
+			    	<label class="control-label">From</label>
+			    	<input class="form-control" data-id="input0ResFrom" placeholder="dd/mm/yyyy" required="required" />
+				  	<span class="add-on"><i class="icon-th"></i></span>
+			    </div>
+			    <div class="col-sm-3 input-append date" data-date-format="dd/mm/yyyy">
+			    	<label class="control-label">To</label>
+			    	<input class="form-control " data-id="inputResTo" placeholder="dd/mm/yyyy" required="required" />
+				  	<span class="add-on"><i class="icon-th"></i></span>
+			    </div>
+		    </div>
+	    </div>
+  	</div>
+</apex:component>

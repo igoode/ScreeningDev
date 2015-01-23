@@ -1,0 +1,975 @@
+<apex:page docType="html-5.0" 
+		standardStylesheets="false" 
+		sidebar="false" 
+		showHeader="false"  
+		applyHtmlTag="false" 
+		applyBodyTag="false" 
+		cache="true">	
+	<apex:remoteObjects jsNameSpace="RemoteObjectModel">
+	    <apex:remoteObjectModel name="Application__c" 
+	    		jsShorthand="Appl" 
+	        	fields="Id,Name,RecordTypeId,Title__c,Current_Last_Name__c,Current_First_Name__c,Current_Middle_Names__c,Gender__c,Date_of_Birth__c,Town_City_of_Birth__c,State_Territory_of_Birth__c,Country_of_Birth__c,Aboriginal_or_Torres_Strait_Islander__c,Unit_No__c,Street_No__c,Street_Name__c,Suburb_Town__c,State__c,Postcode__c,Period_of_Residence_From__c,Period_of_Residence_To__c,Telephone_H__c,Telephone_W__c,Telephone_M__c,Email_Address__c,Current_Postal_Address__c,Current_Postal_Suburb__c,Current_Postal_State__c,Current_Postal_Postcode__c,Application_Type__c,Declaration_1__c,Declaration_2__c,Declaration_3__c,Declaration_4__c,Declaration_5__c,Declaration_6__c,Declaration_7__c,Declaration_8__c,Declaration_9__c,Consent_to_obtain_personal_information__c" />
+	    <apex:remoteObjectModel name="Previous_Address__c" 
+	    		jsShorthand="PrevAddr" 
+	        	fields="Id,Name,Unit_No__c,Street_No__c,Street_Name__c,Suburb__c,State__c,Postcode__c,Period_of_Residence_From__c,Period_of_Residence_To__c" />
+	    <apex:remoteObjectModel name="Previous_Name__c" 
+	    		jsShorthand="PrevName" 
+	        	fields="ID,Name,Application__c,First_and_Middle_Names__c,Last_Name__c" />
+	    <apex:remoteObjectModel name="RecordType" 
+	        	fields="ID,Name" />
+	</apex:remoteObjects>  
+  	<apex:composition template="SiteTemplate">
+  	
+  	<apex:define name="title">
+      <title>Department for Communities and Social Inclusion - Screening Unit - Home</title>
+    </apex:define>
+
+    <apex:define name="body">
+    	<style>
+    		.bold
+    		{
+    			font-weight:bold;
+    		}
+	    	.prevName
+	    	{
+	    		width:100% !important;
+	    	}
+	    	.decLabel
+	    	{
+	    		text-align: left !important;
+	    		font-weight: normal !important;
+	    	}
+    	</style>
+	    <!-- Main component for a primary marketing message or call to action -->
+	    <div class="row row-offcanvas row-offcanvas-left main">
+	    	<div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+	          <div class="list-group">
+	            <a href="#" class="list-group-item active">Child-related employment screening</a>
+	            <a href="#" class="list-group-item">Part A: Your Personal Details</a>
+	            <a href="#" class="list-group-item">Part B: Declaration and Informed Consent</a>
+	            <a href="#" class="list-group-item">Part C: 100 Point Identification Verification</a>
+	            <a href="#" class="list-group-item">Part D: Employment Information</a>
+	          </div>
+	        </div>
+	    	<div class="col-xs-12 col-sm-9">
+		    	<p class="pull-left visible-xs">
+		            <button class="btn btn-primary btn-xs glyphicon glyphicon-th-list" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle nav</span></button>
+		        </p>
+		        <h2>Child-related employment screening</h2>
+				 <div class="panel-group" id="accordion">
+			        <div class="panel panel-default">
+			            <div class="panel-heading">
+			                <h3 class="panel-title">
+			                    <a data-toggle="collapse" data-parent="#accordion" href="#acc1">A1 - Your personal details</a>
+			                </h3>
+			            </div>
+			            <div id="acc1" class="panel-collapse collapse in">
+			                <div class="panel-body">
+				                <ul> 
+				                	<li>Make sure you include your FULL current name, including all given (first and middle) names and last name.</li>
+				                	<li>Make sure you include FULL DETAILS for ALL previous names and aliases, including any previous married names and maiden name.</li>
+				                	<li>Ensure that your date of birth is correct, including the year. </li><li>Include the city or town and country of your birth. </li>
+				                	<li>Include all previous residential addresses at which you have lived in the last ten (10)years. If there is not enough space, please provide this information as an attachment.</li>
+			                	</ul>
+			                	<p>
+				                	<em>
+				                		<u>Note:</u>&nbsp;If an error in any of the above details is determined to be your mistake, you may be required to resubmit your application and pay again.
+				                	</em>
+			                	</p>
+						    	<form class="form-horizontal" role="form" id="form1">
+						    		<div class="form-group">
+								    	<label for="selApplType" class="col-sm-3 control-label">Application for</label>
+							    		<div class="col-sm-9">
+										  	<select class="form-control" id="selApplType" required="true">
+										    	<option></option>
+										    	<option>Aged Care Sector Employment</option>
+										    	<option>Child Related Employment</option>
+										    	<option>Disability Services Employment</option>
+										    	<option>General Employment Probity</option>
+										    	<option>Vulnerable Person Related Employment</option>
+										  	</select>	
+										</div>
+								  	</div>
+						      	  	<div class="form-group">
+								    	<label for="inlineRadioOptions" class="col-sm-3 control-label">Title</label>
+								     	<div class="col-sm-9">
+										  	<div class="radio-inline">
+											  	<label>
+												  <input type="radio" name="titleRadioOptions" id="titleRadio1" value="Mr"/> Mr
+												</label>
+											</div>
+											<div class="radio-inline">
+												<label>
+												  <input type="radio" name="titleRadioOptions" id="titleRadio2" value="Mrs"/> Mrs
+												</label>
+											</div>
+											<div class="radio-inline">
+												<label>
+												  <input type="radio" name="titleRadioOptions" id="titleRadio3" value="Miss"/> Miss
+												</label>
+											</div>
+											<div class="radio-inline">
+												<label>
+												  <input type="radio" name="titleRadioOptions" id="titleRadio4" value="Dr"/> Dr
+												</label>
+											</div>
+											<div class="radio-inline" style="padding-top:0px;">
+												<label>
+												  	<span>
+														<input type="radio" name="titleRadioOptions" id="titleRadio5" value="Other" style="margin-top:10px;" />
+												  	</span>
+												  	<input type="text" class="form-control input-sm" placeholder="Other (please specify)"  name="other_text" disabled="disabled" />
+												</label>
+											</div>
+									  	</div>
+								  	</div>
+									<div class="form-group">
+									    <label for="lastName" class="col-sm-3 control-label">Current Last Name</label>
+									    <div class="col-sm-9">
+									    	<input type="text" class="form-control" id="lastName" placeholder="Current Last Name" 
+									    			data-input="lastName" 
+									    			required="required"
+									    			data-validation-required-message="Current Last Name is required"/>
+									    </div>
+									</div>
+									<div class="form-group">
+									    <label for="firstName" class="col-sm-3 control-label">Current First Name</label>
+									    <div class="col-sm-9">
+									    	<input type="text" class="form-control" id="firstName" placeholder="Current First Name" data-input="firstName"/>
+									    </div>
+									</div>
+								  	<div class="form-group">
+								    	<label for="middleName" class="col-sm-3 control-label">Current Middle Name(s)</label>
+								    	<div class="col-sm-9">
+								      		<input type="text" class="form-control" id="middleName" placeholder="Current Middle Name(s)" data-input="middleName"/>
+								    	</div>
+								  	</div>
+								  	<div class="form-group">
+								    	<label for="genderRadioOptions" class="col-sm-3 control-label">Gender</label>
+								     	<div class="col-sm-9">
+										  	<div class="radio-inline">
+											  	<label>
+												  <input type="radio" name="genderRadioOptions" id="genderRadio1" value="Male"/> Male
+												</label>
+											</div>
+											<div class="radio-inline">
+												<label>
+												  <input type="radio" name="genderRadioOptions" id="genderRadio2" value="Female"/> Female
+												</label>
+											</div>
+											<div class="radio-inline">
+												<label>
+												  <input type="radio" name="genderRadioOptions" id="genderRadio3" value="Other"/> Other
+												</label>
+											</div>
+									  	</div>
+								  	</div>
+								  	<div class="form-group">
+								    	<label for="inputDOB" class="col-sm-3 control-label">Date of Birth</label>			
+								    	<div class="col-sm-9 input-append date" id="dp3" data-date-format="dd/mm/yyyy">
+										  	<input class="form-control " id="inputDOB" placeholder="dd/mm/yyyy" data-input="inputDOB" required="required" />
+										  	<span class="add-on"><i class="icon-th"></i></span>
+										</div>
+								  	</div>							  
+								  	<div class="form-group">
+								  		<label for="selBirthCountry" class="col-sm-3 control-label">Country of birth</label>
+								  		<div class="col-sm-9">
+									  		<select id="selBirthCountry" class="form-control bfh-countries" data-country="AU" required="required"></select>
+										</div>
+									</div>	
+								  	<div class="form-group">
+								  		<label for="selBirthState" class="col-sm-3 control-label">State of birth</label>
+										<div class="col-sm-9">
+											<select id="selBirthState" class="form-control bfh-states" data-country="selBirthCountry" required="required"></select>	
+										</div>
+									</div>	
+									<div class="form-group">
+								    	<label for="inputBirthTown" class="col-sm-3 control-label">Town/city of birth</label>
+								    	<div class="col-sm-9">
+								      		<input type="text" class="form-control" id="inputBirthTown" 
+								      				placeholder="Town/city of birth" 
+								      				data-input="inputBirthTown"
+								      				required="required"/>
+								    	</div>
+								  	</div>			  	
+								  	<div class="form-group">
+								  		<c:YesNoRadio FieldLabel="Do you identify as Aboriginal or Torres Strait Islander"
+													RadioGroupName="atsiRadioOptions"
+													RadioGroupId="atsiRadio1"
+													LabelClass="col-sm-9"/>
+									</div>
+								  	<div class="form-group">
+								    	<div class="col-sm-offset-2 col-sm-10">
+								    		<button id="nextBtn1" 
+								    				type="submit" 
+								    				class="btn btn-lg btn-primary pull-right nextBtn" 
+								    				data-toggle="collapse" 
+								    				data-parent="#accordion"  
+								    				role="button">	
+								    			next »
+								    		</button>
+								    	</div>
+								  	</div>
+								</form>
+							</div>
+			            </div>
+			        </div>
+			        <div class="panel panel-default">
+			            <div class="panel-heading">
+			                <h3 class="panel-title">
+			                    <a data-toggle="collapse" data-parent="#accordion" href="#acc2">A2 - Your previous names</a>
+			                </h3>
+			            </div>
+			            <div id="acc2" class="panel-collapse collapse">
+			                <div class="panel-body">
+						      	<em>Include ALL names by which you have been known, eg aliases, maiden names, previous married names, deed poll. If there is insufficient space, please list them on a separate piece of paper and attach it to this document.</em>
+						      	<p/>                                                                                      
+						      	<form class="form-inline" id="form2">          
+					      			<div class="col-md-12 column">
+										<table class="table table-bordered table-hover" id="prevNameTbl">
+											<thead>
+												<tr >
+													<th class="text-center">
+													</th>
+													<th class="text-center">
+														Previous First Name
+													</th>
+													<th class="text-center">
+														Previous Last Name
+													</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr id='prevName0'>
+													<td>
+														1
+													</td>
+													<td>
+														<input type="hidden" name='prevNameID0' />
+														<input type="text" name='prevFirstName0'  
+																placeholder='Previous First Name' class="form-control input-md prevName"/>
+													</td>
+													<td>
+														<input type="text" name='prevLastName0' 
+																placeholder='Previous Last Name' class="form-control input-md prevName"/>
+													</td>
+												</tr>
+							                    <tr id='prevName1'></tr>
+											</tbody>
+										</table>
+									</div>
+						      		<div class="form-group">
+						      			<div class="col-sm-offset-2 col-sm-10">
+								      		<a id="addPrevName" class="btn btn-default pull-left">Add Row</a>
+								      		<a id='delPrevName' class="pull-right btn btn-default">Delete Row</a>
+							      		</div>
+						      		</div>
+						      		<div class="form-group">
+								    	<button id="nextBtn2" 
+								    				type="submit" 
+								    				class="btn btn-lg btn-primary pull-right nextBtn" 
+								    				data-toggle="collapse" 
+								    				data-parent="#accordion"  
+								    				role="button">	
+								    			next »
+								    		</button>								    		
+								  	</div>
+						      	</form>
+				            </div>
+				        </div>
+				        <div class="panel panel-default">
+				            <div class="panel-heading">
+				                <h3 class="panel-title">
+				                    <a data-toggle="collapse" data-parent="#accordion" href="#acc3">A3 - Your current contact details</a>
+				                </h3>
+				            </div>
+				            <div id="acc3" class="panel-collapse collapse">
+				                <div class="panel-body">                                                                                      
+							      	<form class="form-horizontal" role="form" id="form3">
+							      		<c:Address IdSuffix="Con"/>
+									  	<div class="form-group">
+									    	<label class="col-sm-3 control-label">Telephone</label>
+									    	<div class="container-fluid">
+										    	<div class="row">
+												    <div class="col-sm-3 input-append">
+												    	<label for="inputConHomePh" class="control-label">(H)</label>
+												    	<input class="form-control" id="inputConHomePh" placeholder="Home" data-input="inputConHomePh" />
+												    </div>
+												    <div class="col-sm-3 input-append">
+												    	<label for="inputConWorkPh" class="control-label">(W)</label>
+												    	<input class="form-control" id="inputConWorkPh" placeholder="Work" data-input="inputConWorkPh"  />
+												    </div>
+												    <div class="col-sm-3 input-append">
+												    	<label for="inputConMobPh" class="control-label">(M)</label>
+												    	<input class="form-control" id="inputConMobPh" placeholder="Mobile" data-input="inputConMobPh"  />
+												    </div>
+											    </div>
+										    </div>
+									  	</div>
+									  	<div class="form-group">
+									    	<label for="inputConEmail" class="col-sm-3 control-label">Email</label>
+										    <div class="col-sm-9">
+										    	<input type="text" class="form-control" id="inputConEmail" placeholder="Email" 
+										    			data-input="inputConEmail"/>
+										    </div>
+									  	</div>
+									  	<div class="form-group">
+									    	<label for="inputConPostAddr" class="col-sm-3 control-label">Current postal address(if different from above)</label>
+										    <div class="col-sm-9">
+										    	<input type="text" class="form-control" id="inputConPostAddr" placeholder="Postal address" 
+										    			data-input="inputConPostAddr" />
+										    </div>
+									  	</div>
+									  	<div class="form-group">
+									    	<label for="inputConPostSurburb" class="col-sm-3 control-label">Suburb</label>
+										    <div class="col-sm-9">
+										    	<input type="text" class="form-control" id="inputConPostSurburb" placeholder="Suburb" 
+										    			data-input="inputConPostSurburb" />
+										    </div>
+									  	</div>
+									  	<div class="form-group">
+									    	<label for="selConPostState" class="col-sm-3 control-label">State</label>
+										    <div class="col-sm-9">
+										    	<select id="selConPostState" class="form-control bfh-states" data-country="AU"></select>	
+										    </div>
+									  	</div>
+									  	<div class="form-group">
+									    	<label for="inputConPostPostcode" class="col-sm-3 control-label">Postcode</label>
+										    <div class="col-sm-9">
+										    	<input type="text" class="form-control" id="inputConPostPostcode" placeholder="Postcode" 
+										    			data-input="inputConPostPostcode" />
+										    </div>
+									  	</div>
+									  	<div class="form-group">
+									  		<div class="col-sm-offset-2 col-sm-10">
+								    			<button id="nextBtn3" 
+									    				type="submit" 
+									    				class="btn btn-lg btn-primary pull-right nextBtn" 
+									    				data-toggle="collapse" 
+									    				data-parent="#accordion"  
+									    				role="button">	
+									    			next »
+									    		</button>	
+								    		</div>							    		
+								  		</div>
+								  	</form>
+					            </div>
+					        </div>
+						</div>
+						<div class="panel panel-default">
+				            <div class="panel-heading">
+				                <h3 class="panel-title">
+				                    <a data-toggle="collapse" data-parent="#accordion" href="#acc4">A4 - Your previous residential addresses</a>
+				                </h3>
+				            </div>
+				            <div id="acc4" class="panel-collapse collapse">
+				                <div class="panel-body">
+							      	<em>Please record all previous addresses you have lived at over the&nbsp;<span class="bold">last ten (10) years</span>&nbsp;below, including overseas addresses. 
+							      	</em>
+							      	<p/>                                                                                      
+							      	<form class="form-horizontal" role="form" id="form4">	
+							      		<table class="table table-bordered table-hover" id="prevAddrTbl">
+											<tr>
+												<td data-id="rowId">
+													1
+												</td>
+												<td>
+													<c:Address IdSuffix="PrAddr0"/>
+												</td>
+											</tr>
+										</table>
+										<div class="form-group">
+							      			<div class="col-sm-offset-2 col-sm-10">
+									      		<a id="addPrevAddr" class="btn btn-default pull-left">Add Row</a>
+									      		<a id='delPrevAddr' class="pull-right btn btn-default">Delete Row</a>
+								      		</div>
+							      		</div>
+							      		<div class="form-group">
+								    		<div class="col-sm-offset-2 col-sm-10">
+									    		<button id="nextBtn4" 
+									    				type="submit" 
+									    				class="btn btn-lg btn-primary pull-right nextBtn" 
+									    				data-toggle="collapse" 
+									    				data-parent="#accordion"  
+									    				role="button">	
+									    			next »
+									    		</button>
+								    		</div>								    		
+									  	</div>
+							      	</form>
+					            </div>
+					        </div>
+						</div>
+						<div class="panel panel-default">
+				            <div class="panel-heading">
+				                <h3 class="panel-title">
+				                    <a data-toggle="collapse" data-parent="#accordion" href="#acc5">B1 - Declaration</a>
+				                </h3>
+				            </div>
+				            <div id="acc5" class="panel-collapse collapse">
+				                <div class="panel-body">                                                                                    
+							      	<form class="form-horizontal" role="form" id="form5">	
+							      		<div class="form-group">
+							      			<div>
+							      				<label class="col-sm-1 control-label">1</label>
+							      			</div>
+								      		<c:YesNoRadio FieldLabel="Have you ever been dismissed or resigned from any employment or a volunteer role in response to or following allegations of improper conduct relating to children?"
+														RadioGroupName="inputDec1"
+														RadioGroupId="inputDecQ1-" 
+														LabelClass="col-sm-8 decLabel"/>
+										</div>
+										<div class="form-group">
+											<div>
+							      				<label class="col-sm-1 control-label">2</label>
+							      			</div>
+											<c:YesNoRadio FieldLabel="Have you ever submitted an application for employment or a volunteer role involving contact with children which was declined for disciplinary reasons or allegations of improper conduct?"
+														RadioGroupName="inputDec2"
+														RadioGroupId="inputDecQ2-" 
+														LabelClass="col-sm-8 decLabel"/>
+										</div>
+										<div class="form-group">
+											<div>
+							      				<label class="col-sm-1 control-label">3</label>
+							      			</div>
+											<c:YesNoRadio FieldLabel="Have you been (or are you currently) the subject of any professional disciplinary proceedings, or any action that might lead to such proceedings in any jurisdiction? (not including criminal court proceedings)."
+														RadioGroupName="inputDec3"
+														RadioGroupId="inputDecQ3-"
+														LabelClass="col-sm-8 decLabel"/>
+										</div>
+										<div class="form-group">
+											<div>
+							      				<label class="col-sm-1 control-label">4</label>
+							      			</div>
+											<c:YesNoRadio FieldLabel="Have you ever been (or are you currently) subject to any restrictions regarding your contact with children (including removal of a child) in any employment, volunteer, or personal capacity?"
+														RadioGroupName="inputDec4"
+														RadioGroupId="inputDecQ4-"
+														LabelClass="col-sm-8 decLabel"/>
+										</div>
+										<div class="form-group">
+											<div>
+							      				<label class="col-sm-1 control-label">5</label>
+							      			</div>
+											<c:YesNoRadio FieldLabel="Have you ever been found guilty of an offence committed in a country other than Australia, including an offence for which no conviction was recorded?"
+														RadioGroupName="inputDec5"
+														RadioGroupId="inputDecQ5-"
+														LabelClass="col-sm-8 decLabel"/>
+										</div>
+										<div class="form-group">
+											<div>
+							      				<label class="col-sm-1 control-label">6</label>
+							      			</div>
+											<c:YesNoRadio FieldLabel="Have you been named as the defendant in an Interim or Confirmed Intervention Order, Restraining Order, Apprehended Violence Order, Domestic Violence Restraining Order, Paedophile Restraining Order or equivalent, in any jurisdiction?"
+														RadioGroupName="inputDec6"
+														RadioGroupId="inputDecQ6-"
+														LabelClass="col-sm-8 decLabel"/>
+										</div>
+										<div class="form-group">
+											<div>
+							      				<label class="col-sm-1 control-label">7</label>
+							      			</div>
+											<c:YesNoRadio FieldLabel="Are you the subject of any criminal or traffic charges (not including parking or speeding infringements) that are still to be determined or finalised?"
+														RadioGroupName="inputDec7"
+														RadioGroupId="inputDecQ7-"
+														LabelClass="col-sm-8 decLabel"/>
+										</div>
+										<div class="form-group">
+											<div>
+							      				<label class="col-sm-1 control-label">8</label>
+							      			</div>
+											<c:YesNoRadio FieldLabel="Are you currently or have you ever been a registrable sex offender? (eg. Australian National Child Sex Offender Register)"
+														RadioGroupName="inputDec8"
+														RadioGroupId="inputDecQ8-"
+														LabelClass="col-sm-8 decLabel"/>
+										</div>
+										<div class="form-group">
+											<div>
+							      				<label class="col-sm-1 control-label">9</label>
+							      			</div>
+											<c:YesNoRadio FieldLabel="Have you ever been denied an employment screening clearance from another Australian jurisdiction? "
+														RadioGroupName="inputDec9"
+														RadioGroupId="inputDecQ9-"
+														LabelClass="col-sm-8 decLabel"/>
+										</div>
+							      		<div class="form-group">
+							      			<div class="col-sm-offset-2 col-sm-10">
+									    		<button id="nextBtn5" 
+									    				type="submit" 
+									    				class="btn btn-lg btn-primary pull-right nextBtn" 
+									    				data-toggle="collapse" 
+									    				data-parent="#accordion"  
+									    				role="button">	
+									    			next »
+									    		</button>
+								    		</div>								    		
+									  	</div>
+							      	</form>
+					            </div>
+					        </div>
+						</div>
+						<div class="panel panel-default">
+				            <div class="panel-heading">
+				                <h3 class="panel-title">
+				                    <a data-toggle="collapse" data-parent="#accordion" href="#acc6">B2 - Have you answered ‘yes’ to any of the questions above?</a>
+				                </h3>
+				            </div>
+				            <div id="acc6" class="panel-collapse collapse">
+				                <div class="panel-body">                                                                                    
+					                <em>
+					                	If so, you must submit a summary of the circumstances surrounding the situation below. Your summary should include (as applicable) dates, decisions, reasons for the decision, conditions of employment, offence type and date, court details, and the status of proceedings. Attach a separate piece of paper to this form if you require more space.  Alternatively, complete your summary separately, place it in a sealed envelope marked CONFIDENTIAL, and submit it with your application.
+					                </em>
+					            </div>
+					        </div>
+						</div>
+						<div class="panel panel-default">
+				            <div class="panel-heading">
+				                <h3 class="panel-title">
+				                    <a data-toggle="collapse" data-parent="#accordion" href="#acc7">B3 - Consent to obtain personal information</a>
+				                </h3>
+				            </div>
+				            <div id="acc7" class="panel-collapse collapse">
+				                <div class="panel-body">                                                                                    
+					                <ul>
+						                <li>
+						                	Declare that the personal information I have provided in this form relates to me, contains my full name and all names previously used by me, and is correct. Further, that I have read and complied with instructions provided on the ‘How to Apply’ section of the DCSI Screening Unit website;
+						                </li>
+						                <li>
+											Acknowledge that the provision of false or misleading information may be an offence;
+										</li>
+										<li>
+											Consent to the DCSI Screening Unit collecting information in this Form to provide to the CrimTrac Agency and the Australian police services;
+										</li>
+										<li>
+											Consent to:
+											<ul>
+												<li>
+													the CrimTrac Agency disclosing personal information about me to the Australian police services;
+												</li>
+												<li>
+													Australian police services disclosing to the CrimTrac Agency, from their records, details of convictions and outstanding charges, including findings of guilt or the acceptance of a plea of guilty by a court, that can be disclosed in accordance with the laws of the Commonwealth, States and Territories and, in the absence of any laws governing the disclosure of this information, disclosing in accordance with the policies of the police service concerned; 
+												</li>
+												<li>
+													the CrimTrac Agency providing the information disclosed by the Australian police agencies to the DCSI Screening Unit, in accordance with the laws of the Commonwealth;
+												</li>
+											</ul>
+										</li>
+										<li>
+											Consent to the DCSI Screening Unit obtaining ANY information from any police service, court, prosecuting authority or other authorised agency and for the police services, courts, prosecuting authority or other authorised agency to disclose to the DCSI Screening Unit ANY information, for the purposes of child-related employment screening;
+										</li>
+										<li>
+											Accept that this information obtained may include but is not limited to details of convictions and pending or non-conviction charges or circumstances information relating to offences committed or allegedly committed by me, regardless of when and where the offence or alleged offence occurred, and what the outcome may have been;
+										</li>
+										<li>
+											Consent to the DCSI Screening Unit accessing relevant information about me that may be held by agencies and administrative units of the South Australian Government and/or relevant registration bodies, which may include:
+											<ul>
+												<li>
+													Care Concern Investigation records held by the DCSI;
+												</li>
+												<li>
+													Care Concern Investigation records and Child Protection records held by the Department for Education and Child Development;
+												</li>
+											</ul>
+										</li>
+										<li>
+											Consent to the DCSI Screening Unit:
+											<ul>
+												<li>
+													utilising any of the information described above about me or provided by me on this form to assess any risk I may pose in the event I am engaged to work or volunteer in a child related environment; 
+												</li>
+												<li>
+													providing advice that may include any information about me described in  an assessment indicating any risk of harm I may pose if engaged to work or volunteer in a child related environment to my requesting organisation or another entity seeking the assessment on behalf of that organisation; 
+												</li> 
+												<li>
+													providing relevant criminal history information to the requesting organisation or another entity seeking the assessment on behalf of that organisation where permitted by the CrimTrac Agency to do so;
+												</li>
+											</ul> 
+										</li> 
+										<li>										
+											Accept that the requesting organisation and, where applicable, the relevant government supervisory agency, shall make the final determination as to my engagement in the position to which this application relates; 
+										</li> 
+										<li>
+											Consent to the DCSI Screening Unit reassessing the risk assessment pertaining to me upon receipt of new or additional information, and to the DCSI Screening Unit disclosing details of any reassessed risk assessment to my employer or any relevant government supervisory agency;
+										</li>
+										<li>
+											Consent to my personal information being disclosed to police services for their respective law enforcement purposes, including the investigation of any outstanding criminal offences;
+										</li> 
+										<li>
+											Accept that Spent Convictions legislation (however described) in the Commonwealth and many States and Territories protects spent convictions from disclosure, and understand that the position/entitlement for which I am being considered may be in a category for which exclusions from Spent Convictions legislation may apply.
+						                </li>
+					                </ul>
+					            </div>
+					            <form class="form-horizontal" role="form" id="form5">	
+						      		<div class="form-group">
+							      		<c:YesNoRadio FieldLabel="Do you consent to the above?"
+													RadioGroupName="inputConsent"
+													RadioGroupId="inputConsent-" 
+													LabelClass="col-sm-8 decLabel"/>
+									</div>
+									<div class="form-group">
+										<div class="col-sm-offset-2 col-sm-10">
+								    		<button id="nextBtn7" 
+								    				type="submit" 
+								    				class="btn btn-lg btn-primary pull-right nextBtn" 
+								    				data-toggle="collapse" 
+								    				data-parent="#accordion"  
+								    				role="button">	
+								    			next »
+								    		</button>
+							    		</div>								    		
+								  	</div>
+								</form>
+					        </div>
+						</div>
+						<div class="panel panel-default">
+				            <div class="panel-heading">
+				                <h3 class="panel-title">
+				                    <a data-toggle="collapse" data-parent="#accordion" href="#acc8">C1 - 100 Point Identification Check</a>
+				                </h3>
+				            </div>
+				            <div id="acc8" class="panel-collapse collapse">
+				                <div class="panel-body">                                                                                    
+					                <em>
+					                	You must provide proof of your identity before your application can be processed. You must show a verifying officer original identity documents that add up to at least 100 points. Note any proof of name change certificate does not count towards the points total. You must use ONE Category A document or ONE Category B document which MUST contain a photograph. Aboriginal applicants from remote communities or recent migrants to Australia may use identity documents detailed below.
+					                </em>
+					                <p/>
+					                <form class="form-inline" id="form2">          
+							      		<div class="row clearfix">
+							      			<div class="col-sm-12 column">
+												<table class="table table-bordered table-hover" id="100PtTbl">
+													<thead>
+														<tr >
+															<th class="text-left">
+																Category
+															</th>
+															<th class="text-left">
+																Type of Document
+															</th>
+															<th class="text-left">
+																Value
+															</th>
+															<th class="text-left">
+																Points
+															</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td>
+																Category A<br/>
+																70 points<br/>
+																Only one document from this category will be accepted.
+															</td>
+															<td>
+																<div class="form-group">
+															     	<div class="col-md-12 md">
+																	  	<div class="checkbox">
+																		  	<label>
+																			  	<input type="checkbox" name="100PtAOptions" 
+																			  		id="100PtAOptions1" 
+																			  		value="Birth certificate or extract"/> 
+																		  		Birth certificate or extract
+																			</label>
+																		</div>
+																		<div class="checkbox">
+																			<label>
+																			  	<input type="checkbox" name="100PtAOptions" 
+																			  		id="100PtAOptions2" 
+																			  		value="Australian citizenship certificate"/> 
+																		  		Australian citizenship certificate
+																			</label>
+																		</div>
+																		<div class="checkbox">
+																			<label>
+																			  	<input type="checkbox" name="100PtAOptions" 
+																			  		id="100PtAOption3" 
+																			  		value="Current international travel 	document (eg. passport)"/> 
+																		  		Current international travel document (eg. passport)
+																			</label>
+																		</div>
+																		<div class="checkbox">
+																			<label>
+																			  <input type="checkbox" name="100PtAOptions" 
+																			  		id="100PtAOption4" 
+																			  		value="United Nations refugee visa or similar, authorising international travel "/> 
+																			  United Nations refugee visa or similar, authorising international travel 
+																			</label>
+																		</div>
+																  	</div>
+															  	</div>
+
+															</td>
+															<td>
+																70
+															</td>
+															<td>
+																<label id="100PtA">0</label>
+															</td>
+														</tr>
+														<tr>
+															<td>
+																Category B Documents<br/>
+																Your initial Category B document is worth 40 points.<br/>
+																Subsequent documents are worth 25 points.
+															</td>
+															<td>
+																<div class="form-group">
+															     	<div class="col-md-12">
+																	  	<div class="checkbox">
+																		  	<label>
+																			  <input type="checkbox" name="100PtBOptions" 
+																			  		id="100PtBOption1" 
+																			  		value="Australian driver’s licence or permit"/> 
+																		  		Australian driver’s licence or permit
+																			</label>
+																		</div>
+																		<div class="checkbox">
+																			<label>
+																			  <input type="checkbox" name="100PtBOptions" 
+																			  		id="100PtBOption2" 
+																			  		value="Department of Veterans’ Affairs (DVA) card"/> 
+																		  		Department of Veterans’ Affairs (DVA) card
+																			</label>
+																		</div>
+																		<div class="checkbox">
+																			<label>
+																			  <input type="checkbox" name="100PtBOptions" 
+																			  		id="100PtBOption3" 
+																			  		value="Centrelink pensioner / health care card"/> 
+																		  		Centrelink pensioner / health care card
+																			</label>
+																		</div>
+																		<div class="checkbox">
+																			<label>
+																			  <input type="checkbox" name="100PtBOptions" 
+																			  		id="100PtBOption4" 
+																			  		value="Government employee identification card"/> 
+																		  		Government employee identification card
+																			</label>
+																		</div>
+																		<div class="checkbox">
+																			<label>
+																			  <input type="checkbox" name="100PtBOptions" 
+																			  		id="100PtBOption5" 
+																			  		value="Tertiary student identification card"/> 
+																		  		Tertiary student identification card
+																			</label>
+																		</div>
+																		<div class="checkbox">
+																			<label>
+																			  <input type="checkbox" name="100PtBOptions" 
+																			  		id="100PtBOption6" 
+																			  		value="Secondary student identification card"/> 
+																		  		Secondary student identification card
+																			</label>
+																		</div>
+																		<div class="checkbox">
+																			<label>
+																			  <input type="checkbox" name="100PtBOptions" 
+																			  		id="100PtBOption7" 
+																			  		value="Medical practitioner reference"/> 
+																		  		Medical practitioner reference (only if applicant is known to the doctor for at least a year) 
+																			</label>
+																		</div>
+																  	</div>
+															  	</div>
+
+															</td>
+															<td>
+																40<br/>
+																or<br/>
+																25
+															</td>
+															<td>
+																<label id="100PtB">0</label>
+															</td>
+														</tr>
+														<tr>
+															<td>
+																Category C Documents<br/>
+																25 points<br/>
+																If you wish to use more than one Category C document, they must be from different organisations.
+															</td>
+															<td>
+																<div class="form-group">
+															     	<div class="col-md-12">
+																	  	<div class="checkbox">
+																		  	<label>
+																			  <input type="checkbox" name="100PtCOptions" 
+																			  		id="100PtCOption1"/> 
+																		  		Seniors/ Medicare/ private health card
+																			</label>
+																		</div>
+																		<div class="checkbox">
+																			<label>
+																			  <input type="checkbox" name="100PtCOptions" 
+																			  		id="100PtCOption2" /> 
+																		  		Council rates/ property insurance papers
+																			</label>
+																		</div>
+																		<div class="checkbox">
+																			<label >
+																			  <input type="checkbox" name="100PtCOptions" 
+																			  		id="100PtCOption3"/> 
+																		  		Proof of age card
+																			</label>
+																		</div>
+																		<div class="checkbox">
+																			<label>
+																			  <input type="checkbox" name="100PtCOptions" 
+																			  		id="100PtCOption4"/> 
+																		  		International Driver’s Licence
+																			</label>
+																		</div>
+																		<div class="checkbox">
+																			<label>
+																			  <input type="checkbox" name="100PtCOptions" 
+																			  		id="100PtCOption5" /> 
+																		  		Bank or credit card
+																			</label>
+																		</div>
+																		<div class="checkbox">
+																			<label >
+																			  <input type="checkbox" name="100PtCOptions" 
+																			  		id="100PtCOption6" /> 
+																		  		Utilities bills (Telephone, gas, electricity or water)
+																			</label>
+																		</div>
+																		<div class="checkbox">
+																			<label>
+																			  <input type="checkbox" name="100PtCOptions" 
+																			  		id="100PtCOption7"/> 
+																		  		Tax notice/superannuation statements
+																			</label>
+																		</div>
+																		<div class="checkbox">
+																			<label>
+																			  <input type="checkbox" name="100PtCOptions" 
+																			  		id="100PtCOption8"/> 
+																		  		Motor vehicle registration/insurance papers
+																			</label>
+																		</div>
+																		<div class="checkbox">
+																			<label>
+																			  <input type="checkbox" name="100PtCOptions" 
+																			  		id="100PtCOption9"/> 
+																		  		Rental property lease agreement
+																			</label>
+																		</div>
+																		<div class="checkbox">
+																			<label >
+																			  <input type="checkbox" name="100PtCOptions" 
+																			  		id="100PtCOption10"/> 
+																		  		Electoral Roll registration 
+																			</label>
+																		</div>
+																		<div class="checkbox">
+																			<label  >
+																			  <input type="checkbox" name="100PtCOptions" 
+																			  		id="100PtCOption11"/> 
+																		  		Professional or trade association card
+																			</label>
+																		</div>
+																  	</div>
+															  	</div>
+
+															</td>
+															<td>
+																25
+															</td>
+															<td>
+																<label id="100PtC">0</label>
+															</td>
+														</tr>
+														<tr>
+															<td>
+															</td>
+															<td>
+																Must equal or be more than 100 Points
+															</td>
+															<td>
+																<label>TOTAL</label>
+															</td>
+															<td>
+																<label id="100PtTot">0</label>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+							      		</div>
+							      		<div class="form-group">
+							      			<ul>
+							      				<li>
+							      					For&nbsp;<span class="bold">Aboriginal Applicants</span>&nbsp;who reside in remote or isolated locations, apart from the standard identity items above, there is an added option of two letters of verification provided by Community Leaders (recognised as leaders of the community to which the applicant belongs). Each verification scores 50 points. 
+						      					</li>
+						      					<li>
+													For&nbsp;<span class="bold">immigrant or foreign visitor (arrival within the past six weeks):</span>&nbsp;proof of arrival date and current passport will be accepted.
+												</li> 
+												<li> 
+													For&nbsp;<span class="bold">applicants under 18:</span>&nbsp;One Category A document or statement from an educational institution, signed by the principal or deputy principal, confirming that the child attends the institution (statement must be on the institution’s letterhead)
+												</li> 
+											</ul>
+							      		</div>
+							      		<div class="form-group">
+							      			<div class="col-sm-offset-2 col-sm-10">
+									    		<button id="nextBtn2" 
+									    				type="submit" 
+									    				class="btn btn-lg btn-primary pull-right" 
+									    				data-toggle="collapse" 
+									    				data-parent="#accordion"  
+									    				role="button">	
+									    			next »
+									    		</button>
+								    		</div>								    		
+									  	</div>
+							      	</form>
+					            </div>
+					        </div>
+						</div>
+					</div>
+			        <!--<div class="panel panel-default">
+			            <div class="panel-heading">
+			                <h3 class="panel-title">
+			                    <a data-toggle="collapse" data-parent="#accordion" href="#PartB">Part B: Declaration and Informed Consent</a>
+			                </h3>
+			            </div>
+			             <div id="PartB" class="panel-collapse collapse">
+			                <div class="panel-body">
+			                <ul> <li>Be sure to answer all the declaration questions. If you have answered "yes" to any questions, please provide additional information if necessary in a sealed envelope marked "CONFIDENTIAL" and attach it to the application. </li><li>Ensure that you have signed and dated your form to provide consent and that your name is recorded on the consent form the same as it is recorded on page 1.&nbsp; It you are submitting more than one form, each form must be completely filled out and signed.</li></ul>
+							</div>
+			            </div>
+			        </div>
+			        <div class="panel panel-default">
+			        <div class="panel-heading">
+			                <h3 class="panel-title">
+			                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseC">Part C: 100 Point Identification Verification</a>
+			                </h3>
+			            </div>
+			             <div id="collapseC" class="panel-collapse collapse">
+			                <div class="panel-body">
+			                <p>For your application to be processed, your identity must have been verified using a 100 point identification check.&nbsp;</p><p>The application forms stipulate what kinds of documents and how many are required to reach the required 100 points.&nbsp;Certain classes of person can verify your identification using the 100 point check.&nbsp; These include:</p><ul><li>A Justice of the&nbsp;Peace</li><li>A Commissioner for Taking Affidavits (eg a solicitor,&nbsp;barrister or proclaimed police officer).&nbsp;</li></ul><p>The form must be signed by the verifier and the section providing their details must be completed:</p><ul><li>Ensure your identification is verified by an appropriate person. This should <strong>not</strong> be a close relative.&nbsp;</li><li>For further details on who can&nbsp;verify, please download the&nbsp;<a title="Employment Screening Verification - Permitted Verifiers Information Sheet" href="http://www.dcsi.sa.gov.au/__data/assets/pdf_file/0008/17369/EMPLOYMENT-SCREENING.pdf">Employment Screening Verification - Permitted Verifiers Information Sheet  (PDF 214.5 KB)
+		</a>.&nbsp;&nbsp;</li></ul><p><u>Note:</u>&nbsp; Other forms of identity verification are allowed in limited circumstances, ie in relation to applications in remote or isolated areas and persons who do not have standards documentation such as a passport or driver's licence.&nbsp; For further information, please <a href="mailto:screening@dcsi.sa.gov.au">email the DCSI Screening Unit</a>.&nbsp;</p>
+							</div>
+			            </div>
+			        </div>
+			        <div class="panel panel-default">
+			        <div class="panel-heading">
+			                <h3 class="panel-title">
+			                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseD">Part D: Employment Information</a>
+			                </h3>
+			            </div>
+			             <div id="collapseD" class="panel-collapse collapse">
+			                <div class="panel-body">
+			                	<ul> <li>This section is to be completed by the Requesting Officer at your work or volunteer organisation and should provide a detailed description of the role you will be undertaking</li><li>If&nbsp;the organisation is paying for the screening,&nbsp;the Requesting Officer&nbsp;must sign and date the front page of the&nbsp;form.&nbsp; Alternatively, if you are paying for the application and lodging it&nbsp;at Australia Post, please ensure the receipt is attached to the front of the form.</li></ul>
+								<p>If your form does not indicate whether you are a paid employee or volunteer, your organisation will be charged at the 'paid employee' rate.</p>
+							</div>
+			            </div>
+			        </div>-->
+				</div>
+		      </div>
+	      </div>
+	    </apex:define>
+	    <apex:define name="script">
+	    	<apex:includeScript value="{!URLFOR($Resource.ApplicationScripts)}" />
+	    </apex:define>
+  </apex:composition>
+</apex:page>

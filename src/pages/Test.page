@@ -1,0 +1,51 @@
+<apex:page applyBodyTag="false" showHeader="false">
+  <head>
+    <title>Bootstrap Form Helpers Basic Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!-- Bootstrap -->
+ 
+    <!-- Bootstrap Form Helpers -->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+  	
+    <h1>Hello, world!</h1>
+
+    <!-- jQuery -->
+    <apex:stylesheet value="{!URLFOR($Resource.Site, '/css/bootstrap.min.css')}"/>
+    <apex:stylesheet value="{!URLFOR($Resource.Site, '/css/glyphicons-bootstrap.css')}"/>
+    <apex:stylesheet value="{!URLFOR($Resource.Site, '/css/glyphicons.css')}"/>
+    <apex:stylesheet value="{!URLFOR($Resource.Site, '/css/site.css')}"/>
+    
+    <apex:includeScript value="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"/>
+    <apex:includeScript value="{!URLFOR($Resource.Site, '/js/bootstrap.min.js')}" />
+    <apex:includeScript value="{!URLFOR($Resource.Site, '/js/bootstrap-datepicker.js')}" />
+
+    <!-- Bootstrap Form Helpers -->
+    <apex:includeScript value="{!URLFOR($Resource.Site, '/js/bootstrap-formhelpers.min.js')}" />
+	<apex:stylesheet value="{!URLFOR($Resource.Site, '/css/bootstrap-formhelpers.min.css')}"/>
+
+<script>
+  	$(document).ready(function()
+    		{    			
+	    		//$("#inputDOB").datepicker();
+	    	});
+  	</script>
+	<div class="form-group">
+							    	<label for="inputDOB" class="col-sm-3 control-label">Date of Birth</label>
+							    	<!--<div class="col-sm-9">
+							      		<input class="form-control" id="inputDOB" placeholder="dd/mm/yyyy" data-input="inputDOB" required="true"/>
+							    	</div>-->
+							    	<div class="col-sm-9 input-append date" id="dp3"  data-date-format="dd/mm/yyyy">
+									  	<input class="form-control " id="inputDOB" placeholder="dd/mm/yyyy" data-input="inputDOB" required="true" />
+									  	<span class="add-on"><i class="icon-th"></i></span>
+									</div>
+							  	</div>
+  </body>
+
+</apex:page>

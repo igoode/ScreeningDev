@@ -1,0 +1,19 @@
+{
+    "X-SFDC-Session": "00D900000010Lap!ARoAQO0WVE080DR2ItaN7QARdeAh5XPMxYBT03chmqDrt4XLftmC2wOuQ8AZaMXiakILGIv0ZFUSc8TmdDJPAFNTmS2O5dE1", 
+    "success": true, 
+    "instance_url": "https://ap1.salesforce.com", 
+    "project name": "ScreeningDev", 
+    "time_stamp": "2015-01-15 10:22:02", 
+    "session_id": "00D900000010Lap!ARoAQO0WVE080DR2ItaN7QARdeAh5XPMxYBT03chmqDrt4XLftmC2wOuQ8AZaMXiakILGIv0ZFUSc8TmdDJPAFNTmS2O5dE1", 
+    "metadata_url": "https://ap1.salesforce.com/services/Soap/m/32.0", 
+    "headers": {
+        "Content-Type": "application/json; charset=UTF-8", 
+        "Accept": "application/json", 
+        "Authorization": "OAuth 00D900000010Lap!ARoAQO0WVE080DR2ItaN7QARdeAh5XPMxYBT03chmqDrt4XLftmC2wOuQ8AZaMXiakILGIv0ZFUSc8TmdDJPAFNTmS2O5dE1"
+    }, 
+    "user_id": "0059000000333qhAAA", 
+    "partner_url": "https://ap1.salesforce.com/services/Soap/u/32.0", 
+    "rest_url": "https://ap1.salesforce.com/services/data/v32.0", 
+    "server_url": "https://ap1.salesforce.com/services/Soap/u/5.0/00D900000010Lap", 
+    "apex_url": "https://ap1.salesforce.com/services/Soap/s/32.0"
+}

@@ -1,0 +1,19 @@
+<apex:component layout="none">
+	<apex:attribute name="FieldLabel" description="Form field label" type="String" />
+	<apex:attribute name="RadioGroupName" description="Radio group name" type="String" />
+	<apex:attribute name="RadioGroupId" description="Radio group id" type="String" />
+	<apex:attribute name="LabelClass" description="Style class for label column" type="String" />
+	<label for="{!RadioGroupName}" class="{!LabelClass} control-label">{!FieldLabel}</label>
+    <div class="col-sm-3 ">
+	  	<div class="radio-inline">
+		  	<label>
+			  <input type="radio" name="{!RadioGroupName}" id="{!RadioGroupId}1" value="Yes"/> Yes
+			</label>
+		</div>
+		<div class="radio-inline">
+			<label>
+			  <input type="radio" name="{!RadioGroupName}" id="{!RadioGroupId}2" value="No"/> No
+			</label>
+		</div>
+  	</div>
+</apex:component>

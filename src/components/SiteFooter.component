@@ -1,0 +1,18 @@
+<apex:component id="footerComponent">
+  <div class="footer-bar"></div>
+  <footer class="footer">
+    <div class="col-md-10">
+      <ul class="nav navbar-nav">
+        <li><a href="#">Disclaimer</a></li>
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">Copyright</a></li>
+        <li><a href="#">Accessiblity</a></li>
+      </ul>
+    </div>
+    <div class="col-md-2">
+      <a href="http://www.sa.gov.au" target="_blank">
+        <img alt="sa.gov.au" src="{!URLFOR($Resource.Site, '/images/SagovLogo.png')}"/>
+      </a>
+    </div>
+  </footer>
+</apex:component>

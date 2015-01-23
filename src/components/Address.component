@@ -1,0 +1,67 @@
+<apex:component layout="none">
+	<apex:attribute name="IdSuffix" description="Suffix for component id" type="String" />
+    <!-- don't use id as there can be multiple rows-->
+    <div class="form-group">
+        <label for="inputConUnitNo{!IdSuffix}" class="col-sm-3 control-label">Unit No</label>
+        <div class="col-sm-9">
+            <input type="text" class="form-control" id="inputConUnitNo{!IdSuffix}" data-name="Unit_No__c" placeholder="Unit No"  />
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="inputConStreetNo{!IdSuffix}" class="col-sm-3 control-label">Street No</label>
+        <div class="col-sm-9">
+            <input type="text" class="form-control" id="inputConStreetNo{!IdSuffix}" data-name="Street_No__c" placeholder="Street No" 
+                    required="required"/>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="inputConStreetName{!IdSuffix}" class="col-sm-3 control-label">Street Name</label>
+        <div class="col-sm-9">
+            <input type="text" class="form-control" id="inputConStreetName{!IdSuffix}" data-name="Street_Name__c" placeholder="Street Name" 
+                    required="required"/>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="inputConSuburb{!IdSuffix}" class="col-sm-3 control-label">Suburb/town</label>
+        <div class="col-sm-9">
+            <input type="text" class="form-control" id="inputConSuburb{!IdSuffix}" data-name="Suburb__c" placeholder="Suburb/town" 
+                    required="required"/>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="selPrevCountry{!IdSuffix}"  class="col-sm-3 control-label">Country</label>
+        <div class="col-sm-9">
+            <select id="selPrevCountry{!IdSuffix}" class="form-control bfh-countries" data-country="AU"  data-name="Country__c" required="required"></select> 
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="selConState{!IdSuffix}" class="col-sm-3 control-label">State</label>
+        <div class="col-sm-9">
+            <select id="selConState{!IdSuffix}" class="form-control bfh-states" data-country="selPrevCountry{!IdSuffix}" data-name="State__c" required="required"></select>   
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="inputConPostcode{!IdSuffix}" class="col-sm-3 control-label">Postcode</label>
+        <div class="col-sm-9">
+            <input type="text" class="form-control" id="inputConPostcode{!IdSuffix}" data-name="Postcode__c" placeholder="Postcode" 
+                    required="required"/>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-sm-3 control-label">Period of residence</label>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-3 input-append date" data-date-format="dd/mm/yyyy" id="dtFrom{!IdSuffix}">
+                    <label for="inputResFrom{!IdSuffix}" class="control-label">From</label>
+                    <input class="form-control" id="inputResFrom{!IdSuffix}" placeholder="dd/mm/yyyy" data-name="Period_of_Residence_From__c" required="required" />
+                    <span class="add-on"><i class="icon-th"></i></span>
+                </div>
+                <div class="col-sm-3 input-append date" data-date-format="dd/mm/yyyy">
+                    <label for="inputResTo{!IdSuffix}" class="control-label">To</label>
+                    <input class="form-control " id="inputResTo{!IdSuffix}" placeholder="dd/mm/yyyy" data-name="Period_of_Residence_To__c" required="required" />
+                    <span class="add-on"><i class="icon-th"></i></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</apex:component>
