@@ -1,0 +1,26 @@
+﻿Label,Name,Type,Length,Unique,Externalid,Precision,Picklistvalues,Calculatedformula,Defaultvalue,Controllername,Relationshipname,Referenceto,Inlinehelptext,Nillable,Createable,Custom,Dependentpicklist
+"Amount Used","AmountUsed","double","","","","18","","","","","","","","True","","",""
+"Created By ID","CreatedById","reference","18","","","","","","","","CreatedBy","User","","","","",""
+"Created Date","CreatedDate","datetime","","","","","","","","","","","","","","",""
+"Current Amount Allowed","CurrentAmountAllowed","double","","","","18","","","","","","","","","","",""
+"Deleted","IsDeleted","boolean","","","","","","","","","","","","","","",""
+"End Date","EndDate","date","","","","","","","","","","","","True","","",""
+"Frequency","Frequency","picklist","255","","","","Weekly
+Fortnightly
+Monthly
+Once
+Quarterly
+Yearly
+","","","","","","","True","","",""
+"Has Rollover","HasRollover","boolean","","","","","","","","","","","","","","",""
+"Is Persistent Resource","IsPersistentResource","boolean","","","","","","","","","","","","","","",""
+"Last Modified By ID","LastModifiedById","reference","18","","","","","","","","LastModifiedBy","User","","","","",""
+"Last Modified Date","LastModifiedDate","datetime","","","","","","","","","","","","","","",""
+"Overage Grace","OverageGrace","percent","","","","5","","","","","","","","True","","",""
+"Resource Group Key","ResourceGroupKey","string","120","","","","","","","","","","","","","",""
+"Setting","Setting","string","120","","","","","","","","","","","","","",""
+"Setting Label","MasterLabel","string","255","","","","","","","","","","","True","","",""
+"Start Date","StartDate","date","","","","","","","","","","","","","","",""
+"System Modstamp","SystemModstamp","datetime","","","","","","","","","","","","","","",""
+"Tenant Usage Entitlement ID","Id","id","18","","","","","","","","","","","","","",""
+"Usage Date","UsageDate","datetime","","","","","","","","","","","","True","","",""

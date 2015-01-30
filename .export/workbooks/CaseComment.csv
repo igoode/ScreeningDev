@@ -1,0 +1,11 @@
+﻿Label,Name,Type,Length,Unique,Externalid,Precision,Picklistvalues,Calculatedformula,Defaultvalue,Controllername,Relationshipname,Referenceto,Inlinehelptext,Nillable,Createable,Custom,Dependentpicklist
+"Body","CommentBody","textarea","4000","","","","","","","","","","","True","True","",""
+"Case Comment ID","Id","id","18","","","","","","","","","","","","","",""
+"Created By ID","CreatedById","reference","18","","","","","","","","CreatedBy","User","","","","",""
+"Created Date","CreatedDate","datetime","","","","","","","","","","","","","","",""
+"Deleted","IsDeleted","boolean","","","","","","","","","","","","","","",""
+"Last Modified By ID","LastModifiedById","reference","18","","","","","","","","LastModifiedBy","User","","","","",""
+"Last Modified Date","LastModifiedDate","datetime","","","","","","","","","","","","","","",""
+"Parent ID","ParentId","reference","18","","","","","","","","Parent","Case","","","True","",""
+"Published","IsPublished","boolean","","","","","","","","","","","","","True","",""
+"System Modstamp","SystemModstamp","datetime","","","","","","","","","","","","","","",""

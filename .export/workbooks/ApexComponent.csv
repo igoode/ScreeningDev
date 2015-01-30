@@ -1,0 +1,21 @@
+﻿Label,Name,Type,Length,Unique,Externalid,Precision,Picklistvalues,Calculatedformula,Defaultvalue,Controllername,Relationshipname,Referenceto,Inlinehelptext,Nillable,Createable,Custom,Dependentpicklist
+"Api Version","ApiVersion","double","","","","18","","","","","","","","","True","",""
+"Component ID","Id","id","18","","","","","","","","","","","","","",""
+"Controller Key","ControllerKey","string","255","","","","","","","","","","","True","True","",""
+"Controller Type","ControllerType","picklist","40","","","","0
+1
+4
+2
+3
+5
+","","","","","","","","True","",""
+"Created By ID","CreatedById","reference","18","","","","","","","","CreatedBy","User","","","","",""
+"Created Date","CreatedDate","datetime","","","","","","","","","","","","","","",""
+"Description","Description","textarea","4000","","","","","","","","","","","True","True","",""
+"Label","MasterLabel","string","80","","","","","","","","","","","","True","",""
+"Last Modified By ID","LastModifiedById","reference","18","","","","","","","","LastModifiedBy","User","","","","",""
+"Last Modified Date","LastModifiedDate","datetime","","","","","","","","","","","","","","",""
+"Markup","Markup","textarea","1048576","","","","","","","","","","","","True","",""
+"Name","Name","string","80","","","","","","","","","","","","True","",""
+"Namespace Prefix","NamespacePrefix","string","15","","","","","","","","","","","True","","",""
+"System Modstamp","SystemModstamp","datetime","","","","","","","","","","","","","","",""

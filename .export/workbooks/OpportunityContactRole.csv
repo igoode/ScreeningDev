@@ -1,0 +1,21 @@
+﻿Label,Name,Type,Length,Unique,Externalid,Precision,Picklistvalues,Calculatedformula,Defaultvalue,Controllername,Relationshipname,Referenceto,Inlinehelptext,Nillable,Createable,Custom,Dependentpicklist
+"Contact ID","ContactId","reference","18","","","","","","","","Contact","Contact","","","True","",""
+"Contact Role ID","Id","id","18","","","","","","","","","","","","","",""
+"Created By ID","CreatedById","reference","18","","","","","","","","CreatedBy","User","","","","",""
+"Created Date","CreatedDate","datetime","","","","","","","","","","","","","","",""
+"Deleted","IsDeleted","boolean","","","","","","","","","","","","","","",""
+"Last Modified By ID","LastModifiedById","reference","18","","","","","","","","LastModifiedBy","User","","","","",""
+"Last Modified Date","LastModifiedDate","datetime","","","","","","","","","","","","","","",""
+"Opportunity ID","OpportunityId","reference","18","","","","","","","","Opportunity","Opportunity","","","True","",""
+"Primary","IsPrimary","boolean","","","","","","","","","","","","","True","",""
+"Role","Role","picklist","40","","","","Business User
+Decision Maker
+Economic Buyer
+Economic Decision Maker
+Evaluator
+Executive Sponsor
+Influencer
+Technical Buyer
+Other
+","","","","","","","True","True","",""
+"System Modstamp","SystemModstamp","datetime","","","","","","","","","","","","","","",""

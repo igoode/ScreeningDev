@@ -1,0 +1,19 @@
+﻿Label,Name,Type,Length,Unique,Externalid,Precision,Picklistvalues,Calculatedformula,Defaultvalue,Controllername,Relationshipname,Referenceto,Inlinehelptext,Nillable,Createable,Custom,Dependentpicklist
+"End Date","EndDate","date","","","","","","","","","","","","","","",""
+"Fiscal Year Settings ID","FiscalYearSettingsId","reference","18","","","","","","","","FiscalYearSettings","FiscalYearSettings","","True","","",""
+"Is Forecast Period","IsForecastPeriod","boolean","","","","","","","","","","","","","","",""
+"Number","Number","int","","","","","","","","","","","","True","","",""
+"Period ID","Id","id","18","","","","","","","","","","","","","",""
+"Period Name","PeriodLabel","picklist","40","","","","","","","","","","","True","","",""
+"Quarter Name","QuarterLabel","picklist","40","","","","Spring
+Summer
+Fall
+Winter
+","","","","","","","True","","",""
+"Start Date","StartDate","date","","","","","","","","","","","","","","",""
+"System Modstamp","SystemModstamp","datetime","","","","","","","","","","","","","","",""
+"Type","Type","picklist","40","","","","Month
+Quarter
+Week
+Year
+","","","","","","","True","","",""

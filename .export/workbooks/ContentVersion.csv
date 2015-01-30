@@ -1,0 +1,45 @@
+﻿Label,Name,Type,Length,Unique,Externalid,Precision,Picklistvalues,Calculatedformula,Defaultvalue,Controllername,Relationshipname,Referenceto,Inlinehelptext,Nillable,Createable,Custom,Dependentpicklist
+"Checksum","Checksum","string","50","","","","","","","","","","","True","","",""
+"Content Location","ContentLocation","picklist","40","","","","S
+E
+","","","","","","","","True","",""
+"Content Modified Date","ContentModifiedDate","datetime","","","","","","","","","","","","True","True","",""
+"Content Origin","Origin","picklist","40","","","","C
+H
+","","","","","","","","True","",""
+"Content URL","ContentUrl","url","255","","","","","","","","","","","True","True","",""
+"ContentDocument ID","ContentDocumentId","reference","18","","","","","","","","ContentDocument","ContentDocument","","","True","",""
+"ContentVersion ID","Id","id","18","","","","","","","","","","","","","",""
+"Created By ID","CreatedById","reference","18","","","","","","","","CreatedBy","User","","","","",""
+"Created Date","CreatedDate","datetime","","","","","","","","","","","","","","",""
+"Description","Description","textarea","1000","","","","","","","","","","","True","True","",""
+"External Data Source ID","ExternalDataSourceId","reference","18","","","","","","","","ExternalDataSource","ExternalDataSource","","True","True","",""
+"External Document Info1","ExternalDocumentInfo1","string","1000","","","","","","","","","","","True","True","",""
+"External Document Info2","ExternalDocumentInfo2","string","1000","","","","","","","","","","","True","True","",""
+"Featured Content Boost","FeaturedContentBoost","int","","","","","","","","","","","","True","","",""
+"Featured Content Date","FeaturedContentDate","date","","","","","","","","","","","","True","","",""
+"File Extension","FileExtension","string","40","","","","","","","","","","","True","","",""
+"File Type","FileType","string","20","","","","","","","","","","","","","",""
+"First Publish Location ID","FirstPublishLocationId","reference","18","","","","","","","","FirstPublishLocation","Account","","True","True","",""
+"Is Deleted","IsDeleted","boolean","","","","","","","","","","","","","","",""
+"Is Latest","IsLatest","boolean","","","","","","","","","","","","","","",""
+"Last Modified By ID","LastModifiedById","reference","18","","","","","","","","LastModifiedBy","User","","","","",""
+"Last Modified Date","LastModifiedDate","datetime","","","","","","","","","","","","","","",""
+"Major Version","IsMajorVersion","boolean","","","","","","","","","","","","","True","",""
+"Negative Rating Count","NegativeRatingCount","int","","","","","","","","","","","","True","","",""
+"Owner ID","OwnerId","reference","18","","","","","","","","Owner","User","","","True","",""
+"Path On Client","PathOnClient","string","500","","","","","","","","","","","True","True","",""
+"Positive Rating Count","PositiveRatingCount","int","","","","","","","","","","","","True","","",""
+"Publish Status","PublishStatus","picklist","40","","","","U
+P
+R
+","","","","","","","","","",""
+"Rating Count","RatingCount","int","","","","","","","","","","","","True","","",""
+"Reason For Change","ReasonForChange","string","1000","","","","","","","","","","","True","True","",""
+"Size","ContentSize","int","","","","","","","","","","","","True","","",""
+"System Modstamp","SystemModstamp","datetime","","","","","","","","","","","","","","",""
+"Tags","TagCsv","textarea","2000","","","","","","","","","","","True","True","",""
+"Title","Title","string","255","","","","","","","","","","","","True","",""
+"User ID","ContentModifiedById","reference","18","","","","","","","","","User","","True","","",""
+"Version Data","VersionData","base64","","","","","","","","","","","","True","True","",""
+"Version Number","VersionNumber","string","20","","","","","","","","","","","True","","",""

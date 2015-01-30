@@ -1,0 +1,10 @@
+﻿Label,Name,Type,Length,Unique,Externalid,Precision,Picklistvalues,Calculatedformula,Defaultvalue,Controllername,Relationshipname,Referenceto,Inlinehelptext,Nillable,Createable,Custom,Dependentpicklist
+"Created By ID","CreatedById","reference","18","","","","","","","","CreatedBy","User","","","","",""
+"Created Date","CreatedDate","datetime","","","","","","","","","","","","","","",""
+"Date Assigned","SystemModstamp","datetime","","","","","","","","","","","","","","",""
+"Deleted","IsDeleted","boolean","","","","","","","","","","","","","","",""
+"Last Modified By ID","LastModifiedById","reference","18","","","","","","","","LastModifiedBy","User","","","","",""
+"Last Modified Date","LastModifiedDate","datetime","","","","","","","","","","","","","","",""
+"Permission Set License Assignment ID","Id","id","18","","","","","","","","","","","","","",""
+"Permission Set License ID","PermissionSetLicenseId","reference","18","","","","","","","","PermissionSetLicense","PermissionSetLicense","","","True","",""
+"User ID","AssigneeId","reference","18","","","","","","","","Assignee","User","","","True","",""

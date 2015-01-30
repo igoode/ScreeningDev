@@ -1,0 +1,47 @@
+﻿Label,Name,Type,Length,Unique,Externalid,Precision,Picklistvalues,Calculatedformula,Defaultvalue,Controllername,Relationshipname,Referenceto,Inlinehelptext,Nillable,Createable,Custom,Dependentpicklist
+"Accept Attachments","AttachmentOption","picklist","40","","","","0
+1
+2
+3
+4
+","","","","","","","","True","",""
+"Accept Email From","AuthorizedSenders","textarea","4000","","","","","","","","","","","True","True","",""
+"Active","IsActive","boolean","","","","","","","","","","","","","True","",""
+"Advanced Email Security Settings","IsAuthenticationRequired","boolean","","","","","","","","","","","","","True","",""
+"Class ID","ApexClassId","reference","18","","","","","","","","","ApexClass","","True","True","",""
+"Convert Text Attachments to Binary Attachments","IsTextAttachmentsAsBinary","boolean","","","","","","","","","","","","","True","",""
+"Created By ID","CreatedById","reference","18","","","","","","","","CreatedBy","User","","","","",""
+"Created Date","CreatedDate","datetime","","","","","","","","","","","","","","",""
+"Deactivated Email Address Action","AddressInactiveAction","picklist","40","","","","0
+1
+2
+3
+","","","","","","","True","True","",""
+"Deactivated Email Service Action","FunctionInactiveAction","picklist","40","","","","0
+1
+2
+3
+","","","","","","","True","True","",""
+"Email Service Name","FunctionName","string","64","","","","","","","","","","","","True","",""
+"Enable Error Routing","IsErrorRoutingEnabled","boolean","","","","","","","","","","","","","True","",""
+"Last Modified By ID","LastModifiedById","reference","18","","","","","","","","LastModifiedBy","User","","","","",""
+"Last Modified Date","LastModifiedDate","datetime","","","","","","","","","","","","","","",""
+"Over Email Rate Limit Action","OverLimitAction","picklist","40","","","","0
+1
+2
+3
+","","","","","","","True","True","",""
+"Route Error Emails to This Email Address","ErrorRoutingAddress","email","270","","","","","","","","","","","True","True","",""
+"Service ID","Id","id","18","","","","","","","","","","","","","",""
+"System Modstamp","SystemModstamp","datetime","","","","","","","","","","","","","","",""
+"TLS Required","IsTlsRequired","boolean","","","","","","","","","","","","","True","",""
+"Unauthenticated Sender Action","AuthenticationFailureAction","picklist","40","","","","0
+1
+2
+3
+","","","","","","","True","True","",""
+"Unauthorized Sender Action","AuthorizationFailureAction","picklist","40","","","","0
+1
+2
+3
+","","","","","","","True","True","",""

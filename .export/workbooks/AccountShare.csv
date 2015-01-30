@@ -1,0 +1,33 @@
+﻿Label,Name,Type,Length,Unique,Externalid,Precision,Picklistvalues,Calculatedformula,Defaultvalue,Controllername,Relationshipname,Referenceto,Inlinehelptext,Nillable,Createable,Custom,Dependentpicklist
+"Account Access","AccountAccessLevel","picklist","40","","","","Read
+Edit
+All
+","","","","","","","","","",""
+"Account ID","AccountId","reference","18","","","","","","","","Account","Account","","","","",""
+"Account Share ID","Id","id","18","","","","","","","","","","","","","",""
+"Case Access","CaseAccessLevel","picklist","40","","","","None
+Read
+Edit
+","","","","","","","","","",""
+"Contact Access","ContactAccessLevel","picklist","40","","","","None
+Read
+Edit
+","","","","","","","True","","",""
+"Deleted","IsDeleted","boolean","","","","","","","","","","","","","","",""
+"Last Modified By ID","LastModifiedById","reference","18","","","","","","","","LastModifiedBy","User","","","","",""
+"Last Modified Date","LastModifiedDate","datetime","","","","","","","","","","","","","","",""
+"Opportunity Access","OpportunityAccessLevel","picklist","40","","","","None
+Read
+Edit
+","","","","","","","","","",""
+"Row Cause","RowCause","picklist","40","","","","Owner
+Manual
+Rule
+ImplicitChild
+ImplicitParent
+Team
+Territory
+TerritoryManual
+TerritoryRule
+","","","","","","","True","","",""
+"User/Group ID","UserOrGroupId","reference","18","","","","","","","","","Group","","","","",""

@@ -1,0 +1,12 @@
+﻿Label,Name,Type,Length,Unique,Externalid,Precision,Picklistvalues,Calculatedformula,Defaultvalue,Controllername,Relationshipname,Referenceto,Inlinehelptext,Nillable,Createable,Custom,Dependentpicklist
+"Active","Active","boolean","","","","","","","","","","","","","","",""
+"Created By ID","CreatedById","reference","18","","","","","","","","CreatedBy","User","","","","",""
+"Created Date","CreatedDate","datetime","","","","","","","","","","","","","","",""
+"Last Modified By ID","LastModifiedById","reference","18","","","","","","","","LastModifiedBy","User","","","","",""
+"Last Modified Date","LastModifiedDate","datetime","","","","","","","","","","","","","","",""
+"Name","Name","string","120","","","","","","","","","","","True","","",""
+"Rule ID","Id","id","18","","","","","","","","","","","","","",""
+"SObject Type","SobjectType","picklist","40","","","","Case
+Lead
+","","","","","","","True","","",""
+"System Modstamp","SystemModstamp","datetime","","","","","","","","","","","","","","",""

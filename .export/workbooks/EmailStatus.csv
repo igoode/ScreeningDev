@@ -1,0 +1,12 @@
+﻿Label,Name,Type,Length,Unique,Externalid,Precision,Picklistvalues,Calculatedformula,Defaultvalue,Controllername,Relationshipname,Referenceto,Inlinehelptext,Nillable,Createable,Custom,Dependentpicklist
+"# Times Opened","TimesOpened","int","","","","","","","","","","","","","","",""
+"Activity ID","TaskId","reference","18","","","","","","","","Task","Task","","","","",""
+"Contact/Lead ID","WhoId","reference","18","","","","","","","","Who","Contact","","True","","",""
+"Created By ID","CreatedById","reference","18","","","","","","","","CreatedBy","User","","","","",""
+"Created Date","CreatedDate","datetime","","","","","","","","","","","","","","",""
+"Date Opened","FirstOpenDate","datetime","","","","","","","","","","","","True","","",""
+"Email Status ID","Id","id","18","","","","","","","","","","","","","",""
+"Email Template Name","EmailTemplateName","string","80","","","","","","","","","","","True","","",""
+"Last Modified By ID","LastModifiedById","reference","18","","","","","","","","LastModifiedBy","User","","","","",""
+"Last Modified Date","LastModifiedDate","datetime","","","","","","","","","","","","","","",""
+"Last Opened","LastOpenDate","datetime","","","","","","","","","","","","True","","",""

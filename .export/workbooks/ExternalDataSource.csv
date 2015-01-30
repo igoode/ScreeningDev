@@ -1,0 +1,46 @@
+﻿Label,Name,Type,Length,Unique,Externalid,Precision,Picklistvalues,Calculatedformula,Defaultvalue,Controllername,Relationshipname,Referenceto,Inlinehelptext,Nillable,Createable,Custom,Dependentpicklist
+"API Key","ApiKey","string","128","","","","","","","","","","The API Key is a string required by the external data service to identify the users of their applications. Please read the documentation for the data source type for information about how to obtain the key.","True","","",""
+"Class ID","Type","picklist","255","","","","Datacloud
+Identity
+Limits
+OData
+SimpleURL
+","","","","","","","","","",""
+"Created By ID","CreatedById","reference","18","","","","","","","","CreatedBy","User","","","","",""
+"Created Date","CreatedDate","datetime","","","","","","","","","","","","","","",""
+"Custom Configuration","CustomConfiguration","textarea","4000","","","","","","","","","","","True","","",""
+"Default External Repository","Repository","string","255","","","","","","","","","","","True","","",""
+"Deleted","IsDeleted","boolean","","","","","","","","","","","","","","",""
+"External Data Source","MasterLabel","string","80","","","","","","","","","","","","","",""
+"External Data Source ID","Id","id","18","","","","","","","","","","","","","",""
+"Identity Type","PrincipalType","picklist","255","","","","Anonymous
+PerUser
+NamedUser
+","","","","","","Used to track users accessing the external server. Anonymous implies a user identity is not specified for external server access. Named Principal uses one user identity for all users to access the external server.","","","",""
+"Last Modified By ID","LastModifiedById","reference","18","","","","","","","","LastModifiedBy","User","","","","",""
+"Last Modified Date","LastModifiedDate","datetime","","","","","","","","","","","","","","",""
+"Master Language","Language","picklist","40","","","","en_US
+de
+es
+fr
+it
+ja
+sv
+ko
+zh_TW
+zh_CN
+pt_BR
+nl_NL
+da
+th
+fi
+ru
+es_MX
+no
+","","","","","","","","","",""
+"Name","DeveloperName","string","80","","","","","","","","","","","","","",""
+"Namespace Prefix","NamespacePrefix","string","15","","","","","","","","","","","True","","",""
+"Server URL","Endpoint","textarea","1000","","","","","","","","","","A URL starting with “http://” or “https://”","True","","",""
+"Static Resource ID","LargeIconId","reference","18","","","","","","","","LargeIcon","StaticResource","","True","","",""
+"Static Resource ID","SmallIconId","reference","18","","","","","","","","SmallIcon","StaticResource","","True","","",""
+"System Modstamp","SystemModstamp","datetime","","","","","","","","","","","","","","",""

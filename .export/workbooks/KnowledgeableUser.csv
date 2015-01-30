@@ -1,0 +1,6 @@
+﻿Label,Name,Type,Length,Unique,Externalid,Precision,Picklistvalues,Calculatedformula,Defaultvalue,Controllername,Relationshipname,Referenceto,Inlinehelptext,Nillable,Createable,Custom,Dependentpicklist
+"Knowledgeable User ID","Id","id","18","","","","","","","","","","","","","",""
+"Rank","RawRank","int","","","","","","","","","","","","True","","",""
+"System Modstamp","SystemModstamp","datetime","","","","","","","","","","","","","","",""
+"Topic ID","TopicId","reference","18","","","","","","","","","Topic","","","","",""
+"User ID","UserId","reference","18","","","","","","","","","User","","","","",""

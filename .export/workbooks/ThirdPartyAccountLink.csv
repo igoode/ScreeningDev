@@ -1,0 +1,10 @@
+﻿Label,Name,Type,Length,Unique,Externalid,Precision,Picklistvalues,Calculatedformula,Defaultvalue,Controllername,Relationshipname,Referenceto,Inlinehelptext,Nillable,Createable,Custom,Dependentpicklist
+"Auth. Provider ID","SsoProviderId","reference","18","","","","","","","","SsoProvider","AuthProvider","","True","","",""
+"External User Handle","Handle","string","375","","","","","","","","","","","True","","",""
+"External User Id","RemoteIdentifier","string","128","","","","","","","","","","","True","","",""
+"Is Not SSO Usable","IsNotSsoUsable","boolean","","","","","","","","","","","","","","",""
+"Provider","Provider","string","128","","","","","","","","","","","True","","",""
+"Single Sign-On Provider Name","SsoProviderName","string","255","","","","","","","","","","","True","","",""
+"Third Party Account Link ID","Id","id","18","","","","","","","","","","","","","",""
+"Third Party Account Link Unique Key","ThirdPartyAccountLinkKey","string","255","","","","","","","","","","","True","","",""
+"User ID","UserId","reference","18","","","","","","","","User","User","","True","","",""

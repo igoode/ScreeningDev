@@ -1,0 +1,5 @@
+﻿Label,Name,Type,Length,Unique,Externalid,Precision,Picklistvalues,Calculatedformula,Defaultvalue,Controllername,Relationshipname,Referenceto,Inlinehelptext,Nillable,Createable,Custom,Dependentpicklist
+"Assignee ID","AssigneeId","reference","18","","","","","","","","Assignee","User","","","True","",""
+"Date Assigned","SystemModstamp","datetime","","","","","","","","","","","","","","",""
+"PermissionSet ID","PermissionSetId","reference","18","","","","","","","","PermissionSet","PermissionSet","","","True","",""
+"PermissionSetAssignment ID","Id","id","18","","","","","","","","","","","","","",""

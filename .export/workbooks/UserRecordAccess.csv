@@ -1,0 +1,16 @@
+﻿Label,Name,Type,Length,Unique,Externalid,Precision,Picklistvalues,Calculatedformula,Defaultvalue,Controllername,Relationshipname,Referenceto,Inlinehelptext,Nillable,Createable,Custom,Dependentpicklist
+"Has All Access","HasAllAccess","boolean","","","","","","","","","","","","","","",""
+"Has Delete Access","HasDeleteAccess","boolean","","","","","","","","","","","","","","",""
+"Has Edit Access","HasEditAccess","boolean","","","","","","","","","","","","","","",""
+"Has Read Access","HasReadAccess","boolean","","","","","","","","","","","","","","",""
+"Has Transfer Access","HasTransferAccess","boolean","","","","","","","","","","","","","","",""
+"Maximum Access Level","MaxAccessLevel","picklist","40","","","","None
+Read
+Edit
+Delete
+Transfer
+All
+","","","","","","","True","","",""
+"Record ID","RecordId","picklist","40","","","","","","","","","","","","","",""
+"User ID","UserId","reference","18","","","","","","","","","User","","","","",""
+"User Record Access ID","Id","id","18","","","","","","","","","","","","","",""

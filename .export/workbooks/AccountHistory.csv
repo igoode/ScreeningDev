@@ -1,0 +1,74 @@
+﻿Label,Name,Type,Length,Unique,Externalid,Precision,Picklistvalues,Calculatedformula,Defaultvalue,Controllername,Relationshipname,Referenceto,Inlinehelptext,Nillable,Createable,Custom,Dependentpicklist
+"Account History ID","Id","id","18","","","","","","","","","","","","","",""
+"Account ID","AccountId","reference","18","","","","","","","","Account","Account","","","","",""
+"Changed Field","Field","picklist","255","","","","accountMerged
+AccountNumber
+AccountSource
+Active__c
+AnnualRevenue
+BillingAddress
+BillingCity
+BillingCountry
+BillingCountryCode
+BillingLatitude
+BillingLongitude
+BillingPostalCode
+BillingState
+BillingStateCode
+BillingStreet
+CleanStatus
+created
+accountCreatedFromLead
+CustomerPriority__c
+DandbCompany
+Description
+DunsNumber
+Fax
+feedEvent
+Industry
+Jigsaw
+accountUpdatedByLead
+personAccountUpdatedByLead
+NaicsCode
+NaicsDesc
+Name
+NumberOfEmployees
+NumberofLocations__c
+Owner
+ownerAccepted
+ownerAssignment
+Ownership
+Parent
+Phone
+Rating
+locked
+unlocked
+ShippingAddress
+ShippingCity
+ShippingCountry
+ShippingCountryCode
+ShippingLatitude
+ShippingLongitude
+ShippingPostalCode
+ShippingState
+ShippingStateCode
+ShippingStreet
+Sic
+SicDesc
+Site
+SLA__c
+SLAExpirationDate__c
+SLASerialNumber__c
+TextName
+TickerSymbol
+Tradestyle
+Type
+UpsellOpportunity__c
+Website
+YearStarted
+","","","","","","","","","",""
+"Created By ID","CreatedById","reference","18","","","","","","","","CreatedBy","User","","","","",""
+"Created Date","CreatedDate","datetime","","","","","","","","","","","","","","",""
+"Deleted","IsDeleted","boolean","","","","","","","","","","","","","","",""
+"New Value","NewValue","anyType","255","","","","","","","","","","","True","","",""
+"Old Value","OldValue","anyType","255","","","","","","","","","","","True","","",""

@@ -1,0 +1,12 @@
+﻿Label,Name,Type,Length,Unique,Externalid,Precision,Picklistvalues,Calculatedformula,Defaultvalue,Controllername,Relationshipname,Referenceto,Inlinehelptext,Nillable,Createable,Custom,Dependentpicklist
+"CTI Adapter URL","AdapterUrl","string","2000","","","","","","","","","","","True","True","",""
+"Call Center ID","Id","id","18","","","","","","","","","","","","","",""
+"Created By ID","CreatedById","reference","18","","","","","","","","CreatedBy","User","","","","",""
+"Created Date","CreatedDate","datetime","","","","","","","","","","","","","","",""
+"Custom Settings","CustomSettings","string","3000","","","","","","","","","","","True","True","",""
+"Internal Name","InternalName","string","240","","","","","","","","","","","","True","",""
+"Last Modified By ID","LastModifiedById","reference","18","","","","","","","","LastModifiedBy","User","","","","",""
+"Last Modified Date","LastModifiedDate","datetime","","","","","","","","","","","","","","",""
+"Name","Name","string","255","","","","","","","","","","","","True","",""
+"System Modstamp","SystemModstamp","datetime","","","","","","","","","","","","","","",""
+"Version","Version","double","","","","18","","","","","","","","True","True","",""

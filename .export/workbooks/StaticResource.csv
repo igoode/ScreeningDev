@@ -1,0 +1,16 @@
+﻿Label,Name,Type,Length,Unique,Externalid,Precision,Picklistvalues,Calculatedformula,Defaultvalue,Controllername,Relationshipname,Referenceto,Inlinehelptext,Nillable,Createable,Custom,Dependentpicklist
+"Body","Body","base64","","","","","","","","","","","","True","True","",""
+"Cache Control","CacheControl","picklist","40","","","","Private
+Public
+","","","","","","","","True","",""
+"Created By ID","CreatedById","reference","18","","","","","","","","CreatedBy","User","","","","",""
+"Created Date","CreatedDate","datetime","","","","","","","","","","","","","","",""
+"Description","Description","textarea","255","","","","","","","","","","","True","True","",""
+"Last Modified By ID","LastModifiedById","reference","18","","","","","","","","LastModifiedBy","User","","","","",""
+"Last Modified Date","LastModifiedDate","datetime","","","","","","","","","","","","","","",""
+"MIME Type","ContentType","string","120","","","","","","","","","","","","True","",""
+"Name","Name","string","255","","","","","","","","","","","","True","",""
+"Namespace Prefix","NamespacePrefix","string","15","","","","","","","","","","","True","","",""
+"Size","BodyLength","int","","","","","","","","","","","","","","",""
+"Static Resource ID","Id","id","18","","","","","","","","","","","","","",""
+"System Modstamp","SystemModstamp","datetime","","","","","","","","","","","","","","",""

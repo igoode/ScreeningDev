@@ -1,0 +1,13 @@
+﻿Label,Name,Type,Length,Unique,Externalid,Precision,Picklistvalues,Calculatedformula,Defaultvalue,Controllername,Relationshipname,Referenceto,Inlinehelptext,Nillable,Createable,Custom,Dependentpicklist
+"Parent ID","ParentId","reference","18","","","","","","","","Parent","PermissionSet","","","True","",""
+"Setup Entity ID","SetupEntityId","reference","18","","","","","","","","","ApexClass","","","True","",""
+"Setup Entity Type","SetupEntityType","picklist","40","","","","ApexClass
+ApexPage
+ConnectedApplication
+CustomPermission
+ExternalDataSource
+ServiceProvider
+TabSet
+","","","","","","","True","","",""
+"SetupEntityAccess ID","Id","id","18","","","","","","","","","","","","","",""
+"System Modstamp","SystemModstamp","datetime","","","","","","","","","","","","","","",""

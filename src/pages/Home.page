@@ -40,15 +40,32 @@
 	    		font-weight: normal !important;
 	    	}
     	</style>
+    	<script>
+    		j$(document).ready(function()
+				{  
+		    		j$('.menuGrp a.list-group-item').click(function(e)
+					{
+						j$('.menuGrp a').removeClass('active');
+						j$(this).toggleClass('active');
+						j$('.collapse.in').collapse('hide');
+						var target = j$(this).data('target');
+						j$('#' + target).collapse('show');
+
+					});
+				});
+    	</script>
 	    <!-- Main component for a primary marketing message or call to action -->
 	    <div class="row row-offcanvas row-offcanvas-left main">
 	    	<div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
-	          <div class="list-group">
-	            <a href="#" class="list-group-item active">Child-related employment screening</a>
-	            <a href="#" class="list-group-item">Part A: Your Personal Details</a>
-	            <a href="#" class="list-group-item">Part B: Declaration and Informed Consent</a>
-	            <a href="#" class="list-group-item">Part C: 100 Point Identification Verification</a>
-	            <a href="#" class="list-group-item">Part D: Employment Information</a>
+	          <div class="list-group menuGrp">
+	            <a href="#accHdr1" class="list-group-item active" data-target="acc1">A1 - Your personal details</a>
+	            <a href="#accHdr2" class="list-group-item" data-target="acc2">A2 - Your previous names</a>
+	            <a href="#accHdr3" class="list-group-item" data-target="acc3">A3 - Your current contact details</a>
+	            <a href="#accHdr4" class="list-group-item" data-target="acc4">A4 - Your previous residential addresses</a>
+	            <a href="#accHdr5" class="list-group-item" data-target="acc5">B1 - Declaration</a>
+	            <a href="#accHdr6" class="list-group-item" data-target="acc6">B2 - Have you answered 'yes' to any of the questions above?</a>
+	            <a href="#accHdr7" class="list-group-item" data-target="acc7">B3 - Consent to obtain personal information</a>
+	            <a href="#accHdr8" class="list-group-item" data-target="acc8">C1 - 100 Point Identification Check</a>
 	          </div>
 	        </div>
 	    	<div class="col-xs-12 col-sm-9">
@@ -224,8 +241,8 @@
 			                <div class="panel-body">
 						      	<em>Include ALL names by which you have been known, eg aliases, maiden names, previous married names, deed poll. If there is insufficient space, please list them on a separate piece of paper and attach it to this document.</em>
 						      	<p/>                                                                                      
-						      	<form class="form-inline" id="form2">          
-					      			<div class="col-md-12 column">
+						      	<form class="form-horizontal" id="form2">          
+					      			<div class="column col-sm-12 col-md-12">
 										<table class="table table-bordered table-hover" id="prevNameTbl">
 											<thead>
 												<tr >
@@ -258,21 +275,23 @@
 											</tbody>
 										</table>
 									</div>
-						      		<div class="form-group">
+									<div class="form-group">
 						      			<div class="col-sm-offset-2 col-sm-10">
 								      		<a id="addPrevName" class="btn btn-default pull-left">Add Row</a>
 								      		<a id='delPrevName' class="pull-right btn btn-default">Delete Row</a>
 							      		</div>
 						      		</div>
 						      		<div class="form-group">
-								    	<button id="nextBtn2" 
+							    		<div class="col-sm-offset-2 col-sm-10">
+								    		<button id="nextBtn2" 
 								    				type="submit" 
 								    				class="btn btn-lg btn-primary pull-right nextBtn" 
 								    				data-toggle="collapse" 
 								    				data-parent="#accordion"  
 								    				role="button">	
 								    			next »
-								    		</button>								    		
+								    		</button>
+							    		</div>								    		
 								  	</div>
 						      	</form>
 				            </div>
@@ -523,7 +542,7 @@
 						<div class="panel panel-default">
 				            <div class="panel-heading">
 				                <h3 class="panel-title">
-				                    <a data-toggle="collapse" data-parent="#accordion" href="#acc7">B3 - Consent to obtain personal information</a>
+				                    <a data-toggle="collapse" data-parent="#accordion" id="accHdr7" href="#acc7">B3 - Consent to obtain personal information</a>
 				                </h3>
 				            </div>
 				            <div id="acc7" class="panel-collapse collapse">
@@ -631,13 +650,13 @@
 					                	You must provide proof of your identity before your application can be processed. You must show a verifying officer original identity documents that add up to at least 100 points. Note any proof of name change certificate does not count towards the points total. You must use ONE Category A document or ONE Category B document which MUST contain a photograph. Aboriginal applicants from remote communities or recent migrants to Australia may use identity documents detailed below.
 					                </em>
 					                <p/>
-					                <form class="form-inline" id="form2">          
+					                <form class="form-horizontal" id="form2">          
 							      		<div class="row clearfix">
 							      			<div class="col-sm-12 column">
 												<table class="table table-bordered table-hover" id="100PtTbl">
 													<thead>
 														<tr >
-															<th class="text-left">
+															<th class="text-left" style="width:25%">
 																Category
 															</th>
 															<th class="text-left">

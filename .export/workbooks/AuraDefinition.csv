@@ -1,0 +1,30 @@
+﻿Label,Name,Type,Length,Unique,Externalid,Precision,Picklistvalues,Calculatedformula,Defaultvalue,Controllername,Relationshipname,Referenceto,Inlinehelptext,Nillable,Createable,Custom,Dependentpicklist
+"Created By ID","CreatedById","reference","18","","","","","","","","CreatedBy","User","","","","",""
+"Created Date","CreatedDate","datetime","","","","","","","","","","","","","","",""
+"Defintion Type","DefType","picklist","255","","","","APPLICATION
+CONTROLLER
+COMPONENT
+EVENT
+HELPER
+INTERFACE
+LAYOUT
+RENDERER
+STYLE
+PROVIDER
+MODEL
+TESTSUITE
+DOCUMENTATION
+THEME
+","","","","","","","","True","",""
+"Deleted","IsDeleted","boolean","","","","","","","","","","","","","","",""
+"Format","Format","picklist","255","","","","XML
+JS
+CSS
+TEMPLATE_CSS
+","","","","","","","","True","",""
+"Last Modified By ID","LastModifiedById","reference","18","","","","","","","","LastModifiedBy","User","","","","",""
+"Last Modified Date","LastModifiedDate","datetime","","","","","","","","","","","","","","",""
+"Lightning Definition Bundle ID","AuraDefinitionBundleId","reference","18","","","","","","","","AuraDefinitionBundle","AuraDefinitionBundle","","","True","",""
+"Lightning Definition ID","Id","id","18","","","","","","","","","","","","","",""
+"Source","Source","textarea","1000000","","","","","","","","","","","","True","",""
+"System Modstamp","SystemModstamp","datetime","","","","","","","","","","","","","","",""

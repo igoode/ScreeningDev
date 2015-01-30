@@ -1,0 +1,24 @@
+﻿Label,Name,Type,Length,Unique,Externalid,Precision,Picklistvalues,Calculatedformula,Defaultvalue,Controllername,Relationshipname,Referenceto,Inlinehelptext,Nillable,Createable,Custom,Dependentpicklist
+"Created By ID","CreatedById","reference","18","","","","","","","","CreatedBy","User","","","","",""
+"Created Date","CreatedDate","datetime","","","","","","","","","","","","","","",""
+"Data.com Object Type","DatacloudEntityType","picklist","255","","","","0
+1
+2
+4
+","","","","","","","","","",""
+"Data.com Purchase Type","PurchaseType","picklist","255","","","","0
+1
+2
+","","","","","","","","","",""
+"Data.com Usage ID","Id","id","18","","","","","","","","","","","","","",""
+"Data.com Usage Type","UserType","picklist","255","","","","0
+1
+","","","","","","","","","",""
+"Deleted","IsDeleted","boolean","","","","","","","","","","","","","","",""
+"Description","Description","string","255","","","","","","","","","","","True","","",""
+"Last Modified By ID","LastModifiedById","reference","18","","","","","","","","LastModifiedBy","User","","","","",""
+"Last Modified Date","LastModifiedDate","datetime","","","","","","","","","","","","","","",""
+"Purchase Count","Usage","double","","","","18","","","","","","","","","","",""
+"Sequence ID","Name","string","255","","","","","","","","","","","","","",""
+"System Modstamp","SystemModstamp","datetime","","","","","","","","","","","","","","",""
+"User ID","UserId","reference","18","","","","","","","","User","User","","","","",""

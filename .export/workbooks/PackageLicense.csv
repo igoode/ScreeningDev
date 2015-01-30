@@ -1,0 +1,14 @@
+﻿Label,Name,Type,Length,Unique,Externalid,Precision,Picklistvalues,Calculatedformula,Defaultvalue,Controllername,Relationshipname,Referenceto,Inlinehelptext,Nillable,Createable,Custom,Dependentpicklist
+"Allowed Licenses","AllowedLicenses","int","","","","","","","","","","","","","","",""
+"Created Date","CreatedDate","datetime","","","","","","","","","","","","","","",""
+"Expiration Date","ExpirationDate","datetime","","","","","","","","","","","","True","","",""
+"Is Provisioned","IsProvisioned","boolean","","","","","","","","","","","","","","",""
+"Last Modified Date","LastModifiedDate","datetime","","","","","","","","","","","","","","",""
+"Namespace Prefix","NamespacePrefix","string","40","","","","","","","","","","","","","",""
+"Package License ID","Id","id","18","","","","","","","","","","","","","",""
+"Status","Status","picklist","40","","","","Trial
+Free
+Active
+","","","","","","","","","",""
+"System Modstamp","SystemModstamp","datetime","","","","","","","","","","","","","","",""
+"Used Licenses","UsedLicenses","int","","","","","","","","","","","","","","",""

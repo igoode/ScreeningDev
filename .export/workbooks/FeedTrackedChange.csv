@@ -1,0 +1,6 @@
+﻿Label,Name,Type,Length,Unique,Externalid,Precision,Picklistvalues,Calculatedformula,Defaultvalue,Controllername,Relationshipname,Referenceto,Inlinehelptext,Nillable,Createable,Custom,Dependentpicklist
+"Feed Item ID","FeedItemId","reference","18","","","","","","","","","AccountFeed","","","","",""
+"Feed Tracked Change ID","Id","id","18","","","","","","","","","","","","","",""
+"Field","FieldName","string","120","","","","","","","","","","","","","",""
+"New Value","NewValue","anyType","255","","","","","","","","","","","True","","",""
+"Old Value","OldValue","anyType","255","","","","","","","","","","","True","","",""

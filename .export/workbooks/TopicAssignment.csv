@@ -1,0 +1,9 @@
+﻿Label,Name,Type,Length,Unique,Externalid,Precision,Picklistvalues,Calculatedformula,Defaultvalue,Controllername,Relationshipname,Referenceto,Inlinehelptext,Nillable,Createable,Custom,Dependentpicklist
+"Created By ID","CreatedById","reference","18","","","","","","","","CreatedBy","User","","","","",""
+"Created Date","CreatedDate","datetime","","","","","","","","","","","","","","",""
+"Deleted","IsDeleted","boolean","","","","","","","","","","","","","","",""
+"Entity ID","EntityId","reference","18","","","","","","","","Entity","Account","","","True","",""
+"Record Key Prefix","EntityKeyPrefix","string","3","","","","","","","","","","","","","",""
+"System Modstamp","SystemModstamp","datetime","","","","","","","","","","","","","","",""
+"Topic Assignment Id","Id","id","18","","","","","","","","","","","","","",""
+"Topic ID","TopicId","reference","18","","","","","","","","Topic","Topic","","","True","",""

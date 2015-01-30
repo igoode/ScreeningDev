@@ -1,0 +1,27 @@
+﻿Label,Name,Type,Length,Unique,Externalid,Precision,Picklistvalues,Calculatedformula,Defaultvalue,Controllername,Relationshipname,Referenceto,Inlinehelptext,Nillable,Createable,Custom,Dependentpicklist
+"Auth. Provider ID","Id","id","18","","","","","","","","","","","","","",""
+"Authorize Endpoint URL","AuthorizeUrl","url","1024","","","","","","","","","","","True","True","",""
+"Class ID","RegistrationHandlerId","reference","18","","","","","","","","","ApexClass","","True","True","",""
+"Consumer Key","ConsumerKey","string","256","","","","","","","","","","","True","True","",""
+"Consumer Secret","ConsumerSecret","string","100","","","","","","","","","","","True","True","",""
+"Created Date","CreatedDate","datetime","","","","","","","","","","","","","","",""
+"Custom Error URL","ErrorUrl","string","500","","","","","","","","","","","True","True","",""
+"Default Scopes","DefaultScopes","string","256","","","","","","","","","","","True","True","",""
+"Icon URL","IconUrl","url","1024","","","","","","","","","","","True","True","",""
+"Include identity organization's organization ID for third-party account linkage","OptionsIncludeOrgIdInId","boolean","","","","","","","","","","","","","True","",""
+"Name","FriendlyName","string","32","","","","","","","","","","","","True","",""
+"Provider Type","ProviderType","picklist","40","","","","Facebook
+Janrain
+Salesforce
+OpenIdConnect
+MicrosoftACS
+LinkedIn
+Twitter
+","","","","","","","","True","",""
+"Send access token in header","OptionsSendAccessTokenInHeader","boolean","","","","","","","","","","","","","True","",""
+"Send client credentials in header","OptionsSendClientCredentialsInHeader","boolean","","","","","","","","","","","","","True","",""
+"Token Endpoint URL","TokenUrl","url","1024","","","","","","","","","","","True","True","",""
+"Token Issuer","IdTokenIssuer","string","1024","","","","","","","","","","","True","True","",""
+"URL Suffix","DeveloperName","string","32","","","","","","","","","","","","True","",""
+"User ID","ExecutionUserId","reference","18","","","","","","","","","User","","True","True","",""
+"User Info Endpoint URL","UserInfoUrl","url","1024","","","","","","","","","","","True","True","",""

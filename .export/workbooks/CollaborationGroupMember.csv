@@ -1,0 +1,18 @@
+﻿Label,Name,Type,Length,Unique,Externalid,Precision,Picklistvalues,Calculatedformula,Defaultvalue,Controllername,Relationshipname,Referenceto,Inlinehelptext,Nillable,Createable,Custom,Dependentpicklist
+"CollaborationGroup ID","CollaborationGroupId","reference","18","","","","","","","","CollaborationGroup","CollaborationGroup","","","True","",""
+"Created By ID","CreatedById","reference","18","","","","","","","","CreatedBy","User","","","","",""
+"Created Date","CreatedDate","datetime","","","","","","","","","","","","","","",""
+"Group Member Id","Id","id","18","","","","","","","","","","","","","",""
+"Group Member Role","CollaborationRole","picklist","40","","","","Admin
+Standard
+","","","","","","","True","True","",""
+"Last Feed Access Date","LastFeedAccessDate","datetime","","","","","","","","","","","","True","","",""
+"Last Modified By ID","LastModifiedById","reference","18","","","","","","","","LastModifiedBy","User","","","","",""
+"Last Modified Date","LastModifiedDate","datetime","","","","","","","","","","","","","","",""
+"Member ID","MemberId","reference","18","","","","","","","","Member","User","","","True","",""
+"Notification Frequency","NotificationFrequency","picklist","40","","","","P
+D
+W
+N
+","","","","","","","True","True","",""
+"System Modstamp","SystemModstamp","datetime","","","","","","","","","","","","","","",""

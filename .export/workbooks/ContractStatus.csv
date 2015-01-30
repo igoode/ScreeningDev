@@ -1,0 +1,16 @@
+﻿Label,Name,Type,Length,Unique,Externalid,Precision,Picklistvalues,Calculatedformula,Defaultvalue,Controllername,Relationshipname,Referenceto,Inlinehelptext,Nillable,Createable,Custom,Dependentpicklist
+"Contract Status Value ID","Id","id","18","","","","","","","","","","","","","",""
+"Created By ID","CreatedById","reference","18","","","","","","","","CreatedBy","User","","","","",""
+"Created Date","CreatedDate","datetime","","","","","","","","","","","","","","",""
+"Is Default","IsDefault","boolean","","","","","","","","","","","","","","",""
+"Last Modified By ID","LastModifiedById","reference","18","","","","","","","","LastModifiedBy","User","","","","",""
+"Last Modified Date","LastModifiedDate","datetime","","","","","","","","","","","","","","",""
+"Master Label","MasterLabel","string","255","","","","","","","","","","","True","","",""
+"Sort Order","SortOrder","int","","","","","","","","","","","","True","","",""
+"Status Code","StatusCode","picklist","40","","","","Draft
+InApproval
+Activated
+Terminated
+Expired
+","","","","","","","True","","",""
+"System Modstamp","SystemModstamp","datetime","","","","","","","","","","","","","","",""

@@ -1,0 +1,109 @@
+﻿Label,Name,Type,Length,Unique,Externalid,Precision,Picklistvalues,Calculatedformula,Defaultvalue,Controllername,Relationshipname,Referenceto,Inlinehelptext,Nillable,Createable,Custom,Dependentpicklist
+"Create Records","PermissionsCreate","boolean","","","","","","","","","","","","","True","",""
+"Created By ID","CreatedById","reference","18","","","","","","","","CreatedBy","User","","","","",""
+"Created Date","CreatedDate","datetime","","","","","","","","","","","","","","",""
+"Delete Records","PermissionsDelete","boolean","","","","","","","","","","","","","True","",""
+"Edit All Records","PermissionsModifyAllRecords","boolean","","","","","","","","","","","","","True","",""
+"Edit Records","PermissionsEdit","boolean","","","","","","","","","","","","","True","",""
+"Last Modified By ID","LastModifiedById","reference","18","","","","","","","","LastModifiedBy","User","","","","",""
+"Last Modified Date","LastModifiedDate","datetime","","","","","","","","","","","","","","",""
+"ObjectPermissions ID","Id","id","18","","","","","","","","","","","","","",""
+"Parent ID","ParentId","reference","18","","","","","","","","Parent","PermissionSet","","","True","",""
+"Read All Records","PermissionsViewAllRecords","boolean","","","","","","","","","","","","","True","",""
+"Read Records","PermissionsRead","boolean","","","","","","","","","","","","","True","",""
+"Sobject Type Name","SobjectType","picklist","40","","","","Account
+AddOnDefinition
+AggregationRow
+Application__c
+Asset
+Campaign
+Case
+Certification
+CertificationDef
+CertificationSectionDef
+CertificationStep
+CertificationStepDef
+CloudServiceProvider
+CloudServiceProviderApi
+Contact
+Contract
+ContractLineItem
+DandBCompany
+Document
+DuplicateRecordSet
+EditionDefinition
+Entitlement
+EntitlementContact
+EnvironmentHubInvitation
+EnvironmentHubMember
+FtestAccountChild
+FtestChild
+FtestError
+FtestErrorChild
+FtestGrandChild
+FtestHiddenName
+FtestMain
+FtestPerson
+FtestVirtualMain
+Goal
+GoalLink
+Idea
+IdeaTheme
+IncludedLicenseDefinition
+Lead
+LicensingError
+LicensingRequest
+LiveAgentSession
+LiveChatTranscript
+LiveChatVisitor
+Macro
+ManagementAddOnLicense
+ManagementEditionLicense
+ManagementPlatformLicense
+ManagementUserLicense
+MarketingAction
+Metric
+MyCustomObject
+Opportunity
+Order
+PersonKey
+PlatformLicenseDefinition
+Previous_Address__c
+Previous_Name__c
+Pricebook2
+Product2
+ProfileSkill
+ProfileSkillEndorsement
+ProfileSkillUser
+PushTopic
+Question
+QuickText
+Quote
+RegisteredMobileDevice
+ServiceContract
+SignupRequest
+SocialPost
+Solution
+SOSSession
+StreamingChannel
+Tenant
+TenantParameterMap
+UsageEntitlement
+UserLicenseDefinition
+WorkCoaching
+WorkFeedback
+WorkFeedbackQuestion
+WorkFeedbackQuestionSet
+WorkFeedbackRequest
+WorkGoal
+WorkGoalCollaborator
+WorkGoalLink
+WorkPerformanceCycle
+WorkReward
+WorkRewardFund
+WorkRewardFundType
+WorkUpgradeAction
+WorkUpgradeCustomer
+WorkUpgradeUser
+","","","","","","","","True","",""
+"System Modstamp","SystemModstamp","datetime","","","","","","","","","","","","","","",""

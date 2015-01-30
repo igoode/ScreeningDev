@@ -1,0 +1,9 @@
+﻿Label,Name,Type,Length,Unique,Externalid,Precision,Picklistvalues,Calculatedformula,Defaultvalue,Controllername,Relationshipname,Referenceto,Inlinehelptext,Nillable,Createable,Custom,Dependentpicklist
+"Assigned User ID","UserId","reference","18","","","","","","","","","User","","","True","",""
+"Created By ID","CreatedById","reference","18","","","","","","","","CreatedBy","User","","","","",""
+"Created Date","CreatedDate","datetime","","","","","","","","","","","","","","",""
+"Last Modified By ID","LastModifiedById","reference","18","","","","","","","","LastModifiedBy","User","","","","",""
+"Last Modified Date","LastModifiedDate","datetime","","","","","","","","","","","","","","",""
+"Package License ID","PackageLicenseId","reference","18","","","","","","","","PackageLicense","PackageLicense","","","True","",""
+"System Modstamp","SystemModstamp","datetime","","","","","","","","","","","","","","",""
+"User Package License ID","Id","id","18","","","","","","","","","","","","","",""

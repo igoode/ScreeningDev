@@ -1,0 +1,32 @@
+﻿Label,Name,Type,Length,Unique,Externalid,Precision,Picklistvalues,Calculatedformula,Defaultvalue,Controllername,Relationshipname,Referenceto,Inlinehelptext,Nillable,Createable,Custom,Dependentpicklist
+"Apex Job ID","Id","id","18","","","","","","","","","","","","","",""
+"Apex Job ID","ParentJobId","reference","18","","","","","","","","","AsyncApexJob","","True","","",""
+"Apex Method","MethodName","string","255","","","","","","","","","","","True","","",""
+"Batches Processed","JobItemsProcessed","int","","","","","","","","","","","","","","",""
+"Class ID","ApexClassId","reference","18","","","","","","","","ApexClass","ApexClass","","True","","",""
+"Completion Date","CompletedDate","datetime","","","","","","","","","","","","True","","",""
+"Created By ID","CreatedById","reference","18","","","","","","","","CreatedBy","User","","","","",""
+"Created Date","CreatedDate","datetime","","","","","","","","","","","","","","",""
+"Failures","NumberOfErrors","int","","","","","","","","","","","","True","","",""
+"Job Type","JobType","picklist","40","","","","Future
+SharingRecalculation
+ScheduledApex
+BatchApex
+BatchApexWorker
+TestRequest
+TestWorker
+ApexToken
+Queueable
+","","","","","","","","","",""
+"Last ID processed and committed","LastProcessed","string","15","","","","","","","","","","","True","","",""
+"Offset of last ID processed and committed","LastProcessedOffset","int","","","","","","","","","","","","True","","",""
+"Status","Status","picklist","40","","","","Queued
+Processing
+Aborted
+Completed
+Failed
+Preparing
+Holding
+","","","","","","","","","",""
+"Status Detail","ExtendedStatus","string","255","","","","","","","","","","","True","","",""
+"Total Batches","TotalJobItems","int","","","","","","","","","","","","True","","",""

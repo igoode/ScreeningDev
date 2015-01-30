@@ -1,0 +1,50 @@
+﻿Label,Name,Type,Length,Unique,Externalid,Precision,Picklistvalues,Calculatedformula,Defaultvalue,Controllername,Relationshipname,Referenceto,Inlinehelptext,Nillable,Createable,Custom,Dependentpicklist
+"Active","IsActive","boolean","","","","","","","","","","","","","True","",""
+"Actual Cost","ActualCost","currency","","","","18","","","","","","","","True","True","",""
+"Budgeted Cost","BudgetedCost","currency","","","","18","","","","","","","","True","True","",""
+"Campaign ID","Id","id","18","","","","","","","","","","","","","",""
+"Converted Leads","NumberOfConvertedLeads","int","","","","","","","","","","","","","","",""
+"Created By ID","CreatedById","reference","18","","","","","","","","CreatedBy","User","","","","",""
+"Created Date","CreatedDate","datetime","","","","","","","","","","","","","","",""
+"Deleted","IsDeleted","boolean","","","","","","","","","","","","","","",""
+"Description","Description","textarea","32000","","","","","","","","","","","True","True","",""
+"End Date","EndDate","date","","","","","","","","","","","","True","True","",""
+"Expected Response (%)","ExpectedResponse","percent","","","","10","","","","","","","","True","True","",""
+"Expected Revenue","ExpectedRevenue","currency","","","","18","","","","","","","","True","True","",""
+"Last Activity","LastActivityDate","date","","","","","","","","","","","","True","","",""
+"Last Modified By ID","LastModifiedById","reference","18","","","","","","","","LastModifiedBy","User","","","","",""
+"Last Modified Date","LastModifiedDate","datetime","","","","","","","","","","","","","","",""
+"Last Referenced Date","LastReferencedDate","datetime","","","","","","","","","","","","True","","",""
+"Last Viewed Date","LastViewedDate","datetime","","","","","","","","","","","","True","","",""
+"Name","Name","string","80","","","","","","","","","","","","True","",""
+"Num Sent","NumberSent","double","","","","18","","","","","","","","True","True","",""
+"Num Total Opportunities","NumberOfOpportunities","int","","","","","","","","","","","","","","",""
+"Num Won Opportunities","NumberOfWonOpportunities","int","","","","","","","","","","","","","","",""
+"Owner ID","OwnerId","reference","18","","","","","","","","Owner","User","","","True","",""
+"Parent Campaign ID","ParentId","reference","18","","","","","","","","Parent","Campaign","","True","True","",""
+"Record Type ID","CampaignMemberRecordTypeId","reference","18","","","","","","","","CampaignMemberRecordType","RecordType","","True","True","",""
+"Start Date","StartDate","date","","","","","","","","","","","","True","True","",""
+"Status","Status","picklist","40","","","","Planned
+In Progress
+Completed
+Aborted
+","","","","","","","True","True","",""
+"System Modstamp","SystemModstamp","datetime","","","","","","","","","","","","","","",""
+"Total Contacts","NumberOfContacts","int","","","","","","","","","","","","","","",""
+"Total Leads","NumberOfLeads","int","","","","","","","","","","","","","","",""
+"Total Responses","NumberOfResponses","int","","","","","","","","","","","","","","",""
+"Total Value Opportunities","AmountAllOpportunities","currency","","","","18","","","","","","","","","","",""
+"Total Value Won Opportunities","AmountWonOpportunities","currency","","","","18","","","","","","","","","","",""
+"Type","Type","picklist","40","","","","Conference
+Webinar
+Trade Show
+Public Relations
+Partners
+Referral Program
+Advertisement
+Banner Ads
+Direct Mail
+Email
+Telemarketing
+Other
+","","","","","","","True","True","",""

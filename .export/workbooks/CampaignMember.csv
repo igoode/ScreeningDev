@@ -1,0 +1,18 @@
+﻿Label,Name,Type,Length,Unique,Externalid,Precision,Picklistvalues,Calculatedformula,Defaultvalue,Controllername,Relationshipname,Referenceto,Inlinehelptext,Nillable,Createable,Custom,Dependentpicklist
+"Campaign ID","CampaignId","reference","18","","","","","","","","Campaign","Campaign","","","True","",""
+"Campaign Member ID","Id","id","18","","","","","","","","","","","","","",""
+"Contact ID","ContactId","reference","18","","","","","","","","Contact","Contact","","True","True","",""
+"Created By ID","CreatedById","reference","18","","","","","","","","CreatedBy","User","","","","",""
+"Created Date","CreatedDate","datetime","","","","","","","","","","","","","","",""
+"Deleted","IsDeleted","boolean","","","","","","","","","","","","","","",""
+"First Responded Date","FirstRespondedDate","date","","","","","","","","","","","","True","","",""
+"Last Modified By ID","LastModifiedById","reference","18","","","","","","","","LastModifiedBy","User","","","","",""
+"Last Modified Date","LastModifiedDate","datetime","","","","","","","","","","","","","","",""
+"Lead ID","LeadId","reference","18","","","","","","","","Lead","Lead","","True","True","",""
+"Responded","HasResponded","boolean","","","","","","","","","","","","","","",""
+"Status","Status","picklist","40","","","","Planned
+Received
+Responded
+Sent
+","","","","","","","True","True","",""
+"System Modstamp","SystemModstamp","datetime","","","","","","","","","","","","","","",""

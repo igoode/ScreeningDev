@@ -1,0 +1,13 @@
+﻿Label,Name,Type,Length,Unique,Externalid,Precision,Picklistvalues,Calculatedformula,Defaultvalue,Controllername,Relationshipname,Referenceto,Inlinehelptext,Nillable,Createable,Custom,Dependentpicklist
+"Active","IsActive","boolean","","","","","","","","","","","","","True","",""
+"Brand Template Name","Name","string","255","","","","","","","","","","","","True","",""
+"Created By ID","CreatedById","reference","18","","","","","","","","CreatedBy","User","","","","",""
+"Created Date","CreatedDate","datetime","","","","","","","","","","","","","","",""
+"Description","Description","string","1000","","","","","","","","","","","True","True","",""
+"Last Modified By ID","LastModifiedById","reference","18","","","","","","","","LastModifiedBy","User","","","","",""
+"Last Modified Date","LastModifiedDate","datetime","","","","","","","","","","","","","","",""
+"Letterhead ID","Id","id","18","","","","","","","","","","","","","",""
+"Letterhead Unique Name","DeveloperName","string","80","","","","","","","","","","","","True","",""
+"Namespace Prefix","NamespacePrefix","string","15","","","","","","","","","","","True","","",""
+"System Modstamp","SystemModstamp","datetime","","","","","","","","","","","","","","",""
+"Value","Value","textarea","32000","","","","","","","","","","","","True","",""

@@ -1,0 +1,10 @@
+﻿Label,Name,Type,Length,Unique,Externalid,Precision,Picklistvalues,Calculatedformula,Defaultvalue,Controllername,Relationshipname,Referenceto,Inlinehelptext,Nillable,Createable,Custom,Dependentpicklist
+"Created By ID","CreatedById","reference","18","","","","","","","","CreatedBy","User","","","","",""
+"Created Date","CreatedDate","datetime","","","","","","","","","","","","","","",""
+"Last Modified By ID","LastModifiedById","reference","18","","","","","","","","LastModifiedBy","User","","","","",""
+"Last Modified Date","LastModifiedDate","datetime","","","","","","","","","","","","","","",""
+"Member ID","MemberId","reference","18","","","","","","","","","Contact","","","True","",""
+"System Modstamp","SystemModstamp","datetime","","","","","","","","","","","","","","",""
+"Team Role ID","TeamRoleId","reference","18","","","","","","","","","CaseTeamRole","","True","True","",""
+"Team Template ID","TeamTemplateId","reference","18","","","","","","","","","CaseTeamTemplate","","","True","",""
+"Team Template Member Id","Id","id","18","","","","","","","","","","","","","",""

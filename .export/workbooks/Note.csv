@@ -1,0 +1,13 @@
+﻿Label,Name,Type,Length,Unique,Externalid,Precision,Picklistvalues,Calculatedformula,Defaultvalue,Controllername,Relationshipname,Referenceto,Inlinehelptext,Nillable,Createable,Custom,Dependentpicklist
+"Body","Body","textarea","32000","","","","","","","","","","","True","True","",""
+"Created By ID","CreatedById","reference","18","","","","","","","","CreatedBy","User","","","","",""
+"Created Date","CreatedDate","datetime","","","","","","","","","","","","","","",""
+"Deleted","IsDeleted","boolean","","","","","","","","","","","","","","",""
+"Last Modified By ID","LastModifiedById","reference","18","","","","","","","","LastModifiedBy","User","","","","",""
+"Last Modified Date","LastModifiedDate","datetime","","","","","","","","","","","","","","",""
+"Note Id","Id","id","18","","","","","","","","","","","","","",""
+"Owner ID","OwnerId","reference","18","","","","","","","","Owner","User","","","True","",""
+"Parent ID","ParentId","reference","18","","","","","","","","Parent","Account","","","True","",""
+"Private","IsPrivate","boolean","","","","","","","","","","","","","True","",""
+"System Modstamp","SystemModstamp","datetime","","","","","","","","","","","","","","",""
+"Title","Title","string","80","","","","","","","","","","","","True","",""

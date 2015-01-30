@@ -1,0 +1,23 @@
+﻿Label,Name,Type,Length,Unique,Externalid,Precision,Picklistvalues,Calculatedformula,Defaultvalue,Controllername,Relationshipname,Referenceto,Inlinehelptext,Nillable,Createable,Custom,Dependentpicklist
+"Created By ID","CreatedById","reference","18","","","","","","","","CreatedBy","User","","","","",""
+"Created Date","CreatedDate","datetime","","","","","","","","","","","","","","",""
+"Deleted","IsDeleted","boolean","","","","","","","","","","","","","","",""
+"Description","SolutionNote","textarea","32000","","","","","","","","","","","True","True","",""
+"Is Html","IsHtml","boolean","","","","","","","","","","","","","","",""
+"Last Modified By ID","LastModifiedById","reference","18","","","","","","","","LastModifiedBy","User","","","","",""
+"Last Modified Date","LastModifiedDate","datetime","","","","","","","","","","","","","","",""
+"Last Referenced Date","LastReferencedDate","datetime","","","","","","","","","","","","True","","",""
+"Last Viewed Date","LastViewedDate","datetime","","","","","","","","","","","","True","","",""
+"Num Related Cases","TimesUsed","int","","","","","","","","","","","","","","",""
+"Owner ID","OwnerId","reference","18","","","","","","","","Owner","User","","","True","",""
+"Public","IsPublished","boolean","","","","","","","","","","","","","True","",""
+"Reviewed","IsReviewed","boolean","","","","","","","","","","","","","","",""
+"Solution ID","Id","id","18","","","","","","","","","","","","","",""
+"Solution Number","SolutionNumber","string","30","","","","","","","","","","","","","",""
+"Status","Status","picklist","40","","","","Draft
+Reviewed
+Duplicate
+","","","","","","","","True","",""
+"System Modstamp","SystemModstamp","datetime","","","","","","","","","","","","","","",""
+"Title","SolutionName","string","255","","","","","","","","","","","","True","",""
+"Visible in Public Knowledge Base","IsPublishedInPublicKb","boolean","","","","","","","","","","","","","True","",""

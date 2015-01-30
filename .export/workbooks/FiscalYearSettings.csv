@@ -1,0 +1,36 @@
+﻿Label,Name,Type,Length,Unique,Externalid,Precision,Picklistvalues,Calculatedformula,Defaultvalue,Controllername,Relationshipname,Referenceto,Inlinehelptext,Nillable,Createable,Custom,Dependentpicklist
+"Description","Description","string","255","","","","","","","","","","","True","","",""
+"End Date","EndDate","date","","","","","","","","","","","","True","","",""
+"Fiscal Year Settings ID","Id","id","18","","","","","","","","","","","","","",""
+"Is Standard Year","IsStandardYear","boolean","","","","","","","","","","","","","","",""
+"Name","Name","string","80","","","","","","","","","","","","","",""
+"Period ID","PeriodId","reference","18","","","","","","","","","Period","","True","","",""
+"Period Name Scheme","PeriodLabelScheme","picklist","40","","","","NumberByYear
+NumberByQuarter
+StandardMonths
+Custom
+","","","","","","","True","","",""
+"Period Prefix","PeriodPrefix","picklist","40","","","","Period
+FP
+P
+Month
+","","","","","","","True","","",""
+"Quarter Name Scheme","QuarterLabelScheme","picklist","40","","","","NumberByYear
+Custom
+","","","","","","","True","","",""
+"Quarter Prefix","QuarterPrefix","picklist","40","","","","Quarter
+FQ
+Q
+Trimester
+","","","","","","","True","","",""
+"Start Date","StartDate","date","","","","","","","","","","","","True","","",""
+"System Modstamp","SystemModstamp","datetime","","","","","","","","","","","","","","",""
+"Week Name Scheme","WeekLabelScheme","picklist","40","","","","NumberByYear
+NumberByQuarter
+NumberByPeriod
+","","","","","","","True","","",""
+"Week Start Day","WeekStartDay","int","","","","","","","","","","","","True","","",""
+"Year Type","YearType","picklist","40","","","","Standard
+Custom
+Placeholder
+","","","","","","","True","","",""

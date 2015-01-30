@@ -1,0 +1,40 @@
+﻿Label,Name,Type,Length,Unique,Externalid,Precision,Picklistvalues,Calculatedformula,Defaultvalue,Controllername,Relationshipname,Referenceto,Inlinehelptext,Nillable,Createable,Custom,Dependentpicklist
+"AuthProvider","AuthOptionsAuthProvider","boolean","","","","","","","","","","","","","","",""
+"Authentication Configuration ID","Id","id","18","","","","","","","","","","","","","",""
+"Authentication Configuration Type","Type","picklist","255","","","","Org
+Community
+Site
+Portal
+","","","","","","","","","",""
+"Created By ID","CreatedById","reference","18","","","","","","","","CreatedBy","User","","","","",""
+"Created Date","CreatedDate","datetime","","","","","","","","","","","","","","",""
+"Deleted","IsDeleted","boolean","","","","","","","","","","","","","","",""
+"Is Active","IsActive","boolean","","","","","","","","","","","","","","",""
+"Label","MasterLabel","string","80","","","","","","","","","","","","","",""
+"Last Modified By ID","LastModifiedById","reference","18","","","","","","","","LastModifiedBy","User","","","","",""
+"Last Modified Date","LastModifiedDate","datetime","","","","","","","","","","","","","","",""
+"Master Language","Language","picklist","40","","","","en_US
+de
+es
+fr
+it
+ja
+sv
+ko
+zh_TW
+zh_CN
+pt_BR
+nl_NL
+da
+th
+fi
+ru
+es_MX
+no
+","","","","","","","","","",""
+"Name","DeveloperName","string","80","","","","","","","","","","","","","",""
+"Namespace Prefix","NamespacePrefix","string","15","","","","","","","","","","","True","","",""
+"Saml","AuthOptionsSaml","boolean","","","","","","","","","","","","","","",""
+"System Modstamp","SystemModstamp","datetime","","","","","","","","","","","","","","",""
+"URL","Url","string","240","True","","","","","","","","","","","","",""
+"UsernamePassword","AuthOptionsUsernamePassword","boolean","","","","","","","","","","","","","","",""

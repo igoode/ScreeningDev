@@ -1,0 +1,4 @@
+﻿Label,Name,Type,Length,Unique,Externalid,Precision,Picklistvalues,Calculatedformula,Defaultvalue,Controllername,Relationshipname,Referenceto,Inlinehelptext,Nillable,Createable,Custom,Dependentpicklist
+"Dashboard Component ID","Id","id","18","","","","","","","","","","","","","",""
+"Dashboard Component Name","Name","string","80","","","","","","","","","","","True","","",""
+"Dashboard ID","DashboardId","reference","18","","","","","","","","Dashboard","Dashboard","","","","",""

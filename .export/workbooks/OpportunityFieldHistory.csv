@@ -1,0 +1,37 @@
+﻿Label,Name,Type,Length,Unique,Externalid,Precision,Picklistvalues,Calculatedformula,Defaultvalue,Controllername,Relationshipname,Referenceto,Inlinehelptext,Nillable,Createable,Custom,Dependentpicklist
+"Changed Field","Field","picklist","255","","","","Account
+Amount
+Campaign
+CloseDate
+Contract
+created
+opportunityCreatedFromLead
+CurrentGenerators__c
+DeliveryInstallationStatus__c
+Description
+feedEvent
+ForecastCategoryName
+IsPrivate
+LeadSource
+MainCompetitors__c
+Name
+NextStep
+OrderNumber__c
+Owner
+ownerAccepted
+ownerAssignment
+Probability
+locked
+unlocked
+StageName
+TotalOpportunityQuantity
+TrackingNumber__c
+Type
+","","","","","","","","","",""
+"Created By ID","CreatedById","reference","18","","","","","","","","CreatedBy","User","","","","",""
+"Created Date","CreatedDate","datetime","","","","","","","","","","","","","","",""
+"Deleted","IsDeleted","boolean","","","","","","","","","","","","","","",""
+"New Value","NewValue","anyType","255","","","","","","","","","","","True","","",""
+"Old Value","OldValue","anyType","255","","","","","","","","","","","True","","",""
+"Opportunity History ID","Id","id","18","","","","","","","","","","","","","",""
+"Opportunity ID","OpportunityId","reference","18","","","","","","","","Opportunity","Opportunity","","","","",""

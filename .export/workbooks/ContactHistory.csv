@@ -1,0 +1,67 @@
+﻿Label,Name,Type,Length,Unique,Externalid,Precision,Picklistvalues,Calculatedformula,Defaultvalue,Controllername,Relationshipname,Referenceto,Inlinehelptext,Nillable,Createable,Custom,Dependentpicklist
+"Changed Field","Field","picklist","255","","","","Account
+AssistantName
+AssistantPhone
+Birthdate
+CleanStatus
+contactMerged
+created
+contactCreatedFromLead
+Department
+Description
+DoNotCall
+Email
+EmailBouncedDate
+EmailBouncedReason
+Fax
+feedEvent
+FirstName
+HasOptedOutOfEmail
+HasOptedOutOfFax
+HomePhone
+Jigsaw
+Languages__c
+LastName
+contactUpdatedByLead
+LeadSource
+Level__c
+MailingAddress
+MailingCity
+MailingCountry
+MailingCountryCode
+MailingLatitude
+MailingLongitude
+MailingPostalCode
+MailingState
+MailingStateCode
+MailingStreet
+MobilePhone
+Name
+OtherAddress
+OtherCity
+OtherCountry
+OtherCountryCode
+OtherLatitude
+OtherLongitude
+OtherPhone
+OtherPostalCode
+OtherState
+OtherStateCode
+OtherStreet
+Owner
+ownerAccepted
+ownerAssignment
+Phone
+locked
+unlocked
+ReportsTo
+Salutation
+Title
+","","","","","","","","","",""
+"Contact History ID","Id","id","18","","","","","","","","","","","","","",""
+"Contact ID","ContactId","reference","18","","","","","","","","Contact","Contact","","","","",""
+"Created By ID","CreatedById","reference","18","","","","","","","","CreatedBy","User","","","","",""
+"Created Date","CreatedDate","datetime","","","","","","","","","","","","","","",""
+"Deleted","IsDeleted","boolean","","","","","","","","","","","","","","",""
+"New Value","NewValue","anyType","255","","","","","","","","","","","True","","",""
+"Old Value","OldValue","anyType","255","","","","","","","","","","","True","","",""

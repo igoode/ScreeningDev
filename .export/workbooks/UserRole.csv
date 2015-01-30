@@ -1,0 +1,29 @@
+﻿Label,Name,Type,Length,Unique,Externalid,Precision,Picklistvalues,Calculatedformula,Defaultvalue,Controllername,Relationshipname,Referenceto,Inlinehelptext,Nillable,Createable,Custom,Dependentpicklist
+"Account ID","PortalAccountId","reference","18","","","","","","","","","Account","","True","True","",""
+"Case Access Level for Account Owner","CaseAccessForAccountOwner","picklist","40","","","","None
+Read
+Edit
+","","","","","","","True","True","",""
+"Contact Access Level for Account Owner","ContactAccessForAccountOwner","picklist","40","","","","None
+Read
+Edit
+","","","","","","","True","","",""
+"Description","RollupDescription","string","80","","","","","","","","","","","True","True","",""
+"Developer Name","DeveloperName","string","80","","","","","","","","","","","True","True","",""
+"Last Modified By ID","LastModifiedById","reference","18","","","","","","","","LastModifiedBy","User","","","","",""
+"Last Modified Date","LastModifiedDate","datetime","","","","","","","","","","","","","","",""
+"May Forecast Manager Share","MayForecastManagerShare","boolean","","","","","","","","","","","","","","",""
+"Name","Name","string","80","","","","","","","","","","","","True","",""
+"Opportunity Access Level for Account Owner","OpportunityAccessForAccountOwner","picklist","40","","","","None
+Read
+Edit
+","","","","","","","","True","",""
+"Parent Role ID","ParentRoleId","reference","18","","","","","","","","","UserRole","","True","True","",""
+"Portal Type","PortalType","picklist","40","","","","None
+CustomerPortal
+Partner
+","","","","","","","True","True","",""
+"Role ID","Id","id","18","","","","","","","","","","","","","",""
+"System Modstamp","SystemModstamp","datetime","","","","","","","","","","","","","","",""
+"User ID","ForecastUserId","reference","18","","","","","","","","","User","","True","True","",""
+"User ID","PortalAccountOwnerId","reference","18","","","","","","","","","User","","True","","",""

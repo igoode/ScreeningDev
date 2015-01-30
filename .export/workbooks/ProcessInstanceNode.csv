@@ -1,0 +1,26 @@
+﻿Label,Name,Type,Length,Unique,Externalid,Precision,Picklistvalues,Calculatedformula,Defaultvalue,Controllername,Relationshipname,Referenceto,Inlinehelptext,Nillable,Createable,Custom,Dependentpicklist
+"Completed Date","CompletedDate","datetime","","","","","","","","","","","","True","","",""
+"Created By ID","CreatedById","reference","18","","","","","","","","CreatedBy","User","","","","",""
+"Created Date","CreatedDate","datetime","","","","","","","","","","","","","","",""
+"Deleted","IsDeleted","boolean","","","","","","","","","","","","","","",""
+"Elapsed Time in Days","ElapsedTimeInDays","double","","","","7","","","","","","","","True","","",""
+"Elapsed Time in Hours","ElapsedTimeInHours","double","","","","7","","","","","","","","True","","",""
+"Elapsed Time in Minutes","ElapsedTimeInMinutes","double","","","","8","","","","","","","","True","","",""
+"Last Modified By ID","LastModifiedById","reference","18","","","","","","","","LastModifiedBy","User","","","","",""
+"Last Modified Date","LastModifiedDate","datetime","","","","","","","","","","","","","","",""
+"Name","ProcessNodeName","string","255","","","","","","","","","","","True","","",""
+"Node Status","NodeStatus","picklist","255","","","","Approved
+Rejected
+Removed
+Fault
+Pending
+Held
+Reassigned
+Started
+NoResponse
+","","","","","","","True","","",""
+"Process Instance ID","ProcessInstanceId","reference","18","","","","","","","","ProcessInstance","ProcessInstance","","","","",""
+"Process Instance Node ID","Id","id","18","","","","","","","","","","","","","",""
+"Process Node ID","ProcessNodeId","reference","18","","","","","","","","ProcessNode","ProcessNode","","","","",""
+"System Modstamp","SystemModstamp","datetime","","","","","","","","","","","","","","",""
+"User ID","LastActorId","reference","18","","","","","","","","LastActor","User","","True","","",""

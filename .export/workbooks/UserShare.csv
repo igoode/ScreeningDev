@@ -1,0 +1,20 @@
+﻿Label,Name,Type,Length,Unique,Externalid,Precision,Picklistvalues,Calculatedformula,Defaultvalue,Controllername,Relationshipname,Referenceto,Inlinehelptext,Nillable,Createable,Custom,Dependentpicklist
+"Active","IsActive","boolean","","","","","","","","","","","","","","",""
+"Last Modified By ID","LastModifiedById","reference","18","","","","","","","","LastModifiedBy","User","","","","",""
+"Last Modified Date","LastModifiedDate","datetime","","","","","","","","","","","","","","",""
+"Row Cause","RowCause","picklist","40","","","","Owner
+Manual
+Rule
+ImplicitChild
+ImplicitParent
+Team
+Territory
+TerritoryManual
+TerritoryRule
+","","","","","","","True","True","",""
+"User Access Level","UserAccessLevel","picklist","40","","","","Read
+Edit
+","","","","","","","","True","",""
+"User ID","UserId","reference","18","","","","","","","","User","User","","","True","",""
+"User Share ID","Id","id","18","","","","","","","","","","","","","",""
+"User/Group ID","UserOrGroupId","reference","18","","","","","","","","","Group","","","True","",""

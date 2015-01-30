@@ -1,0 +1,6 @@
+﻿Label,Name,Type,Length,Unique,Externalid,Precision,Picklistvalues,Calculatedformula,Defaultvalue,Controllername,Relationshipname,Referenceto,Inlinehelptext,Nillable,Createable,Custom,Dependentpicklist
+"Provider Name","ProviderName","string","255","","","","","","","","","","","True","","",""
+"Social Handle","Handle","string","255","","","","","","","","","","","True","","",""
+"System ID","Id","id","18","","","","","","","","","","","","","",""
+"System ID","ExternalId","string","255","","","","","","","","","","","True","","",""
+"System ID","DcSocialProfileId","string","255","","","","","","","","DcSocialProfile","DcSocialProfile","","True","","",""

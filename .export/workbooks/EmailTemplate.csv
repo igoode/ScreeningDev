@@ -1,0 +1,46 @@
+﻿Label,Name,Type,Length,Unique,Externalid,Precision,Picklistvalues,Calculatedformula,Defaultvalue,Controllername,Relationshipname,Referenceto,Inlinehelptext,Nillable,Createable,Custom,Dependentpicklist
+"API Version","ApiVersion","double","","","","18","","","","","","","","True","True","",""
+"Available For Use","IsActive","boolean","","","","","","","","","","","","","True","",""
+"Created By ID","CreatedById","reference","18","","","","","","","","CreatedBy","User","","","","",""
+"Created Date","CreatedDate","datetime","","","","","","","","","","","","","","",""
+"Description","Description","string","4000","","","","","","","","","","","True","True","",""
+"Email Body","Body","textarea","384000","","","","","","","","","","","True","True","",""
+"Email Template ID","Id","id","18","","","","","","","","","","","","","",""
+"Email Template Name","Name","string","80","","","","","","","","","","","","True","",""
+"Encoding","Encoding","picklist","40","","","","UTF-8
+ISO-8859-1
+Shift_JIS
+ISO-2022-JP
+EUC-JP
+ks_c_5601-1987
+Big5
+GB2312
+Big5-HKSCS
+x-SJIS_0213
+","","","","","","","True","True","",""
+"Folder ID","FolderId","reference","18","","","","","","","","Folder","Folder","","","True","",""
+"HTML Value","HtmlValue","textarea","384000","","","","","","","","","","","True","True","",""
+"Last Modified By ID","LastModifiedById","reference","18","","","","","","","","LastModifiedBy","User","","","","",""
+"Last Modified Date","LastModifiedDate","datetime","","","","","","","","","","","","","","",""
+"Last Used Date","LastUsedDate","datetime","","","","","","","","","","","","True","","",""
+"Letterhead ID","BrandTemplateId","reference","18","","","","","","","","","BrandTemplate","","True","True","",""
+"Markup","Markup","textarea","1048576","","","","","","","","","","","True","True","",""
+"Namespace Prefix","NamespacePrefix","string","15","","","","","","","","","","","True","","",""
+"Owner ID","OwnerId","reference","18","","","","","","","","Owner","User","","","True","",""
+"Style","TemplateStyle","picklist","40","","","","none
+freeForm
+formalLetter
+promotionRight
+promotionLeft
+newsletter
+products
+","","","","","","","","True","",""
+"Subject","Subject","string","255","","","","","","","","","","","True","True","",""
+"System Modstamp","SystemModstamp","datetime","","","","","","","","","","","","","","",""
+"Template Type","TemplateType","picklist","40","","","","text
+html
+custom
+visualforce
+","","","","","","","","True","",""
+"Template Unique Name","DeveloperName","string","80","","","","","","","","","","","","True","",""
+"Times Used","TimesUsed","int","","","","","","","","","","","","True","","",""

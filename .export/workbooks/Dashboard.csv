@@ -1,0 +1,43 @@
+﻿Label,Name,Type,Length,Unique,Externalid,Precision,Picklistvalues,Calculatedformula,Defaultvalue,Controllername,Relationshipname,Referenceto,Inlinehelptext,Nillable,Createable,Custom,Dependentpicklist
+"Background Fade Direction","BackgroundDirection","picklist","40","","","","TopToBottom
+LeftToRight
+Diagonal
+","","","","","","","","","",""
+"Created By ID","CreatedById","reference","18","","","","","","","","CreatedBy","User","","","","",""
+"Created Date","CreatedDate","datetime","","","","","","","","","","","","","","",""
+"Dashboard ID","Id","id","18","","","","","","","","","","","","","",""
+"Dashboard Running User","Type","picklist","40","","","","SpecifiedUser
+LoggedInUser
+MyTeamUser
+","","","","","","","","","",""
+"Dashboard Unique Name","DeveloperName","string","80","","","","","","","","","","","","","",""
+"Deleted","IsDeleted","boolean","","","","","","","","","","","","","","",""
+"Description","Description","string","255","","","","","","","","","","","True","","",""
+"Ending Color","BackgroundEnd","int","","","","","","","","","","","","","","",""
+"Folder ID","FolderId","reference","18","","","","","","","","Folder","Folder","","","","",""
+"Last Modified By ID","LastModifiedById","reference","18","","","","","","","","LastModifiedBy","User","","","","",""
+"Last Modified Date","LastModifiedDate","datetime","","","","","","","","","","","","","","",""
+"Last Referenced Date","LastReferencedDate","datetime","","","","","","","","","","","","True","","",""
+"Last Viewed Date","LastViewedDate","datetime","","","","","","","","","","","","True","","",""
+"Last refreshed for this user","DashboardResultRefreshedDate","string","256","","","","","","","","","","","True","","",""
+"Left Size","LeftSize","picklist","40","","","","Narrow
+Medium
+Wide
+","","","","","","","","","",""
+"Middle Size","MiddleSize","picklist","40","","","","Narrow
+Medium
+Wide
+","","","","","","","True","","",""
+"Namespace Prefix","NamespacePrefix","string","15","","","","","","","","","","","True","","",""
+"Right Size","RightSize","picklist","40","","","","Narrow
+Medium
+Wide
+","","","","","","","","","",""
+"Running User ID","RunningUserId","reference","18","","","","","","","","RunningUser","User","","","","",""
+"Running as","DashboardResultRunningUser","string","256","","","","","","","","","","","True","","",""
+"Starting Color","BackgroundStart","int","","","","","","","","","","","","","","",""
+"System Modstamp","SystemModstamp","datetime","","","","","","","","","","","","","","",""
+"Text Color","TextColor","int","","","","","","","","","","","","","","",""
+"Title","Title","string","80","","","","","","","","","","","","","",""
+"Title Color","TitleColor","int","","","","","","","","","","","","","","",""
+"Title Size","TitleSize","int","","","","","","","","","","","","","","",""

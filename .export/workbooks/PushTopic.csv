@@ -1,0 +1,27 @@
+﻿Label,Name,Type,Length,Unique,Externalid,Precision,Picklistvalues,Calculatedformula,Defaultvalue,Controllername,Relationshipname,Referenceto,Inlinehelptext,Nillable,Createable,Custom,Dependentpicklist
+"API Version","ApiVersion","double","","","","18","","","","","","","","","True","",""
+"Create","NotifyForOperationCreate","boolean","","","","","","","","","","","","","True","",""
+"Created By ID","CreatedById","reference","18","","","","","","","","CreatedBy","User","","","","",""
+"Created Date","CreatedDate","datetime","","","","","","","","","","","","","","",""
+"Delete","NotifyForOperationDelete","boolean","","","","","","","","","","","","","True","",""
+"Deleted","IsDeleted","boolean","","","","","","","","","","","","","","",""
+"Description","Description","string","400","","","","","","","","","","","True","True","",""
+"Is Active","IsActive","boolean","","","","","","","","","","","","","True","",""
+"Last Modified By ID","LastModifiedById","reference","18","","","","","","","","LastModifiedBy","User","","","","",""
+"Last Modified Date","LastModifiedDate","datetime","","","","","","","","","","","","","","",""
+"Notify For Fields","NotifyForFields","picklist","40","","","","Select
+Where
+Referenced
+All
+","","","","","","","","True","",""
+"Notify For Operations","NotifyForOperations","picklist","40","","","","Create
+Update
+All
+Extended
+","","","","","","","","","",""
+"Push Topic ID","Id","id","18","","","","","","","","","","","","","",""
+"SOQL Query","Query","string","1300","","","","","","","","","","","","True","",""
+"System Modstamp","SystemModstamp","datetime","","","","","","","","","","","","","","",""
+"Topic Name","Name","string","25","","","","","","","","","","","","True","",""
+"Undelete","NotifyForOperationUndelete","boolean","","","","","","","","","","","","","True","",""
+"Update","NotifyForOperationUpdate","boolean","","","","","","","","","","","","","True","",""

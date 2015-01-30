@@ -1,0 +1,36 @@
+﻿Label,Name,Type,Length,Unique,Externalid,Precision,Picklistvalues,Calculatedformula,Defaultvalue,Controllername,Relationshipname,Referenceto,Inlinehelptext,Nillable,Createable,Custom,Dependentpicklist
+"Case History ID","Id","id","18","","","","","","","","","","","","","",""
+"Case ID","CaseId","reference","18","","","","","","","","Case","Case","","","","",""
+"Changed Field","Field","picklist","255","","","","Account
+Asset
+BusinessHours
+closed
+Contact
+created
+Description
+EngineeringReqNumber__c
+feedEvent
+IsClosedOnCreate
+IsEscalated
+Origin
+Owner
+ownerAccepted
+ownerAssignment
+ownerEscalated
+Parent
+PotentialLiability__c
+Priority
+Product__c
+Reason
+locked
+unlocked
+SLAViolation__c
+Status
+Subject
+Type
+","","","","","","","","","",""
+"Created By ID","CreatedById","reference","18","","","","","","","","CreatedBy","User","","","","",""
+"Created Date","CreatedDate","datetime","","","","","","","","","","","","","","",""
+"Deleted","IsDeleted","boolean","","","","","","","","","","","","","","",""
+"New Value","NewValue","anyType","255","","","","","","","","","","","True","","",""
+"Old Value","OldValue","anyType","255","","","","","","","","","","","True","","",""

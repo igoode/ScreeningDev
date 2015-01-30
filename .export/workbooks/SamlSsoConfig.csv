@@ -1,0 +1,50 @@
+﻿Label,Name,Type,Length,Unique,Externalid,Precision,Picklistvalues,Calculatedformula,Defaultvalue,Controllername,Relationshipname,Referenceto,Inlinehelptext,Nillable,Createable,Custom,Dependentpicklist
+"Attribute Name","AttributeName","string","255","","","","","","","","","","","True","","",""
+"Created By ID","CreatedById","reference","18","","","","","","","","CreatedBy","User","","","","",""
+"Created Date","CreatedDate","datetime","","","","","","","","","","","","","","",""
+"Custom Error URL","ErrorUrl","string","500","","","","","","","","","","","True","","",""
+"Deleted","IsDeleted","boolean","","","","","","","","","","","","","","",""
+"Entity Id","Audience","string","255","","","","","","","","","","","","","",""
+"Identity Provider Certificate","ValidationCert","string","4000","","","","","","","","","","","","","",""
+"Identity Provider Login URL","LoginUrl","string","1500","","","","","","","","","","","True","","",""
+"Identity Provider Logout URL","LogoutUrl","string","1500","","","","","","","","","","","True","","",""
+"Issuer","Issuer","string","255","","","","","","","","","","","","","",""
+"Label","MasterLabel","string","80","","","","","","","","","","","","","",""
+"Last Modified By ID","LastModifiedById","reference","18","","","","","","","","LastModifiedBy","User","","","","",""
+"Last Modified Date","LastModifiedDate","datetime","","","","","","","","","","","","","","",""
+"Master Language","Language","picklist","40","","","","en_US
+de
+es
+fr
+it
+ja
+sv
+ko
+zh_TW
+zh_CN
+pt_BR
+nl_NL
+da
+th
+fi
+ru
+es_MX
+no
+","","","","","","","","","",""
+"Name","DeveloperName","string","80","","","","","","","","","","","","","",""
+"Name ID Format","AttributeFormat","string","255","","","","","","","","","","","True","","",""
+"Namespace Prefix","NamespacePrefix","string","15","","","","","","","","","","","True","","",""
+"SAML Identity Location","IdentityLocation","picklist","255","","","","SubjectNameId
+Attribute
+","","","","","","","","","",""
+"SAML Identity Type","IdentityMapping","picklist","255","","","","Username
+FederationId
+UserId
+","","","","","","","","","",""
+"SAML Single Sign-On Setting ID","Id","id","18","","","","","","","","","","","","","",""
+"SAML Version","Version","picklist","255","","","","SAML1_1
+SAML2_0
+","","","","","","","","","",""
+"SpInitBinding","OptionsSpInitBinding","boolean","","","","","","","","","","","","","","",""
+"System Modstamp","SystemModstamp","datetime","","","","","","","","","","","","","","",""
+"UserProvisioning","OptionsUserProvisioning","boolean","","","","","","","","","","","","","","",""

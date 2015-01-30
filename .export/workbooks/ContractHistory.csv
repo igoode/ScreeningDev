@@ -1,0 +1,59 @@
+﻿Label,Name,Type,Length,Unique,Externalid,Precision,Picklistvalues,Calculatedformula,Defaultvalue,Controllername,Relationshipname,Referenceto,Inlinehelptext,Nillable,Createable,Custom,Dependentpicklist
+"Changed Field","Field","picklist","255","","","","Account
+ActivatedBy
+ActivatedDate
+BillingAddress
+BillingCity
+BillingCountry
+BillingCountryCode
+BillingLatitude
+BillingLongitude
+BillingPostalCode
+BillingState
+BillingStateCode
+BillingStreet
+CompanySigned
+CompanySignedDate
+contractActivation
+contractApproval
+contractConversion
+contractDraft
+contractExpiration
+ContractTerm
+contractTermination
+created
+CustomerSigned
+CustomerSignedDate
+CustomerSignedTitle
+Description
+EndDate
+feedEvent
+Name
+Owner
+ownerAccepted
+ownerAssignment
+OwnerExpirationNotice
+Pricebook2
+locked
+unlocked
+ShippingAddress
+ShippingCity
+ShippingCountry
+ShippingCountryCode
+ShippingLatitude
+ShippingLongitude
+ShippingPostalCode
+ShippingState
+ShippingStateCode
+ShippingStreet
+SpecialTerms
+StartDate
+Status
+","","","","","","","","","",""
+"Contract History ID","Id","id","18","","","","","","","","","","","","","",""
+"Contract ID","ContractId","reference","18","","","","","","","","Contract","Contract","","","","",""
+"Created By ID","CreatedById","reference","18","","","","","","","","CreatedBy","User","","","","",""
+"Created Date","CreatedDate","datetime","","","","","","","","","","","","","","",""
+"Deleted","IsDeleted","boolean","","","","","","","","","","","","","","",""
+"New Value","NewValue","anyType","255","","","","","","","","","","","True","","",""
+"Old Value","OldValue","anyType","255","","","","","","","","","","","True","","",""

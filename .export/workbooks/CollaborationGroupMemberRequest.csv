@@ -1,0 +1,14 @@
+﻿Label,Name,Type,Length,Unique,Externalid,Precision,Picklistvalues,Calculatedformula,Defaultvalue,Controllername,Relationshipname,Referenceto,Inlinehelptext,Nillable,Createable,Custom,Dependentpicklist
+"CollaborationGroup ID","CollaborationGroupId","reference","18","","","","","","","","CollaborationGroup","CollaborationGroup","","","True","",""
+"Created By ID","CreatedById","reference","18","","","","","","","","CreatedBy","User","","","","",""
+"Created Date","CreatedDate","datetime","","","","","","","","","","","","","","",""
+"Group Member Request Id","Id","id","18","","","","","","","","","","","","","",""
+"Last Modified By ID","LastModifiedById","reference","18","","","","","","","","LastModifiedBy","User","","","","",""
+"Last Modified Date","LastModifiedDate","datetime","","","","","","","","","","","","","","",""
+"Response Message","ResponseMessage","string","255","","","","","","","","","","","True","","",""
+"Status","Status","picklist","40","","","","Pending
+Accepted
+Declined
+","","","","","","","","","",""
+"System Modstamp","SystemModstamp","datetime","","","","","","","","","","","","","","",""
+"User ID","RequesterId","reference","18","","","","","","","","","User","","","True","",""

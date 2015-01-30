@@ -1,0 +1,50 @@
+﻿Label,Name,Type,Length,Unique,Externalid,Precision,Picklistvalues,Calculatedformula,Defaultvalue,Controllername,Relationshipname,Referenceto,Inlinehelptext,Nillable,Createable,Custom,Dependentpicklist
+"Body","Body","textarea","5000","","","","","","","","","","","True","","",""
+"Comment Count","CommentCount","int","","","","","","","","","","","","","","",""
+"Content Data","ContentData","base64","","","","","","","","","","","","True","","",""
+"Content Description","ContentDescription","textarea","1000","","","","","","","","","","","True","","",""
+"Content File Name","ContentFileName","string","255","","","","","","","","","","","True","","",""
+"Content File Type","ContentType","string","120","","","","","","","","","","","True","","",""
+"Content Size","ContentSize","int","","","","","","","","","","","","True","","",""
+"Created By ID","CreatedById","reference","18","","","","","","","","CreatedBy","User","","","","",""
+"Created Date","CreatedDate","datetime","","","","","","","","","","","","","","",""
+"Deleted","IsDeleted","boolean","","","","","","","","","","","","","","",""
+"Feed Item ID","Id","id","18","","","","","","","","","","","","","",""
+"Feed Item Type","Type","picklist","40","","","","TrackedChange
+UserStatus
+TextPost
+AdvancedTextPost
+LinkPost
+ContentPost
+PollPost
+RypplePost
+ProfileSkillPost
+DashboardComponentSnapshot
+ApprovalPost
+CaseCommentPost
+ReplyPost
+EmailMessageEvent
+CallLogPost
+ChangeStatusPost
+AttachArticleEvent
+MilestoneEvent
+ActivityEvent
+ChatTranscriptPost
+CollaborationGroupCreated
+CollaborationGroupUnarchived
+SocialPost
+QuestionPost
+FacebookPost
+BasicTemplateFeedItem
+CreateRecordEvent
+CanvasPost
+AnnouncementPost
+","","","","","","","True","","",""
+"InsertedBy ID","InsertedById","reference","18","","","","","","","","InsertedBy","User","","True","","",""
+"Last Modified Date","LastModifiedDate","datetime","","","","","","","","","","","","","","",""
+"Like Count","LikeCount","int","","","","","","","","","","","","","","",""
+"Link Url","LinkUrl","url","1000","","","","","","","","","","","True","","",""
+"Parent ID","ParentId","reference","18","","","","","","","","Parent","Dashboard","","","","",""
+"Related Record ID","RelatedRecordId","reference","18","","","","","","","","","ContentVersion","","True","","",""
+"System Modstamp","SystemModstamp","datetime","","","","","","","","","","","","","","",""
+"Title","Title","string","255","","","","","","","","","","","True","","",""

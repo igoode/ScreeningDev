@@ -1,0 +1,13 @@
+﻿Label,Name,Type,Length,Unique,Externalid,Precision,Picklistvalues,Calculatedformula,Defaultvalue,Controllername,Relationshipname,Referenceto,Inlinehelptext,Nillable,Createable,Custom,Dependentpicklist
+"Comment Body","CommentBody","textarea","5000","","","","","","","","","","","","True","",""
+"Comment Type","CommentType","picklist","40","","","","TextComment
+ContentComment
+","","","","","","","True","True","",""
+"Created By ID","CreatedById","reference","18","","","","","","","","CreatedBy","User","","","True","",""
+"Created Date","CreatedDate","datetime","","","","","","","","","","","","","True","",""
+"Deleted","IsDeleted","boolean","","","","","","","","","","","","","","",""
+"Feed Comment ID","Id","id","18","","","","","","","","","","","","","",""
+"Feed Item ID","FeedItemId","reference","18","","","","","","","","","AccountFeed","","","True","",""
+"InsertedBy ID","InsertedById","reference","18","","","","","","","","InsertedBy","User","","","","",""
+"Parent ID","ParentId","reference","18","","","","","","","","","Account","","True","","",""
+"Related Record ID","RelatedRecordId","reference","18","","","","","","","","","ContentVersion","","True","True","",""

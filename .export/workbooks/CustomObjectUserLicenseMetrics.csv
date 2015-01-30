@@ -1,0 +1,11 @@
+﻿Label,Name,Type,Length,Unique,Externalid,Precision,Picklistvalues,Calculatedformula,Defaultvalue,Controllername,Relationshipname,Referenceto,Inlinehelptext,Nillable,Createable,Custom,Dependentpicklist
+"Count of Objects assigned","ObjectCount","int","","","","","","","","","","","","True","","",""
+"Custom Object Id","CustomObjectId","string","40","","","","","","","","","","","True","","",""
+"Custom Object Name","CustomObjectName","string","120","","","","","","","","","","","True","","",""
+"Custom Object Type","CustomObjectType","picklist","255","","","","Enterprise
+Light
+","","","","","","","True","","",""
+"Custom Object Usage By User License Metrics Id","Id","id","18","","","","","","","","","","","","","",""
+"Metrics Date","MetricsDate","date","","","","","","","","","","","","","","",""
+"System Modstamp","SystemModstamp","datetime","","","","","","","","","","","","","","",""
+"User License ID","UserLicenseId","reference","18","","","","","","","","UserLicense","UserLicense","","","","",""

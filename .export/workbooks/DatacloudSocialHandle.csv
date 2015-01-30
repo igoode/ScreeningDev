@@ -1,0 +1,7 @@
+﻿Label,Name,Type,Length,Unique,Externalid,Precision,Picklistvalues,Calculatedformula,Defaultvalue,Controllername,Relationshipname,Referenceto,Inlinehelptext,Nillable,Createable,Custom,Dependentpicklist
+"Data.com Contact ID","ExternalId","string","255","","","","","","","","","","","True","","",""
+"Data.com Social Handle ID","Id","id","18","","","","","","","","","","","","","",""
+"Provider","ProviderName","string","255","","","","","","","","","","","True","","",""
+"Social ID","SocialId","string","255","","","","","","","","","","","True","","",""
+"System ID","DatacloudContactId","string","255","","","","","","","","DatacloudContact","DatacloudContact","","True","","",""
+"Url","Url","url","255","","","","","","","","","","","True","","",""

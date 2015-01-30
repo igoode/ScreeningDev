@@ -1,0 +1,16 @@
+﻿Label,Name,Type,Length,Unique,Externalid,Precision,Picklistvalues,Calculatedformula,Defaultvalue,Controllername,Relationshipname,Referenceto,Inlinehelptext,Nillable,Createable,Custom,Dependentpicklist
+"Authentication Protocol","Protocol","picklist","255","","","","NoAuthentication
+Oauth
+Password
+","","","","","","Specify how Salesforce should authenticate to the external server. Password Authentication indicates that a username and password are required to authenticate. No Authentication indicates that no credentials are required.","True","True","",""
+"Created By ID","CreatedById","reference","18","","","","","","","","CreatedBy","User","","","","",""
+"Created Date","CreatedDate","datetime","","","","","","","","","","","","","","",""
+"Deleted","IsDeleted","boolean","","","","","","","","","","","","","","",""
+"External Data Source ID","ExternalDataSourceId","reference","18","","","","","","","","ExternalDataSource","ExternalDataSource","","","True","",""
+"External Data User Authentication ID","Id","id","18","","","","","","","","","","","","","",""
+"Last Modified By ID","LastModifiedById","reference","18","","","","","","","","LastModifiedBy","User","","","","",""
+"Last Modified Date","LastModifiedDate","datetime","","","","","","","","","","","","","","",""
+"Password","Password","encryptedstring","175","","","","","","","","","","","True","True","",""
+"System Modstamp","SystemModstamp","datetime","","","","","","","","","","","","","","",""
+"User ID","UserId","reference","18","","","","","","","","User","User","","True","True","",""
+"Username","Username","string","255","","","","","","","","","","","True","True","",""

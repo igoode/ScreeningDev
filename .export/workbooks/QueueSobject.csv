@@ -1,0 +1,18 @@
+﻿Label,Name,Type,Length,Unique,Externalid,Precision,Picklistvalues,Calculatedformula,Defaultvalue,Controllername,Relationshipname,Referenceto,Inlinehelptext,Nillable,Createable,Custom,Dependentpicklist
+"Created By ID","CreatedById","reference","18","","","","","","","","CreatedBy","User","","","","",""
+"Group ID","QueueId","reference","18","","","","","","","","Queue","Group","","","True","",""
+"Queue Sobject ID","Id","id","18","","","","","","","","","","","","","",""
+"Sobject Type","SobjectType","picklist","40","","","","Application__c
+Case
+Lead
+Macro
+Order
+WorkCoaching
+WorkFeedback
+WorkFeedbackQuestion
+WorkFeedbackQuestionSet
+WorkFeedbackRequest
+WorkGoal
+WorkPerformanceCycle
+","","","","","","","","True","",""
+"System Modstamp","SystemModstamp","datetime","","","","","","","","","","","","","","",""

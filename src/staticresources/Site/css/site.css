@@ -1,0 +1,201 @@
+body {
+  background:#dfdfdf;
+}
+
+body>.container
+{
+  background:#fff;
+  box-shadow: rgba(0,0,0, .5) 3px 3px 6px;
+}
+.navbar {
+  margin-bottom: 20px;
+}
+
+.header-bar{
+  background: #6e749f;
+}
+
+.footer-bar{
+  background: #003E7E;
+}
+
+.header-bar, .footer-bar
+{
+  height: 10px;
+  margin-bottom: 5px;
+}
+
+.container .jumbotron, .container-fluid .jumbotron, .navbar
+{
+  border-radius: 0px;
+  margin-bottom: 5px;
+}
+
+.jumbotron{
+    background:#fff;
+}
+.title-container
+{
+    margin: 10px 0 5px 0;
+}
+
+.row.main
+{
+  margin-bottom:10px;
+}
+
+.title-wrapper
+{
+  background: #003E7E url(../images/HeaderBar.png)  no-repeat right top;
+  min-height: 61px;
+  color:#ffffff;
+  border-top-left-radius: 30px;
+}
+
+
+h2, h3{
+  color:#5172a1;
+}
+
+h3
+{
+  font-size:1.4em
+}
+
+.col-xs-12 h2{
+  margin-top:40px;
+}
+
+.title-wrapper h1{
+  color: #fff;
+  position: relative;
+  left: 28px;
+}
+
+.navbar-collapse{
+  padding-left:0px;
+}
+
+
+.jumbotron p{
+  font-size:1em;
+}
+
+.navbar .container-fluid {
+  padding-left: 0px;
+  margin-left: 0px;
+}
+
+
+.navbar-location
+{
+  position: absolute;
+  left: 1em;
+  top: 0.5em;
+  font-size: 1.5em;
+}
+
+.footer {
+  min-height: 60px;
+  padding: 10px 20px 10px 20px;
+  background-color: #E2E2E2;
+  margin-bottom:10px;
+}
+
+.footer .navbar-nav>li>a{
+  padding-top:0px;
+  color: #000;
+}
+.footer .nav>li>a:hover, .nav>li>a:focus{
+  background-color: #E2E2E2;
+  text-decoration: underline;
+}
+
+@media (min-width: 992px) {
+  .footer .col-md-2{
+    text-align:right;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px)
+{
+  .navbar-form .input-group>.form-control {
+    width: 100px;
+  }
+}
+@media (min-width: 768px)
+{
+  .navbar-header .navbar-location{
+    visiblity:hidden;
+    display:none;
+  }
+}
+
+@media (max-width:768px)
+{
+  .navbar-collapse{
+    padding-left:15px;
+  }
+
+  .navbar .container-fluid {
+    padding-left: 15px;
+  }
+}
+
+.page{
+  padding:0 0;
+}
+
+.list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus {
+  background-color: #6e749f;
+  border-color: #6e749f;
+}
+
+.btn-primary {
+color: #fff;
+background-color: #5172a1;
+border-color: #2e6da4;
+}
+/*
+ * Off Canvas
+ * --------------------------------------------------
+ */
+@media screen and (max-width: 767px) {
+  .row-offcanvas {
+    position: relative;
+    -webkit-transition: all .25s ease-out;
+         -o-transition: all .25s ease-out;
+            transition: all .25s ease-out;
+  }
+
+  .row-offcanvas-right {
+    right: 0;
+  }
+
+  .row-offcanvas-left {
+    left: 0;
+  }
+
+  .row-offcanvas-right
+  .sidebar-offcanvas {
+    right: -50%; /* 6 columns */
+  }
+
+  .row-offcanvas-left
+  .sidebar-offcanvas {
+    left: -50%; /* 6 columns */
+  }
+
+  .row-offcanvas-right.active {
+    right: 50%; /* 6 columns */
+  }
+
+  .row-offcanvas-left.active {
+    left: 50%; /* 6 columns */
+  }
+
+  .sidebar-offcanvas {
+    position: absolute;
+    top: 0;
+    width: 50%; /* 6 columns */
+  }
+}

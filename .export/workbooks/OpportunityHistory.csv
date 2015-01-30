@@ -1,0 +1,28 @@
+﻿Label,Name,Type,Length,Unique,Externalid,Precision,Picklistvalues,Calculatedformula,Defaultvalue,Controllername,Relationshipname,Referenceto,Inlinehelptext,Nillable,Createable,Custom,Dependentpicklist
+"Amount","Amount","currency","","","","18","","","","","","","","True","","",""
+"Close Date","CloseDate","date","","","","","","","","","","","","True","","",""
+"Created By ID","CreatedById","reference","18","","","","","","","","CreatedBy","User","","","","",""
+"Created Date","CreatedDate","datetime","","","","","","","","","","","","","","",""
+"Deleted","IsDeleted","boolean","","","","","","","","","","","","","","",""
+"Expected Revenue","ExpectedRevenue","currency","","","","18","","","","","","","","True","","",""
+"Opportunity History ID","Id","id","18","","","","","","","","","","","","","",""
+"Opportunity ID","OpportunityId","reference","18","","","","","","","","Opportunity","Opportunity","","","","",""
+"Probability","Probability","percent","","","","3","","","","","","","","True","","",""
+"Stage Name","StageName","picklist","40","","","","Prospecting
+Qualification
+Needs Analysis
+Value Proposition
+Id. Decision Makers
+Perception Analysis
+Proposal/Price Quote
+Negotiation/Review
+Closed Won
+Closed Lost
+","","","","","","","","","",""
+"System Modstamp","SystemModstamp","datetime","","","","","","","","","","","","","","",""
+"To ForecastCategory","ForecastCategory","picklist","40","","","","Omitted
+Pipeline
+BestCase
+Forecast
+Closed
+","","","","","","","True","","",""

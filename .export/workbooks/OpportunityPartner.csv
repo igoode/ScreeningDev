@@ -1,0 +1,26 @@
+﻿Label,Name,Type,Length,Unique,Externalid,Precision,Picklistvalues,Calculatedformula,Defaultvalue,Controllername,Relationshipname,Referenceto,Inlinehelptext,Nillable,Createable,Custom,Dependentpicklist
+"Account ID","AccountToId","reference","18","","","","","","","","AccountTo","Account","","","","",""
+"Created By ID","CreatedById","reference","18","","","","","","","","CreatedBy","User","","","","",""
+"Created Date","CreatedDate","datetime","","","","","","","","","","","","","","",""
+"Deleted","IsDeleted","boolean","","","","","","","","","","","","","","",""
+"Last Modified By ID","LastModifiedById","reference","18","","","","","","","","LastModifiedBy","User","","","","",""
+"Last Modified Date","LastModifiedDate","datetime","","","","","","","","","","","","","","",""
+"Opportunity ID","OpportunityId","reference","18","","","","","","","","Opportunity","Opportunity","","","","",""
+"Opportunity Partner ID","Id","id","18","","","","","","","","","","","","","",""
+"Primary","IsPrimary","boolean","","","","","","","","","","","","","","",""
+"Reverse Partner ID","ReversePartnerId","reference","18","","","","","","","","","OpportunityPartner","","True","","",""
+"Role","Role","picklist","40","","","","System Integrator
+Agency
+Advertiser
+VAR/Reseller
+Distributor
+Developer
+Broker
+Lender
+Supplier
+Institution
+Contractor
+Dealer
+Consultant
+","","","","","","","True","","",""
+"System Modstamp","SystemModstamp","datetime","","","","","","","","","","","","","","",""

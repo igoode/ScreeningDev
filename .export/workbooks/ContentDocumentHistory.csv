@@ -1,0 +1,30 @@
+﻿Label,Name,Type,Length,Unique,Externalid,Precision,Picklistvalues,Calculatedformula,Defaultvalue,Controllername,Relationshipname,Referenceto,Inlinehelptext,Nillable,Createable,Custom,Dependentpicklist
+"Changed Field","Field","picklist","255","","","","ArchivedBy
+ArchivedDate
+created
+DeletedBy
+DeletedDate
+contentDocPublished
+contentDocFeatured
+contentDocRepublished
+contentDocUnpublished
+contentDocSubscribed
+contentDocUnsubscribed
+feedEvent
+IsArchived
+Owner
+ownerAccepted
+ownerAssignment
+Parent
+PublishStatus
+locked
+unlocked
+Title
+","","","","","","","","","",""
+"Content Document ID","Id","id","18","","","","","","","","","","","","","",""
+"ContentDocument ID","ContentDocumentId","reference","18","","","","","","","","ContentDocument","ContentDocument","","","","",""
+"Created By ID","CreatedById","reference","18","","","","","","","","CreatedBy","User","","","","",""
+"Created Date","CreatedDate","datetime","","","","","","","","","","","","","","",""
+"Deleted","IsDeleted","boolean","","","","","","","","","","","","","","",""
+"New Value","NewValue","anyType","255","","","","","","","","","","","True","","",""
+"Old Value","OldValue","anyType","255","","","","","","","","","","","True","","",""

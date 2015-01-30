@@ -1,0 +1,354 @@
+﻿Label,Name,Type,Length,Unique,Externalid,Precision,Picklistvalues,Calculatedformula,Defaultvalue,Controllername,Relationshipname,Referenceto,Inlinehelptext,Nillable,Createable,Custom,Dependentpicklist
+"Aboriginal or Torres Strait Islander","Aboriginal_or_Torres_Strait_Islander__c","boolean","","","","","","","","","","","Do you considers yourself to be of Aboriginal or Torres Strait Islander descent.","","True","True",""
+"Application Name","Name","string","80","","","","","","","","","","","","","",""
+"Application Type","Application_Type__c","picklist","255","","","","Aged Care Sector Employment
+Child Related Employment
+Disability Services Employment
+General Employment Probity
+Vulnerable Person Related Employment
+","","","","","","Set by user selection, then used to automatically set RecordType.","True","True","True",""
+"Consent to obtain personal information","Consent_to_obtain_personal_information__c","boolean","","","","","","","","","","","Consent to obtain personal information","","True","True",""
+"Contact","Contact__c","reference","18","","","","","","","","Contact__r","Contact","The Contact that the application is on behalf of.","True","True","True",""
+"Country of Birth","Country_of_Birth__c","picklist","255","","","","Australia
+Afghanistan
+Albania
+Algeria
+American Samoa
+Andorra
+Angola
+Anguilla
+Antarctica
+Antigua and Barbuda
+Argentina
+Armenia
+Aruba
+Austria
+Azerbaijan
+Bahamas
+Bahrain
+Bangladesh
+Barbados
+Belarus
+Belgium
+Belize
+Benin
+Bermuda
+Bhutan
+Bolivia
+Bosnia and Herzegovina
+Botswana
+Bouvet Island
+Brazil
+British Antarctic Territory
+British Indian Ocean Territory
+British Virgin Islands
+Brunei
+Bulgaria
+Burkina Faso
+Burundi
+Cambodia
+Cameroon
+Canada
+Canton and Enderbury Islands
+Cape Verde
+Cayman Islands
+Central African Republic
+Chad
+Chile
+China
+Christmas Island
+Cocos [Keeling] Islands
+Colombia
+Comoros
+Congo - Brazzaville
+Congo - Kinshasa
+Cook Islands
+Costa Rica
+Croatia
+Cuba
+Cyprus
+Czech Republic
+Côte d’Ivoire
+Denmark
+Djibouti
+Dominica
+Dominican Republic
+Dronning Maud Land
+East Germany
+Ecuador
+Egypt
+El Salvador
+Equatorial Guinea
+Eritrea
+Estonia
+Ethiopia
+Falkland Islands
+Faroe Islands
+Fiji
+Finland
+France
+French Guiana
+French Polynesia
+French Southern Territories
+French Southern and Antarctic Territories
+Gabon
+Gambia
+Georgia
+Germany
+Ghana
+Gibraltar
+Greece
+Greenland
+Grenada
+Guadeloupe
+Guam
+Guatemala
+Guernsey
+Guinea
+Guinea-Bissau
+Guyana
+Haiti
+Heard Island and McDonald Islands
+Honduras
+Hong Kong SAR China
+Hungary
+Iceland
+India
+Indonesia
+Iran
+Iraq
+Ireland
+Isle of Man
+Israel
+Italy
+Jamaica
+Japan
+Jersey
+Johnston Island
+Jordan
+Kazakhstan
+Kenya
+Kiribati
+Kuwait
+Kyrgyzstan
+Laos
+Latvia
+Lebanon
+Lesotho
+Liberia
+Libya
+Liechtenstein
+Lithuania
+Luxembourg
+Macau SAR China
+Macedonia
+Madagascar
+Malawi
+Malaysia
+Maldives
+Mali
+Malta
+Marshall Islands
+Martinique
+Mauritania
+Mauritius
+Mayotte
+Metropolitan France
+Mexico
+Micronesia
+Midway Islands
+Moldova
+Monaco
+Mongolia
+Montenegro
+Montserrat
+Morocco
+Mozambique
+Myanmar [Burma]
+Namibia
+Nauru
+Nepal
+Netherlands
+Netherlands Antilles
+Neutral Zone
+New Caledonia
+New Zealand
+Nicaragua
+Niger
+Nigeria
+Niue
+Norfolk Island
+North Korea
+North Vietnam
+Northern Mariana Islands
+Norway
+Oman
+Pacific Islands Trust Territory
+Pakistan
+Palau
+Palestinian Territories
+Panama
+Panama Canal Zone
+Papua New Guinea
+Paraguay
+People's Democratic Republic of Yemen
+Peru
+Philippines
+Pitcairn Islands
+Poland
+Portugal
+Puerto Rico
+Qatar
+Romania
+Russia
+Rwanda
+Réunion
+Saint Barthélemy
+Saint Helena
+Saint Kitts and Nevis
+Saint Lucia
+Saint Martin
+Saint Pierre and Miquelon
+Saint Vincent and the Grenadines
+Samoa
+San Marino
+Saudi Arabia
+Senegal
+Serbia
+Serbia and Montenegro
+Seychelles
+Sierra Leone
+Singapore
+Slovakia
+Slovenia
+Solomon Islands
+Somalia
+South Africa
+South Georgia and the South Sandwich Islands
+South Korea
+Spain
+Sri Lanka
+Sudan
+Suriname
+Svalbard and Jan Mayen
+Swaziland
+Sweden
+Switzerland
+Syria
+São Tomé and Príncipe
+Taiwan
+Tajikistan
+Tanzania
+Thailand
+Timor-Leste
+Togo
+Tokelau
+Tonga
+Trinidad and Tobago
+Tunisia
+Turkey
+Turkmenistan
+Turks and Caicos Islands
+Tuvalu
+U.S. Minor Outlying Islands
+U.S. Miscellaneous Pacific Islands
+U.S. Virgin Islands
+Uganda
+Ukraine
+Union of Soviet Socialist Republics
+United Arab Emirates
+United Kingdom
+United States
+Unknown or Invalid Region
+Uruguay
+Uzbekistan
+Vanuatu
+Vatican City
+Venezuela
+Vietnam
+Wake Island
+Wallis and Futuna
+Western Sahara
+Yemen
+Zambia
+Zimbabwe
+Åland Islands
+","","","","","","Country that the applicant was born in.","True","True","True",""
+"Created By ID","CreatedById","reference","18","","","","","","","","CreatedBy","User","","","","",""
+"Created Date","CreatedDate","datetime","","","","","","","","","","","","","","",""
+"Current First Name","Current_First_Name__c","string","255","","","","","","","","","","Current first name of applicant","True","True","True",""
+"Current Last Name","Current_Last_Name__c","string","255","","","","","","","","","","Current last name of applicant","True","True","True",""
+"Current Middle Names","Current_Middle_Names__c","string","255","","","","","","","","","","Current middle name or names of applicant","True","True","True",""
+"Current Postal Address","Current_Postal_Address__c","textarea","255","","","","","","","","","","Current postal address of the applicant","True","True","True",""
+"Current Postal Postcode","Current_Postal_Postcode__c","string","4","","","","","","","","","","Current postcode of the applicant","True","True","True",""
+"Current Postal State","Current_Postal_State__c","picklist","255","","","","SA
+VIC
+NSW
+QLD
+TAS
+WA
+NT
+ACT
+","","","","","","Current postal address state of the applicant","True","True","True",""
+"Current Postal Suburb","Current_Postal_Suburb__c","string","255","","","","","","","","","","Current postal address suburb of the applicant","True","True","True",""
+"Date of Birth","Date_of_Birth__c","date","","","","","","","","","","","Date of birth of the applicant.","True","True","True",""
+"Declaration 1","Declaration_1__c","boolean","","","","","","","","","","","Have you ever been dismissed or resigned from any employment or a volunteer role in response to or following allegations of improper conduct relating to children?","","True","True",""
+"Declaration 2","Declaration_2__c","boolean","","","","","","","","","","","Have you ever submitted an application for employment or a volunteer role involving contact with children which was declined for disciplinary reasons or allegations of improper conduct?","","True","True",""
+"Declaration 3","Declaration_3__c","boolean","","","","","","","","","","","Have you been (or are you currently) the subject of any professional disciplinary proceedings, or any action that might lead to such proceedings in any jurisdiction? (not including criminal court proceedings).","","True","True",""
+"Declaration 4","Declaration_4__c","boolean","","","","","","","","","","","Have you ever been (or are you currently) subject to any restrictions regarding your contact with children (including removal of a child) in any employment, volunteer, or personal capacity?","","True","True",""
+"Declaration 5","Declaration_5__c","boolean","","","","","","","","","","","Have you ever been found guilty of an offence committed in a country other than Australia, including an offence for which no conviction was recorded?","","True","True",""
+"Declaration 6","Declaration_6__c","boolean","","","","","","","","","","","Have you been named as the defendant in an Interim or Confirmed Intervention Order, Restraining Order, Apprehended Violence Order, Domestic Violence Restraining Order, Paedophile Restraining Order or equivalent, in any jurisdiction?","","True","True",""
+"Declaration 7","Declaration_7__c","boolean","","","","","","","","","","","Are you the subject of any criminal or traffic charges (not including parking or speeding infringements) that are still to be determined or finalised?","","True","True",""
+"Declaration 8","Declaration_8__c","boolean","","","","","","","","","","","Are you currently or have you ever been a registrable sex offender? (eg. Australian National Child Sex Offender Register)","","True","True",""
+"Declaration 9","Declaration_9__c","boolean","","","","","","","","","","","Have you ever been denied an employment screening clearance from another Australian jurisdiction?","","True","True",""
+"Deleted","IsDeleted","boolean","","","","","","","","","","","","","","",""
+"Email Address","Email_Address__c","email","80","","","","","","","","","","Email address of the applicant","True","True","True",""
+"Gender","Gender__c","picklist","255","","","","Male
+Female
+Other
+","","","","","","Gender of the applicant","True","True","True",""
+"Last Activity Date","LastActivityDate","date","","","","","","","","","","","","True","","",""
+"Last Modified By ID","LastModifiedById","reference","18","","","","","","","","LastModifiedBy","User","","","","",""
+"Last Modified Date","LastModifiedDate","datetime","","","","","","","","","","","","","","",""
+"Last Referenced Date","LastReferencedDate","datetime","","","","","","","","","","","","True","","",""
+"Last Viewed Date","LastViewedDate","datetime","","","","","","","","","","","","True","","",""
+"Owner ID","OwnerId","reference","18","","","","","","","","Owner","Group","","","True","",""
+"Period of Residence From","Period_of_Residence_From__c","date","","","","","","","","","","","Date the applicant first moved into their current residence","True","True","True",""
+"Period of Residence To","Period_of_Residence_To__c","date","","","","","","","","","","","","True","True","True",""
+"Postcode","Postcode__c","string","4","","","","","","","","","","","True","True","True",""
+"Record ID","Id","id","18","","","","","","","","","","","","","",""
+"Record Type ID","RecordTypeId","reference","18","","","","","","","","RecordType","RecordType","","True","True","",""
+"State","State__c","picklist","255","","","","SA
+VIC
+NSW
+QLD
+TAS
+WA
+NT
+ACT
+","","","","","","","True","True","True",""
+"State/Territory of Birth","State_Territory_of_Birth__c","picklist","255","","","","SA
+VIC
+NSW
+QLD
+TAS
+WA
+NT
+ACT
+","","","","","","","True","True","True",""
+"Street Name","Street_Name__c","string","255","","","","","","","","","","","True","True","True",""
+"Street No","Street_No__c","string","20","","","","","","","","","","","True","True","True",""
+"Suburb/Town","Suburb_Town__c","string","255","","","","","","","","","","","True","True","True",""
+"System Modstamp","SystemModstamp","datetime","","","","","","","","","","","","","","",""
+"Telephone (H)","Telephone_H__c","phone","40","","","","","","","","","","","True","True","True",""
+"Telephone (M)","Telephone_M__c","phone","40","","","","","","","","","","","True","True","True",""
+"Telephone (W)","Telephone_W__c","phone","40","","","","","","","","","","","True","True","True",""
+"Title","Title__c","picklist","255","","","","Mr
+Mrs
+Ms
+Miss
+Dr
+Other
+","","","","","","","True","True","True",""
+"Town/City of Birth","Town_City_of_Birth__c","string","255","","","","","","","","","","","True","True","True",""
+"Unit No","Unit_No__c","string","20","","","","","","","","","","","True","True","True",""

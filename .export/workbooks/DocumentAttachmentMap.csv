@@ -1,0 +1,7 @@
+﻿Label,Name,Type,Length,Unique,Externalid,Precision,Picklistvalues,Calculatedformula,Defaultvalue,Controllername,Relationshipname,Referenceto,Inlinehelptext,Nillable,Createable,Custom,Dependentpicklist
+"Attachment Sequence","DocumentSequence","int","","","","","","","","","","","","","True","",""
+"Created By ID","CreatedById","reference","18","","","","","","","","CreatedBy","User","","","","",""
+"Created Date","CreatedDate","datetime","","","","","","","","","","","","","","",""
+"Document Entity Map Id","Id","id","18","","","","","","","","","","","","","",""
+"Document ID","DocumentId","reference","18","","","","","","","","","Document","","","True","",""
+"Entity ID","ParentId","reference","18","","","","","","","","","EmailTemplate","","","True","",""

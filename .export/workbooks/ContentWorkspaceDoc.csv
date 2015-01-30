@@ -1,0 +1,8 @@
+﻿Label,Name,Type,Length,Unique,Externalid,Precision,Picklistvalues,Calculatedformula,Defaultvalue,Controllername,Relationshipname,Referenceto,Inlinehelptext,Nillable,Createable,Custom,Dependentpicklist
+"ContentDocument ID","ContentDocumentId","reference","18","","","","","","","","ContentDocument","ContentDocument","","","True","",""
+"Created Date","CreatedDate","datetime","","","","","","","","","","","","","","",""
+"Is Deleted","IsDeleted","boolean","","","","","","","","","","","","","","",""
+"Is Owning Library","IsOwner","boolean","","","","","","","","","","","","","","",""
+"Library Document ID","Id","id","18","","","","","","","","","","","","","",""
+"Library ID","ContentWorkspaceId","reference","18","","","","","","","","ContentWorkspace","ContentWorkspace","","","True","",""
+"System Modstamp","SystemModstamp","datetime","","","","","","","","","","","","","","",""

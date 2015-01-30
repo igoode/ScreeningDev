@@ -1,0 +1,5 @@
+﻿Label,Name,Type,Length,Unique,Externalid,Precision,Picklistvalues,Calculatedformula,Defaultvalue,Controllername,Relationshipname,Referenceto,Inlinehelptext,Nillable,Createable,Custom,Dependentpicklist
+"Group ID","GroupId","reference","18","","","","","","","","Group","Group","","","True","",""
+"Group Member ID","Id","id","18","","","","","","","","","","","","","",""
+"System Modstamp","SystemModstamp","datetime","","","","","","","","","","","","","","",""
+"User/Group ID","UserOrGroupId","reference","18","","","","","","","","","Group","","","True","",""

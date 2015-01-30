@@ -1,0 +1,45 @@
+﻿Label,Name,Type,Length,Unique,Externalid,Precision,Picklistvalues,Calculatedformula,Defaultvalue,Controllername,Relationshipname,Referenceto,Inlinehelptext,Nillable,Createable,Custom,Dependentpicklist
+"Approval Process ID","Id","id","18","","","","","","","","","","","","","",""
+"Created By ID","CreatedById","reference","18","","","","","","","","CreatedBy","User","","","","",""
+"Created Date","CreatedDate","datetime","","","","","","","","","","","","","","",""
+"Custom Object Definition ID","TableEnumOrId","picklist","40","","","","Account
+Asset
+Campaign
+Case
+Contact
+Contract
+KnowledgeArticle
+KnowledgeArticleVersion
+Lead
+Opportunity
+Order
+Product2
+Solution
+WorkCoaching
+WorkFeedback
+WorkFeedbackQuestion
+WorkFeedbackQuestionSet
+WorkFeedbackRequest
+WorkGoal
+WorkPerformanceCycle
+","","","","","","","","","",""
+"Description","Description","textarea","1000","","","","","","","","","","","True","","",""
+"Last Modified By ID","LastModifiedById","reference","18","","","","","","","","LastModifiedBy","User","","","","",""
+"Last Modified Date","LastModifiedDate","datetime","","","","","","","","","","","","","","",""
+"Lock Type","LockType","picklist","40","","","","Total
+Admin
+Owner
+Workitem
+Node
+none
+","","","","","","","","","",""
+"Name","Name","string","40","","","","","","","","","","","","","",""
+"Process Definition Type","Type","picklist","40","","","","Approval
+State
+","","","","","","","","","",""
+"State","State","picklist","40","","","","Active
+Inactive
+Obsolete
+","","","","","","","","","",""
+"System Modstamp","SystemModstamp","datetime","","","","","","","","","","","","","","",""
+"Unique Name","DeveloperName","string","80","","","","","","","","","","","","","",""

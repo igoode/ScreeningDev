@@ -1,0 +1,8 @@
+﻿Label,Name,Type,Length,Unique,Externalid,Precision,Picklistvalues,Calculatedformula,Defaultvalue,Controllername,Relationshipname,Referenceto,Inlinehelptext,Nillable,Createable,Custom,Dependentpicklist
+"Created By ID","CreatedById","reference","18","","","","","","","","CreatedBy","User","","","","",""
+"Created Date","CreatedDate","datetime","","","","","","","","","","","","","","",""
+"Deleted","IsDeleted","boolean","","","","","","","","","","","","","","",""
+"Feed Item ID","FeedItemId","reference","18","","","","","","","","","AccountFeed","","","","",""
+"Feed Poll Choice ID","ChoiceId","reference","18","","","","","","","","Choice","FeedPollChoice","","","","",""
+"Feed Poll Vote ID","Id","id","18","","","","","","","","","","","","","",""
+"Last Modified Date","LastModifiedDate","datetime","","","","","","","","","","","","","","",""

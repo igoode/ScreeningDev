@@ -1,0 +1,9 @@
+﻿Label,Name,Type,Length,Unique,Externalid,Precision,Picklistvalues,Calculatedformula,Defaultvalue,Controllername,Relationshipname,Referenceto,Inlinehelptext,Nillable,Createable,Custom,Dependentpicklist
+"Chatter Activity ID","Id","id","18","","","","","","","","","","","","","",""
+"Comment Count","CommentCount","int","","","","","","","","","","","","","","",""
+"Comment Received Count","CommentReceivedCount","int","","","","","","","","","","","","","","",""
+"Influence Raw Rank","InfluenceRawRank","int","","","","","","","","","","","","","","",""
+"Like Received Count","LikeReceivedCount","int","","","","","","","","","","","","","","",""
+"Parent ID","ParentId","reference","18","","","","","","","","","User","","True","","",""
+"Post Count","PostCount","int","","","","","","","","","","","","","","",""
+"System Modstamp","SystemModstamp","datetime","","","","","","","","","","","","","","",""

@@ -1,0 +1,46 @@
+﻿Label,Name,Type,Length,Unique,Externalid,Precision,Picklistvalues,Calculatedformula,Defaultvalue,Controllername,Relationshipname,Referenceto,Inlinehelptext,Nillable,Createable,Custom,Dependentpicklist
+"All Day","IsAllDay","boolean","","","","","","","","","","","","","True","",""
+"Created By ID","CreatedById","reference","18","","","","","","","","CreatedBy","User","","","","",""
+"Created Date","CreatedDate","datetime","","","","","","","","","","","","","","",""
+"Description","Description","string","100","","","","","","","","","","","True","True","",""
+"End Date","RecurrenceEndDateOnly","date","","","","","","","","","","","","True","True","",""
+"End Time In Minutes From Midnight","EndTimeInMinutes","int","","","","","","","","","","","","True","True","",""
+"Holiday Date","ActivityDate","date","","","","","","","","","","","","True","True","",""
+"Holiday ID","Id","id","18","","","","","","","","","","","","","",""
+"Holiday Name","Name","string","80","","","","","","","","","","","","True","",""
+"Last Modified By ID","LastModifiedById","reference","18","","","","","","","","LastModifiedBy","User","","","","",""
+"Last Modified Date","LastModifiedDate","datetime","","","","","","","","","","","","","","",""
+"Recurrence Day of Month","RecurrenceDayOfMonth","int","","","","","","","","","","","","True","True","",""
+"Recurrence Day of Week Mask","RecurrenceDayOfWeekMask","int","","","","","","","","","","","","True","True","",""
+"Recurrence Instance","RecurrenceInstance","picklist","40","","","","First
+Second
+Third
+Fourth
+Last
+","","","","","","","True","True","",""
+"Recurrence Interval","RecurrenceInterval","int","","","","","","","","","","","","True","True","",""
+"Recurrence Month of Year","RecurrenceMonthOfYear","picklist","40","","","","January
+February
+March
+April
+May
+June
+July
+August
+September
+October
+November
+December
+","","","","","","","True","True","",""
+"Recurrence Type","RecurrenceType","picklist","40","","","","RecursDaily
+RecursEveryWeekday
+RecursMonthly
+RecursMonthlyNth
+RecursWeekly
+RecursYearly
+RecursYearlyNth
+","","","","","","","True","True","",""
+"Recurring Holiday","IsRecurrence","boolean","","","","","","","","","","","","","True","",""
+"Start Date","RecurrenceStartDate","date","","","","","","","","","","","","True","True","",""
+"Start Time In Minutes From Midnight","StartTimeInMinutes","int","","","","","","","","","","","","True","True","",""
+"System Modstamp","SystemModstamp","datetime","","","","","","","","","","","","","","",""

@@ -1,0 +1,72 @@
+﻿Label,Name,Type,Length,Unique,Externalid,Precision,Picklistvalues,Calculatedformula,Defaultvalue,Controllername,Relationshipname,Referenceto,Inlinehelptext,Nillable,Createable,Custom,Dependentpicklist
+"Account ID","AccountId","reference","18","","","","","","","","Account","Account","","True","True","",""
+"Amount","Amount","currency","","","","18","","","","","","","","True","True","",""
+"Campaign ID","CampaignId","reference","18","","","","","","","","Campaign","Campaign","","True","True","",""
+"Close Date","CloseDate","date","","","","","","","","","","","","","True","",""
+"Closed","IsClosed","boolean","","","","","","","","","","","","","","",""
+"Created By ID","CreatedById","reference","18","","","","","","","","CreatedBy","User","","","","",""
+"Created Date","CreatedDate","datetime","","","","","","","","","","","","","","",""
+"Current Generator(s)","CurrentGenerators__c","string","100","","","","","","","","","","","True","True","True",""
+"Deleted","IsDeleted","boolean","","","","","","","","","","","","","","",""
+"Delivery/Installation Status","DeliveryInstallationStatus__c","picklist","255","","","","In progress
+Yet to begin
+Completed
+","","","","","","","True","True","True",""
+"Description","Description","textarea","32000","","","","","","","","","","","True","True","",""
+"Expected Amount","ExpectedRevenue","currency","","","","18","","","","","","","","True","","",""
+"Fiscal Period","Fiscal","string","6","","","","","","","","","","","True","","",""
+"Fiscal Quarter","FiscalQuarter","int","","","","","","","","","","","","True","","",""
+"Fiscal Year","FiscalYear","int","","","","","","","","","","","","True","","",""
+"Forecast Category","ForecastCategory","picklist","40","","","","Omitted
+Pipeline
+BestCase
+Forecast
+Closed
+","","","","","","","","","",""
+"Forecast Category","ForecastCategoryName","picklist","40","","","","Omitted
+Pipeline
+Best Case
+Commit
+Closed
+","","","","","","","True","True","",""
+"Has Line Item","HasOpportunityLineItem","boolean","","","","","","","","","","","","","","",""
+"Last Activity","LastActivityDate","date","","","","","","","","","","","","True","","",""
+"Last Modified By ID","LastModifiedById","reference","18","","","","","","","","LastModifiedBy","User","","","","",""
+"Last Modified Date","LastModifiedDate","datetime","","","","","","","","","","","","","","",""
+"Last Referenced Date","LastReferencedDate","datetime","","","","","","","","","","","","True","","",""
+"Last Viewed Date","LastViewedDate","datetime","","","","","","","","","","","","True","","",""
+"Lead Source","LeadSource","picklist","40","","","","Web
+Phone Inquiry
+Partner Referral
+Purchased List
+Other
+","","","","","","","True","True","",""
+"Main Competitor(s)","MainCompetitors__c","string","100","","","","","","","","","","","True","True","True",""
+"Name","Name","string","120","","","","","","","","","","","","True","",""
+"Next Step","NextStep","string","255","","","","","","","","","","","True","True","",""
+"Opportunity ID","Id","id","18","","","","","","","","","","","","","",""
+"Opportunity Type","Type","picklist","40","","","","Existing Customer - Upgrade
+Existing Customer - Replacement
+Existing Customer - Downgrade
+New Customer
+","","","","","","","True","True","",""
+"Order Number","OrderNumber__c","string","8","","","","","","","","","","","True","True","True",""
+"Owner ID","OwnerId","reference","18","","","","","","","","Owner","User","","","True","",""
+"Price Book ID","Pricebook2Id","reference","18","","","","","","","","Pricebook2","Pricebook2","","True","True","",""
+"Private","IsPrivate","boolean","","","","","","","","","","","","","True","",""
+"Probability (%)","Probability","percent","","","","3","","","","","","","","True","True","",""
+"Quantity","TotalOpportunityQuantity","double","","","","18","","","","","","","","True","True","",""
+"Stage","StageName","picklist","40","","","","Prospecting
+Qualification
+Needs Analysis
+Value Proposition
+Id. Decision Makers
+Perception Analysis
+Proposal/Price Quote
+Negotiation/Review
+Closed Won
+Closed Lost
+","","","","","","","","True","",""
+"System Modstamp","SystemModstamp","datetime","","","","","","","","","","","","","","",""
+"Tracking Number","TrackingNumber__c","string","12","","","","","","","","","","","True","True","True",""
+"Won","IsWon","boolean","","","","","","","","","","","","","","",""

@@ -1,0 +1,42 @@
+﻿Label,Name,Type,Length,Unique,Externalid,Precision,Picklistvalues,Calculatedformula,Defaultvalue,Controllername,Relationshipname,Referenceto,Inlinehelptext,Nillable,Createable,Custom,Dependentpicklist
+"App Type","Type","picklist","255","","","","ConnectedApplication
+ServiceProvider
+TabSet
+","","","","","","","True","","",""
+"App requires a registered mobile device","IsRegisteredDeviceOnly","boolean","","","","","","","","","","","","","","",""
+"AppMenuItem ID","Id","id","18","","","","","","","","","","","","","",""
+"Application ID","ApplicationId","reference","18","","","","","","","","","","","True","","",""
+"Created By ID","CreatedById","reference","18","","","","","","","","CreatedBy","User","","","","",""
+"Created Date","CreatedDate","datetime","","","","","","","","","","","","","","",""
+"Date the mobile app was most recently installed","MobileAppInstalledDate","datetime","","","","","","","","","","","","True","","",""
+"Deleted","IsDeleted","boolean","","","","","","","","","","","","","","",""
+"Description","Description","string","250","","","","","","","","","","","True","","",""
+"Developer Name","Name","string","80","","","","","","","","","","","True","","",""
+"ID for the related mobile app binary","MobileAppBinaryId","string","255","","","","","","","","","","","True","","",""
+"Icon Url","IconUrl","url","255","","","","","","","","","","","True","","",""
+"Info URL","InfoUrl","url","255","","","","","","","","","","","True","","",""
+"Is this a canvas-enabled application","CanvasEnabled","boolean","","","","","","","","","","","","","","",""
+"IsUsingAdminAuthorization","IsUsingAdminAuthorization","boolean","","","","","","","","","","","","","","",""
+"Label","Label","string","250","","","","","","","","","","","True","","",""
+"Last Modified By ID","LastModifiedById","reference","18","","","","","","","","LastModifiedBy","User","","","","",""
+"Last Modified Date","LastModifiedDate","datetime","","","","","","","","","","","","","","",""
+"Logo Image URL","LogoUrl","url","255","","","","","","","","","","","True","","",""
+"Minimum required mobile device OS version","MobileMinOsVer","string","255","","","","","","","","","","","True","","",""
+"Mobile Start Url","MobileStartUrl","url","255","","","","","","","","","","","True","","",""
+"Mobile device OS platform","MobilePlatform","picklist","255","","","","ios
+android
+","","","","","","","True","","",""
+"Most recently installed version of the mobile app","MobileAppInstalledVersion","string","255","","","","","","","","","","","True","","",""
+"Namespace Prefix","NamespacePrefix","string","80","","","","","","","","","","","True","","",""
+"Sort Order","SortOrder","int","","","","","","","","","","","","","","",""
+"Start Url","StartUrl","url","255","","","","","","","","","","","True","","",""
+"System Modstamp","SystemModstamp","datetime","","","","","","","","","","","","","","",""
+"The canvas url for the canvas application","CanvasUrl","url","255","","","","","","","","","","","True","","",""
+"The configured access method for the canvas application","CanvasAccessMethod","picklist","255","","","","Get
+Post
+","","","","","","","True","","",""
+"The identifier used to render the canvas application.","CanvasReferenceId","string","18","","","","","","","","","","","True","","",""
+"The selected/supported locations of the canvas application","CanvasSelectedLocations","string","255","","","","","","","","","","","True","","",""
+"Type of mobile device","MobileDeviceType","string","255","","","","","","","","","","","True","","",""
+"URL to install the mobile app","MobileAppInstallUrl","url","255","","","","","","","","","","","True","","",""
+"Version of the mobile app","MobileAppVer","string","255","","","","","","","","","","","True","","",""

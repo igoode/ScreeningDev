@@ -1,0 +1,16 @@
+﻿Label,Name,Type,Length,Unique,Externalid,Precision,Picklistvalues,Calculatedformula,Defaultvalue,Controllername,Relationshipname,Referenceto,Inlinehelptext,Nillable,Createable,Custom,Dependentpicklist
+"Apex Job ID","AsyncApexJobId","reference","18","","","","","","","","AsyncApexJob","AsyncApexJob","","True","","",""
+"Apex Test Queue Item ID","QueueItemId","reference","18","","","","","","","","QueueItem","ApexTestQueueItem","","True","","",""
+"Apex Test Result ID","Id","id","18","","","","","","","","","","","","","",""
+"Class ID","ApexClassId","reference","18","","","","","","","","ApexClass","ApexClass","","","","",""
+"Error Message","Message","string","4000","","","","","","","","","","","True","","",""
+"Log ID","ApexLogId","reference","18","","","","","","","","ApexLog","ApexLog","","True","","",""
+"Method Name","MethodName","string","255","","","","","","","","","","","True","","",""
+"Pass/Fail","Outcome","picklist","40","","","","Pass
+Fail
+CompileFail
+Skip
+","","","","","","","","","",""
+"Stack Trace","StackTrace","string","4000","","","","","","","","","","","True","","",""
+"System Modstamp","SystemModstamp","datetime","","","","","","","","","","","","","","",""
+"Time Started","TestTimestamp","datetime","","","","","","","","","","","","","","",""

@@ -1,0 +1,12 @@
+﻿Label,Name,Type,Length,Unique,Externalid,Precision,Picklistvalues,Calculatedformula,Defaultvalue,Controllername,Relationshipname,Referenceto,Inlinehelptext,Nillable,Createable,Custom,Dependentpicklist
+"Challenge Method","ChallengeMethod","picklist","40","","","","Email
+SMS
+TOTP_CHOICE
+TOTP_ONLY
+","","","","","","","True","","",""
+"Challenge SentDate","ChallengeSentDate","datetime","","","","","","","","","","","","True","","",""
+"Created Date","CreatedDate","datetime","","","","","","","","","","","","","","",""
+"IsAuthenticated","IsAuthenticated","boolean","","","","","","","","","","","","","","",""
+"Login IP ID","Id","id","18","","","","","","","","","","","","","",""
+"Source IP","SourceIp","string","39","","","","","","","","","","","True","","",""
+"User ID","UsersId","reference","18","","","","","","","","Users","User","","","","",""

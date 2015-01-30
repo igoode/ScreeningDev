@@ -1,0 +1,59 @@
+﻿Label,Name,Type,Length,Unique,Externalid,Precision,Picklistvalues,Calculatedformula,Defaultvalue,Controllername,Relationshipname,Referenceto,Inlinehelptext,Nillable,Createable,Custom,Dependentpicklist
+"Active","IsActive","boolean","","","","","","","","","","","","","","",""
+"Alias","Alias","string","8","","","","","","","","","","","True","","",""
+"E-mail","Email","email","80","","","","","","","","","","","True","","",""
+"First Name","FirstName","string","40","","","","","","","","","","","True","","",""
+"Language","Language","picklist","40","","","","en_US
+de
+es
+fr
+it
+ja
+sv
+ko
+zh_TW
+zh_CN
+pt_BR
+nl_NL
+da
+th
+fi
+ru
+es_MX
+no
+","","","","","","","True","","",""
+"Last Name","LastName","string","80","","","","","","","","","","","True","","",""
+"Last Referenced Date","LastReferencedDate","datetime","","","","","","","","","","","","True","","",""
+"Last Viewed Date","LastViewedDate","datetime","","","","","","","","","","","","True","","",""
+"Name","Name","string","255","","","","","","","","","","","True","","",""
+"Phone","Phone","phone","40","","","","","","","","","","","True","","",""
+"Profile ID","ProfileId","reference","18","","","","","","","","Profile","Profile","","True","","",""
+"Recently Viewed ID","Id","id","18","","","","","","","","","","","","","",""
+"Record Type ID","RecordTypeId","reference","18","","","","","","","","RecordType","RecordType","","True","","",""
+"Role ID","UserRoleId","reference","18","","","","","","","","UserRole","UserRole","","True","","",""
+"Title","Title","string","80","","","","","","","","","","","True","","",""
+"Type","Type","picklist","40","","","","Account
+Application__c
+Campaign
+Case
+CollaborationGroup
+Contact
+ContentDocument
+Contract
+Dashboard
+Document
+Idea
+Lead
+ListView
+Macro
+Opportunity
+Order
+Previous_Address__c
+Previous_Name__c
+Pricebook2
+Profile
+Report
+Solution
+Topic
+User
+","","","","","","","True","","",""

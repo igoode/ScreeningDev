@@ -1,0 +1,61 @@
+﻿Label,Name,Type,Length,Unique,Externalid,Precision,Picklistvalues,Calculatedformula,Defaultvalue,Controllername,Relationshipname,Referenceto,Inlinehelptext,Nillable,Createable,Custom,Dependentpicklist
+"Changed Field","Field","picklist","255","","","","Address
+AnnualRevenue
+City
+CleanStatus
+Company
+CompanyDunsNumber
+Country
+CountryCode
+created
+CurrentGenerators__c
+DandbCompany
+Description
+DoNotCall
+Email
+EmailBouncedDate
+EmailBouncedReason
+Fax
+feedEvent
+FirstName
+HasOptedOutOfEmail
+HasOptedOutOfFax
+Industry
+IsUnreadByOwner
+Jigsaw
+LastName
+Latitude
+leadConverted
+leadMerged
+LeadSource
+Longitude
+MobilePhone
+Name
+NumberOfEmployees
+NumberofLocations__c
+Owner
+ownerAccepted
+ownerAssignment
+Phone
+PostalCode
+Primary__c
+ProductInterest__c
+Rating
+locked
+unlocked
+Salutation
+SICCode__c
+State
+StateCode
+Status
+Street
+Title
+Website
+","","","","","","","","","",""
+"Created By ID","CreatedById","reference","18","","","","","","","","CreatedBy","User","","","","",""
+"Created Date","CreatedDate","datetime","","","","","","","","","","","","","","",""
+"Deleted","IsDeleted","boolean","","","","","","","","","","","","","","",""
+"Lead History ID","Id","id","18","","","","","","","","","","","","","",""
+"Lead ID","LeadId","reference","18","","","","","","","","Lead","Lead","","","","",""
+"New Value","NewValue","anyType","255","","","","","","","","","","","True","","",""
+"Old Value","OldValue","anyType","255","","","","","","","","","","","True","","",""

@@ -1,0 +1,26 @@
+﻿Label,Name,Type,Length,Unique,Externalid,Precision,Picklistvalues,Calculatedformula,Defaultvalue,Controllername,Relationshipname,Referenceto,Inlinehelptext,Nillable,Createable,Custom,Dependentpicklist
+"Archived Date","ArchivedDate","date","","","","","","","","","","","","True","","",""
+"Content Modified Date","ContentModifiedDate","datetime","","","","","","","","","","","","True","","",""
+"ContentDocument ID","Id","id","18","","","","","","","","","","","","","",""
+"Created By ID","CreatedById","reference","18","","","","","","","","CreatedBy","User","","","","",""
+"Created Date","CreatedDate","datetime","","","","","","","","","","","","","","",""
+"Description","Description","textarea","1000","","","","","","","","","","","True","","",""
+"File Extension","FileExtension","string","40","","","","","","","","","","","True","","",""
+"File Type","FileType","string","20","","","","","","","","","","","True","","",""
+"Is Archived","IsArchived","boolean","","","","","","","","","","","","","","",""
+"Is Deleted","IsDeleted","boolean","","","","","","","","","","","","","","",""
+"Last Modified By ID","LastModifiedById","reference","18","","","","","","","","LastModifiedBy","User","","","","",""
+"Last Modified Date","LastModifiedDate","datetime","","","","","","","","","","","","","","",""
+"Last Referenced Date","LastReferencedDate","datetime","","","","","","","","","","","","True","","",""
+"Last Viewed Date","LastViewedDate","datetime","","","","","","","","","","","","True","","",""
+"Latest Published Version ID","LatestPublishedVersionId","reference","18","","","","","","","","LatestPublishedVersion","ContentVersion","","True","","",""
+"Owner ID","OwnerId","reference","18","","","","","","","","Owner","User","","","","",""
+"Parent ID","ParentId","reference","18","","","","","","","","","ContentWorkspace","","True","","",""
+"Publish Status","PublishStatus","picklist","40","","","","U
+P
+R
+","","","","","","","","","",""
+"Size","ContentSize","int","","","","","","","","","","","","True","","",""
+"System Modstamp","SystemModstamp","datetime","","","","","","","","","","","","","","",""
+"Title","Title","string","255","","","","","","","","","","","","","",""
+"User ID","ArchivedById","reference","18","","","","","","","","","User","","True","","",""

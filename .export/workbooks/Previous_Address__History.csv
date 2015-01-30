@@ -1,0 +1,26 @@
+﻿Label,Name,Type,Length,Unique,Externalid,Precision,Picklistvalues,Calculatedformula,Defaultvalue,Controllername,Relationshipname,Referenceto,Inlinehelptext,Nillable,Createable,Custom,Dependentpicklist
+"Changed Field","Field","picklist","255","","","","Application__c
+Country__c
+created
+feedEvent
+Name
+ownerAccepted
+ownerAssignment
+Period_of_Residence_From__c
+Period_of_Residence_To__c
+Postcode__c
+locked
+unlocked
+State__c
+Street_Name__c
+Street_No__c
+Suburb__c
+Unit_No__c
+","","","","","","","","","",""
+"Created By ID","CreatedById","reference","18","","","","","","","","CreatedBy","User","","","","",""
+"Created Date","CreatedDate","datetime","","","","","","","","","","","","","","",""
+"Deleted","IsDeleted","boolean","","","","","","","","","","","","","","",""
+"Entity History ID","Id","id","18","","","","","","","","","","","","","",""
+"New Value","NewValue","anyType","255","","","","","","","","","","","True","","",""
+"Old Value","OldValue","anyType","255","","","","","","","","","","","True","","",""
+"Parent ID","ParentId","reference","18","","","","","","","","Parent","Previous_Address__c","","","","",""

@@ -1,0 +1,57 @@
+﻿Label,Name,Type,Length,Unique,Externalid,Precision,Picklistvalues,Calculatedformula,Defaultvalue,Controllername,Relationshipname,Referenceto,Inlinehelptext,Nillable,Createable,Custom,Dependentpicklist
+"Account ID","AccountId","reference","18","","","","","","","","Account","Account","","True","","",""
+"Activity ID","Id","id","18","","","","","","","","","","","","","",""
+"All-Day Event","IsAllDayEvent","boolean","","","","","","","","","","","","","","",""
+"Assigned To ID","OwnerId","reference","18","","","","","","","","Owner","User","","True","","",""
+"Call Duration","CallDurationInSeconds","int","","","","","","","","","","","","True","","",""
+"Call Object Identifier","CallObject","string","255","","","","","","","","","","","True","","",""
+"Call Result","CallDisposition","string","255","","","","","","","","","","","True","","",""
+"Call Type","CallType","picklist","40","","","","Internal
+Inbound
+Outbound
+","","","","","","","True","","",""
+"Closed","IsClosed","boolean","","","","","","","","","","","","","","",""
+"Comments","Description","textarea","32000","","","","","","","","","","","True","","",""
+"Contact/Lead ID","WhoId","reference","18","","","","","","","","Who","Contact","","True","","",""
+"Created By ID","CreatedById","reference","18","","","","","","","","CreatedBy","User","","","","",""
+"Created Date","CreatedDate","datetime","","","","","","","","","","","","","","",""
+"Date","ActivityDate","date","","","","","","","","","","","","True","","",""
+"Deleted","IsDeleted","boolean","","","","","","","","","","","","","","",""
+"Duration","DurationInMinutes","int","","","","","","","","","","","","True","","",""
+"End","EndDateTime","datetime","","","","","","","","","","","","True","","",""
+"High Priority","IsHighPriority","boolean","","","","","","","","","","","","","","",""
+"Last Modified By ID","LastModifiedById","reference","18","","","","","","","","LastModifiedBy","User","","","","",""
+"Last Modified Date","LastModifiedDate","datetime","","","","","","","","","","","","","","",""
+"Location","Location","string","80","","","","","","","","","","","True","","",""
+"Opportunity/Account ID","WhatId","reference","18","","","","","","","","What","Application__c","","True","","",""
+"Priority","Priority","picklist","40","","","","High
+Normal
+Low
+","","","","","","","True","","",""
+"Public","IsVisibleInSelfService","boolean","","","","","","","","","","","","","","",""
+"Reminder Date/Time","ReminderDateTime","datetime","","","","","","","","","","","","True","","",""
+"Reminder Set","IsReminderSet","boolean","","","","","","","","","","","","","","",""
+"Start","StartDateTime","datetime","","","","","","","","","","","","True","","",""
+"Status","Status","picklist","40","","","","Not Started
+In Progress
+Completed
+Waiting on someone else
+Deferred
+","","","","","","","True","","",""
+"Subject","Subject","combobox","80","","","","Call
+Email
+Send Letter
+Send Quote
+Other
+","","","","","","","True","","",""
+"System Modstamp","SystemModstamp","datetime","","","","","","","","","","","","","","",""
+"Task","IsTask","boolean","","","","","","","","","","","","","","",""
+"Type","ActivityType","picklist","40","","","","Call
+Call
+Email
+Email
+Meeting
+Meeting
+Other
+Other
+","","","","","","","True","","",""

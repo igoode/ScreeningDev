@@ -1,0 +1,17 @@
+﻿Label,Name,Type,Length,Unique,Externalid,Precision,Picklistvalues,Calculatedformula,Defaultvalue,Controllername,Relationshipname,Referenceto,Inlinehelptext,Nillable,Createable,Custom,Dependentpicklist
+"Chatter Invitation Id","Id","id","18","","","","","","","","","","","","","",""
+"Created By ID","CreatedById","reference","18","","","","","","","","CreatedBy","User","","","","",""
+"Created Date","CreatedDate","datetime","","","","","","","","","","","","","","",""
+"Invitation Status","Status","picklist","40","","","","Sent
+Accepted
+Canceled
+","","","","","","","","","",""
+"Invited Email","InvitedUserEmail","string","240","","","","","","","","","","","","True","",""
+"Invited Email (Normalized)","InvitedUserEmailNormalized","email","80","","","","","","","","","","","","","",""
+"Inviter User ID","InviterId","reference","18","","","","","","","","","User","","","","",""
+"Last Modified By ID","LastModifiedById","reference","18","","","","","","","","LastModifiedBy","User","","","","",""
+"Modified Date","LastModifiedDate","datetime","","","","","","","","","","","","","","",""
+"Optional Message","OptionalMessage","string","255","","","","","","","","","","","True","True","",""
+"Parent ID","ParentId","reference","18","","","","","","","","","CollaborationInvitation","","True","","",""
+"Shared Entity ID","SharedEntityId","reference","18","","","","","","","","","CollaborationGroup","","","True","",""
+"System Modstamp","SystemModstamp","datetime","","","","","","","","","","","","","","",""

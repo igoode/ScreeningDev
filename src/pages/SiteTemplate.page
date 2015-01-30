@@ -4,15 +4,8 @@
     <apex:stylesheet value="{!URLFOR($Resource.Site, '/css/glyphicons-bootstrap.css')}"/>
     <apex:stylesheet value="{!URLFOR($Resource.Site, '/css/glyphicons.css')}"/>
     <apex:stylesheet value="{!URLFOR($Resource.Site, '/css/site.css')}"/>
-
-    <apex:includeScript value="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"/>
-    <apex:includeScript value="{!URLFOR($Resource.Site, '/js/bootstrap.min.js')}" />
-    <apex:includeScript value="{!URLFOR($Resource.Site, '/js/bootstrap-formhelpers.min.js')}" />
-    <apex:includeScript value="{!URLFOR($Resource.Site, '/js/bootstrap-datepicker.js')}" />
-    <apex:includeScript value="{!URLFOR($Resource.Site, '/js/jqBootstrapValidation.js')}" />
     <apex:stylesheet value="{!URLFOR($Resource.Site, '/css/bootstrap-formhelpers.min.css')}"/>
     <apex:stylesheet value="{!URLFOR($Resource.Site, '/css/datepicker.css')}"/>
-    <!--<apex:includeScript value="{!URLFOR($Resource.Site, '/js/offcanvas.js')}" />-->
     <apex:insert name="title">
       <title>Department for Communities and Social Inclusion - Screening Unit</title>
     </apex:insert>
@@ -39,14 +32,15 @@
         <site:googleAnalyticsTracking />
         <!-- Bootstrap core JavaScript
         ================================================== -->
-        <!-- Placed at the end of the document so the pages load faster 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-        
-        <script src="{!URLFOR($Resource.Site, '/js/bootstrap.min.js')}" />
-        <script src="{!URLFOR($Resource.Site, '/js/offcanvas.js')}"></script>
-        <script src="{!URLFOR($Resource.Site, '/js/jBootValidator.min.js')}"/>-->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <apex:includeScript value="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"/>
+        <apex:includeScript value="{!URLFOR($Resource.Site, '/js/bootstrap.min.js')}" />
+        <apex:includeScript value="{!URLFOR($Resource.Site, '/js/bootstrap-formhelpers.min.js')}" />
+        <apex:includeScript value="{!URLFOR($Resource.Site, '/js/bootstrap-datepicker.js')}" />
+        <apex:includeScript value="{!URLFOR($Resource.Site, '/js/jqBootstrapValidation.js')}" />
+        <apex:includeScript value="{!URLFOR($Resource.Site, '/js/offcanvas.js')}" />
         <apex:insert name="script"/>
-      </apex:insert>
+        </apex:insert>
     </div>
   </div>
 </body>

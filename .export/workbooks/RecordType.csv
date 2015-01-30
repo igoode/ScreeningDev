@@ -1,0 +1,51 @@
+﻿Label,Name,Type,Length,Unique,Externalid,Precision,Picklistvalues,Calculatedformula,Defaultvalue,Controllername,Relationshipname,Referenceto,Inlinehelptext,Nillable,Createable,Custom,Dependentpicklist
+"Active","IsActive","boolean","","","","","","","","","","","","","","",""
+"Business Process ID","BusinessProcessId","reference","18","","","","","","","","","BusinessProcess","","True","True","",""
+"Created By ID","CreatedById","reference","18","","","","","","","","CreatedBy","User","","","","",""
+"Created Date","CreatedDate","datetime","","","","","","","","","","","","","","",""
+"Description","Description","string","255","","","","","","","","","","","True","True","",""
+"Last Modified By ID","LastModifiedById","reference","18","","","","","","","","LastModifiedBy","User","","","","",""
+"Last Modified Date","LastModifiedDate","datetime","","","","","","","","","","","","","","",""
+"Name","Name","string","80","","","","","","","","","","","","True","",""
+"Namespace Prefix","NamespacePrefix","string","15","","","","","","","","","","","True","","",""
+"Record Type ID","Id","id","18","","","","","","","","","","","","","",""
+"Record Type Name","DeveloperName","string","80","","","","","","","","","","","","True","",""
+"Sobject Type Name","SobjectType","picklist","40","","","","Account
+Announcement
+Application__c
+Campaign
+CampaignMember
+Case
+CollaborationFolder
+CollaborationFolderMember
+Contact
+ContentVersion
+Contract
+Event
+Idea
+InboundSocialPost
+Lead
+Macro
+MacroAction
+Opportunity
+Order
+Previous_Address__c
+Previous_Name__c
+Pricebook2
+Product2
+RecordOrigin
+SearchActivity
+SearchPromotionRule
+Solution
+Task
+WorkCoaching
+WorkFeedback
+WorkFeedbackQuestion
+WorkFeedbackQuestionSet
+WorkFeedbackRequest
+WorkGoal
+WorkGoalCollaborator
+WorkGoalLink
+WorkPerformanceCycle
+","","","","","","","","True","",""
+"System Modstamp","SystemModstamp","datetime","","","","","","","","","","","","","","",""

@@ -1,0 +1,26 @@
+﻿Label,Name,Type,Length,Unique,Externalid,Precision,Picklistvalues,Calculatedformula,Defaultvalue,Controllername,Relationshipname,Referenceto,Inlinehelptext,Nillable,Createable,Custom,Dependentpicklist
+"Actor ID","ActorId","reference","18","","","","","","","","Actor","Group","","","","",""
+"Comments","Comments","string","4000","","","","","","","","","","","True","","",""
+"Created By ID","CreatedById","reference","18","","","","","","","","CreatedBy","User","","","","",""
+"Created Date","CreatedDate","datetime","","","","","","","","","","","","","","",""
+"Deleted","IsDeleted","boolean","","","","","","","","","","","","","","",""
+"Elapsed Time in Days","ElapsedTimeInDays","double","","","","18","","","","","","","","True","","",""
+"Elapsed Time in Hours","ElapsedTimeInHours","double","","","","7","","","","","","","","True","","",""
+"Elapsed Time in Minutes","ElapsedTimeInMinutes","double","","","","8","","","","","","","","True","","",""
+"Is Pending","IsPending","boolean","","","","","","","","","","","","","","",""
+"Original Actor ID","OriginalActorId","reference","18","","","","","","","","OriginalActor","Group","","","","",""
+"Process Instance History ID","Id","id","18","","","","","","","","","","","","","",""
+"Process Instance ID","ProcessInstanceId","reference","18","","","","","","","","ProcessInstance","ProcessInstance","","","","",""
+"RemindersSent","RemindersSent","int","","","","","","","","","","","","True","","",""
+"Status","StepStatus","picklist","40","","","","Approved
+Rejected
+Removed
+Fault
+Pending
+Held
+Reassigned
+Started
+NoResponse
+","","","","","","","True","","",""
+"System Modstamp","SystemModstamp","datetime","","","","","","","","","","","","","","",""
+"Target Object ID","TargetObjectId","reference","18","","","","","","","","TargetObject","Account","","True","","",""

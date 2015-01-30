@@ -1,0 +1,26 @@
+﻿Label,Name,Type,Length,Unique,Externalid,Precision,Picklistvalues,Calculatedformula,Defaultvalue,Controllername,Relationshipname,Referenceto,Inlinehelptext,Nillable,Createable,Custom,Dependentpicklist
+"Closed","IsClosed","boolean","","","","","","","","","","","","","","",""
+"Created By ID","CreatedById","reference","18","","","","","","","","CreatedBy","User","","","","",""
+"Created Date","CreatedDate","datetime","","","","","","","","","","","","","","",""
+"Description","Description","string","255","","","","","","","","","","","True","","",""
+"Forecast Category","ForecastCategory","picklist","40","","","","Omitted
+Pipeline
+BestCase
+Forecast
+Closed
+","","","","","","","","","",""
+"Forecast Category Name","ForecastCategoryName","picklist","40","","","","Omitted
+Pipeline
+Best Case
+Commit
+Closed
+","","","","","","","","","",""
+"Is Active","IsActive","boolean","","","","","","","","","","","","","","",""
+"Last Modified By ID","LastModifiedById","reference","18","","","","","","","","LastModifiedBy","User","","","","",""
+"Last Modified Date","LastModifiedDate","datetime","","","","","","","","","","","","","","",""
+"Master Label","MasterLabel","string","255","","","","","","","","","","","True","","",""
+"Opportunity Stage ID","Id","id","18","","","","","","","","","","","","","",""
+"Probability (%)","DefaultProbability","percent","","","","3","","","","","","","","True","","",""
+"Sort Order","SortOrder","int","","","","","","","","","","","","True","","",""
+"System Modstamp","SystemModstamp","datetime","","","","","","","","","","","","","","",""
+"Won","IsWon","boolean","","","","","","","","","","","","","","",""

@@ -1,0 +1,13 @@
+﻿Label,Name,Type,Length,Unique,Externalid,Precision,Picklistvalues,Calculatedformula,Defaultvalue,Controllername,Relationshipname,Referenceto,Inlinehelptext,Nillable,Createable,Custom,Dependentpicklist
+"Created By ID","CreatedById","reference","18","","","","","","","","CreatedBy","User","","","","",""
+"Created Date","CreatedDate","datetime","","","","","","","","","","","","","","",""
+"Deleted","IsDeleted","boolean","","","","","","","","","","","","","","",""
+"Event ID","EventId","reference","18","","","","","","","","Event","Event","","True","","",""
+"Event Relation ID","Id","id","18","","","","","","","","","","","","","",""
+"Last Modified By ID","LastModifiedById","reference","18","","","","","","","","LastModifiedBy","User","","","","",""
+"Last Modified Date","LastModifiedDate","datetime","","","","","","","","","","","","","","",""
+"Relation ID","RelationId","reference","18","","","","","","","","Relation","Contact","","True","","",""
+"Response","Response","string","255","","","","","","","","","","","True","","",""
+"Response Date","RespondedDate","datetime","","","","","","","","","","","","True","","",""
+"System Modstamp","SystemModstamp","datetime","","","","","","","","","","","","","","",""
+"Type","Type","string","50","","","","","","","","","","","True","","",""

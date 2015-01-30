@@ -1,0 +1,44 @@
+﻿Label,Name,Type,Length,Unique,Externalid,Precision,Picklistvalues,Calculatedformula,Defaultvalue,Controllername,Relationshipname,Referenceto,Inlinehelptext,Nillable,Createable,Custom,Dependentpicklist
+"API Version","ApiVersion","double","","","","18","","","","","","","","","","",""
+"Created By ID","CreatedById","reference","18","","","","","","","","CreatedBy","User","","","","",""
+"Created Date","CreatedDate","datetime","","","","","","","","","","","","","","",""
+"Deleted","IsDeleted","boolean","","","","","","","","","","","","","","",""
+"Event Log File ID","Id","id","18","","","","","","","","","","","","","",""
+"Event Type","EventType","picklist","255","","","","API
+ApexCallout
+ApexExecution
+ApexSoap
+ApexTrigger
+AsyncReportRun
+BulkApi
+ChangeSetOperation
+ContentDistribution
+ContentDocumentLink
+ContentTransfer
+Dashboard
+DocumentAttachmentDownloads
+Login
+LoginAs
+Logout
+MetadataApiOperation
+MultiBlockReport
+PackageInstall
+Report
+ReportExport
+RestApi
+Sandbox
+Sites
+TimeBasedWorkflow
+UITracking
+URI
+VisualforceRequest
+","","","","","","","","","",""
+"Last Modified By ID","LastModifiedById","reference","18","","","","","","","","LastModifiedBy","User","","","","",""
+"Last Modified Date","LastModifiedDate","datetime","","","","","","","","","","","","","","",""
+"Log Date","LogDate","datetime","","","","","","","","","","","","","","",""
+"Log File","LogFile","base64","","","","","","","","","","","","","","",""
+"Log File Content Type","LogFileContentType","string","255","","","","","","","","","","","","","",""
+"Log File Field Names","LogFileFieldNames","string","1333","","","","","","","","","","","True","","",""
+"Log File Field Types","LogFileFieldTypes","string","1333","","","","","","","","","","","True","","",""
+"Log File Length","LogFileLength","double","","","","18","","","","","","","","","","",""
+"System Modstamp","SystemModstamp","datetime","","","","","","","","","","","","","","",""

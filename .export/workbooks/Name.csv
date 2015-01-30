@@ -1,0 +1,61 @@
+﻿Label,Name,Type,Length,Unique,Externalid,Precision,Picklistvalues,Calculatedformula,Defaultvalue,Controllername,Relationshipname,Referenceto,Inlinehelptext,Nillable,Createable,Custom,Dependentpicklist
+"Active","IsActive","boolean","","","","","","","","","","","","","","",""
+"Alias","Alias","string","8","","","","","","","","","","","True","","",""
+"E-mail","Email","email","80","","","","","","","","","","","True","","",""
+"First Name","FirstName","string","40","","","","","","","","","","","True","","",""
+"ID","Id","id","18","","","","","","","","","","","","","",""
+"Last Name","LastName","string","80","","","","","","","","","","","True","","",""
+"Last Referenced Date","LastReferencedDate","datetime","","","","","","","","","","","","True","","",""
+"Last Viewed Date","LastViewedDate","datetime","","","","","","","","","","","","True","","",""
+"Name","Name","string","255","","","","","","","","","","","True","","",""
+"Phone","Phone","phone","40","","","","","","","","","","","True","","",""
+"Profile ID","ProfileId","reference","18","","","","","","","","Profile","Profile","","True","","",""
+"Record Type ID","RecordTypeId","reference","18","","","","","","","","RecordType","RecordType","","True","","",""
+"Role ID","UserRoleId","reference","18","","","","","","","","UserRole","UserRole","","True","","",""
+"Title","Title","string","80","","","","","","","","","","","True","","",""
+"Type","Type","picklist","40","","","","Account
+AccountCleanInfo
+AccountContactRole
+Announcement
+Application__c
+Asset
+Campaign
+Case
+CollaborationGroup
+Contact
+ContactCleanInfo
+ContentDistribution
+ContentDocument
+ContentVersion
+Contract
+DandBCompany
+Dashboard
+DashboardComponent
+DatacloudOwnedEntity
+DatacloudPurchaseUsage
+Document
+Event
+Idea
+IdeaComment
+InstalledMobileApp
+Lead
+LeadCleanInfo
+Macro
+Opportunity
+Order
+OrderItem
+Previous_Address__c
+Previous_Name__c
+Pricebook2
+ProcessInstanceNode
+Product2
+Queue
+Report
+SearchPromotionRule
+SelfServiceUser
+Solution
+Task
+Topic
+User
+","","","","","","","True","","",""
+"Username","Username","string","80","","","","","","","","","","","True","","",""

@@ -1,0 +1,10 @@
+﻿Label,Name,Type,Length,Unique,Externalid,Precision,Picklistvalues,Calculatedformula,Defaultvalue,Controllername,Relationshipname,Referenceto,Inlinehelptext,Nillable,Createable,Custom,Dependentpicklist
+"Content Delivery ID","DistributionId","reference","18","","","","","","","","Distribution","ContentDistribution","","","","",""
+"Content Delivery View ID","Id","id","18","","","","","","","","","","","","","",""
+"Content Delivery View ID","ParentViewId","reference","18","","","","","","","","","ContentDistributionView","","True","","",""
+"Created By ID","CreatedById","reference","18","","","","","","","","CreatedBy","User","","","","",""
+"Deleted","IsDeleted","boolean","","","","","","","","","","","","","","",""
+"File Downloaded","IsDownload","boolean","","","","","","","","","","","","","","",""
+"Internal View","IsInternal","boolean","","","","","","","","","","","","","","",""
+"System Modstamp","SystemModstamp","datetime","","","","","","","","","","","","","","",""
+"View Date","CreatedDate","datetime","","","","","","","","","","","","","","",""

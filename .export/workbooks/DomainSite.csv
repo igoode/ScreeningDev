@@ -1,0 +1,10 @@
+﻿Label,Name,Type,Length,Unique,Externalid,Precision,Picklistvalues,Calculatedformula,Defaultvalue,Controllername,Relationshipname,Referenceto,Inlinehelptext,Nillable,Createable,Custom,Dependentpicklist
+"Created By ID","CreatedById","reference","18","","","","","","","","CreatedBy","User","","","","",""
+"Created Date","CreatedDate","datetime","","","","","","","","","","","","","","",""
+"Custom URL ID","Id","id","18","","","","","","","","","","","","","",""
+"Domain ID","DomainId","reference","18","","","","","","","","Domain","Domain","","","","",""
+"Last Modified By ID","LastModifiedById","reference","18","","","","","","","","LastModifiedBy","User","","","","",""
+"Last Modified Date","LastModifiedDate","datetime","","","","","","","","","","","","","","",""
+"Path","PathPrefix","string","255","","","","","","","","","","","","","",""
+"Site ID","SiteId","reference","18","","","","","","","","Site","Site","","","","",""
+"System Modstamp","SystemModstamp","datetime","","","","","","","","","","","","","","",""

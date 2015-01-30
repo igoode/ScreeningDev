@@ -1,0 +1,64 @@
+﻿Label,Name,Type,Length,Unique,Externalid,Precision,Picklistvalues,Calculatedformula,Defaultvalue,Controllername,Relationshipname,Referenceto,Inlinehelptext,Nillable,Createable,Custom,Dependentpicklist
+"Changed Field","Field","picklist","255","","","","Account
+ActivatedBy
+ActivatedDate
+BillingAddress
+BillingCity
+BillingCountry
+BillingCountryCode
+BillingLatitude
+BillingLongitude
+BillingPostalCode
+BillingState
+BillingStateCode
+BillingStreet
+BillToContact
+CompanyAuthorizedBy
+CompanyAuthorizedDate
+Contract
+created
+CustomerAuthorizedBy
+CustomerAuthorizedDate
+Description
+EffectiveDate
+EndDate
+feedEvent
+Name
+Opportunity
+orderActivated
+orderApproved
+orderCancelled
+orderDeactivated
+orderExpired
+OrderReferenceNumber
+orderSubmitted
+Owner
+ownerAccepted
+ownerAssignment
+PoDate
+PoNumber
+Pricebook2
+locked
+unlocked
+ShippingAddress
+ShippingCity
+ShippingCountry
+ShippingCountryCode
+ShippingLatitude
+ShippingLongitude
+ShippingPostalCode
+ShippingState
+ShippingStateCode
+ShippingStreet
+ShipToContact
+Status
+StatusCode
+Type
+","","","","","","","","","",""
+"Created By ID","CreatedById","reference","18","","","","","","","","CreatedBy","User","","","","",""
+"Created Date","CreatedDate","datetime","","","","","","","","","","","","","","",""
+"Deleted","IsDeleted","boolean","","","","","","","","","","","","","","",""
+"New Value","NewValue","anyType","255","","","","","","","","","","","True","","",""
+"Old Value","OldValue","anyType","255","","","","","","","","","","","True","","",""
+"Order History ID","Id","id","18","","","","","","","","","","","","","",""
+"Order ID","OrderId","reference","18","","","","","","","","Order","Order","","","","",""

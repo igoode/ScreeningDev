@@ -1,0 +1,29 @@
+﻿Label,Name,Type,Length,Unique,Externalid,Precision,Picklistvalues,Calculatedformula,Defaultvalue,Controllername,Relationshipname,Referenceto,Inlinehelptext,Nillable,Createable,Custom,Dependentpicklist
+"Created By ID","CreatedById","reference","18","","","","","","","","CreatedBy","User","","","","",""
+"Created Date","CreatedDate","datetime","","","","","","","","","","","","","","",""
+"Developer Name","DeveloperName","string","80","","","","","","","","","","","True","True","",""
+"Email","Email","email","255","","","","","","","","","","","True","True","",""
+"Group ID","Id","id","18","","","","","","","","","","","","","",""
+"Include Bosses","DoesIncludeBosses","boolean","","","","","","","","","","","","","True","",""
+"Last Modified By ID","LastModifiedById","reference","18","","","","","","","","LastModifiedBy","User","","","","",""
+"Last Modified Date","LastModifiedDate","datetime","","","","","","","","","","","","","","",""
+"Name","Name","string","40","","","","","","","","","","","","True","",""
+"Owner ID","OwnerId","reference","18","","","","","","","","Owner","Organization","","","","",""
+"Related ID","RelatedId","reference","18","","","","","","","","","User","","True","","",""
+"Send Email to Members","DoesSendEmailToMembers","boolean","","","","","","","","","","","","","True","",""
+"System Modstamp","SystemModstamp","datetime","","","","","","","","","","","","","","",""
+"Type","Type","picklist","40","","","","AllCustomerPortal
+CollaborationGroup
+Manager
+ManagerAndSubordinatesInternal
+Organization
+PRMOrganization
+Queue
+Regular
+Role
+RoleAndSubordinates
+RoleAndSubordinatesInternal
+SharingRuleGroup
+Territory
+TerritoryAndSubordinates
+","","","","","","","","True","",""

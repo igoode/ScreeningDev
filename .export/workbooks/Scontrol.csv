@@ -1,0 +1,31 @@
+﻿Label,Name,Type,Length,Unique,Externalid,Precision,Picklistvalues,Calculatedformula,Defaultvalue,Controllername,Relationshipname,Referenceto,Inlinehelptext,Nillable,Createable,Custom,Dependentpicklist
+"Binary","Binary","base64","","","","","","","","","","","","True","","",""
+"Binary Length","BodyLength","int","","","","","","","","","","","","","","",""
+"Created By ID","CreatedById","reference","18","","","","","","","","CreatedBy","User","","","","",""
+"Created Date","CreatedDate","datetime","","","","","","","","","","","","","","",""
+"Custom S-Control ID","Id","id","18","","","","","","","","","","","","","",""
+"Description","Description","string","255","","","","","","","","","","","True","","",""
+"Encoding","EncodingKey","picklist","40","","","","UTF-8
+ISO-8859-1
+Shift_JIS
+ISO-2022-JP
+EUC-JP
+ks_c_5601-1987
+Big5
+GB2312
+Big5-HKSCS
+x-SJIS_0213
+","","","","","","","","","",""
+"Filename","Filename","string","255","","","","","","","","","","","True","","",""
+"HTML Body","HtmlWrapper","textarea","1048576","","","","","","","","","","","","","",""
+"Label","Name","string","80","","","","","","","","","","","","","",""
+"Last Modified By ID","LastModifiedById","reference","18","","","","","","","","LastModifiedBy","User","","","","",""
+"Last Modified Date","LastModifiedDate","datetime","","","","","","","","","","","","","","",""
+"Namespace Prefix","NamespacePrefix","string","15","","","","","","","","","","","True","","",""
+"Prebuild In Page","SupportsCaching","boolean","","","","","","","","","","","","","","",""
+"S-Control Name","DeveloperName","string","80","","","","","","","","","","","","","",""
+"System Modstamp","SystemModstamp","datetime","","","","","","","","","","","","","","",""
+"Type","ContentSource","picklist","40","","","","HTML
+URL
+Snippet
+","","","","","","","True","","",""

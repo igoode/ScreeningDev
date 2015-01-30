@@ -1,0 +1,31 @@
+﻿Label,Name,Type,Length,Unique,Externalid,Precision,Picklistvalues,Calculatedformula,Defaultvalue,Controllername,Relationshipname,Referenceto,Inlinehelptext,Nillable,Createable,Custom,Dependentpicklist
+"Agent Key","AgentKey","string","255","","","","","","","","","","","True","","",""
+"Created By ID","CreatedById","reference","18","","","","","","","","CreatedBy","User","","","","",""
+"Created Date","CreatedDate","datetime","","","","","","","","","","","","","","",""
+"Deleted","IsDeleted","boolean","","","","","","","","","","","","","","",""
+"Label","MasterLabel","string","80","","","","","","","","","","","","","",""
+"Last Modified By ID","LastModifiedById","reference","18","","","","","","","","LastModifiedBy","User","","","","",""
+"Last Modified Date","LastModifiedDate","datetime","","","","","","","","","","","","","","",""
+"Master Language","Language","picklist","40","","","","en_US
+de
+es
+fr
+it
+ja
+sv
+ko
+zh_TW
+zh_CN
+pt_BR
+nl_NL
+da
+th
+fi
+ru
+es_MX
+no
+","","","","","","","","","",""
+"Name","DeveloperName","string","80","","","","","","","","","","","","","",""
+"Secure Agent ID","Id","id","18","","","","","","","","","","","","","",""
+"System Modstamp","SystemModstamp","datetime","","","","","","","","","","","","","","",""
+"User ID","ProxyUserId","reference","18","","","","","","","","ProxyUser","User","","True","","",""

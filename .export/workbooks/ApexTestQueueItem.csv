@@ -1,0 +1,16 @@
+﻿Label,Name,Type,Length,Unique,Externalid,Precision,Picklistvalues,Calculatedformula,Defaultvalue,Controllername,Relationshipname,Referenceto,Inlinehelptext,Nillable,Createable,Custom,Dependentpicklist
+"Apex Job ID","ParentJobId","reference","18","","","","","","","","","AsyncApexJob","","True","","",""
+"Apex Test Queue Item ID","Id","id","18","","","","","","","","","","","","","",""
+"Class ID","ApexClassId","reference","18","","","","","","","","ApexClass","ApexClass","","","True","",""
+"Created By ID","CreatedById","reference","18","","","","","","","","CreatedBy","User","","","","",""
+"Created Date","CreatedDate","datetime","","","","","","","","","","","","","","",""
+"Status","Status","picklist","40","","","","Queued
+Processing
+Aborted
+Completed
+Failed
+Preparing
+Holding
+","","","","","","","","","",""
+"Status Detail","ExtendedStatus","string","1000","","","","","","","","","","","True","","",""
+"System Modstamp","SystemModstamp","datetime","","","","","","","","","","","","","","",""

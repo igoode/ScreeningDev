@@ -1,0 +1,56 @@
+﻿Label,Name,Type,Length,Unique,Externalid,Precision,Picklistvalues,Calculatedformula,Defaultvalue,Controllername,Relationshipname,Referenceto,Inlinehelptext,Nillable,Createable,Custom,Dependentpicklist
+"Changed Field","Field","picklist","255","","","","Aboriginal_or_Torres_Strait_Islander__c
+Application_Type__c
+Consent_to_obtain_personal_information__c
+Contact__c
+Country_of_Birth__c
+created
+Current_First_Name__c
+Current_Last_Name__c
+Current_Middle_Names__c
+Current_Postal_Address__c
+Current_Postal_Postcode__c
+Current_Postal_State__c
+Current_Postal_Suburb__c
+Date_of_Birth__c
+Declaration_1__c
+Declaration_2__c
+Declaration_3__c
+Declaration_4__c
+Declaration_5__c
+Declaration_6__c
+Declaration_7__c
+Declaration_8__c
+Declaration_9__c
+Email_Address__c
+feedEvent
+Gender__c
+Name
+Owner
+ownerAccepted
+ownerAssignment
+Period_of_Residence_From__c
+Period_of_Residence_To__c
+Postcode__c
+locked
+RecordType
+unlocked
+State__c
+State_Territory_of_Birth__c
+Street_Name__c
+Street_No__c
+Suburb_Town__c
+Telephone_H__c
+Telephone_M__c
+Telephone_W__c
+Title__c
+Town_City_of_Birth__c
+Unit_No__c
+","","","","","","","","","",""
+"Created By ID","CreatedById","reference","18","","","","","","","","CreatedBy","User","","","","",""
+"Created Date","CreatedDate","datetime","","","","","","","","","","","","","","",""
+"Deleted","IsDeleted","boolean","","","","","","","","","","","","","","",""
+"Entity History ID","Id","id","18","","","","","","","","","","","","","",""
+"New Value","NewValue","anyType","255","","","","","","","","","","","True","","",""
+"Old Value","OldValue","anyType","255","","","","","","","","","","","True","","",""
+"Parent ID","ParentId","reference","18","","","","","","","","Parent","Application__c","","","","",""

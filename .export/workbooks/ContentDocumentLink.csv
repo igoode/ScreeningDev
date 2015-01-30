@@ -1,0 +1,14 @@
+﻿Label,Name,Type,Length,Unique,Externalid,Precision,Picklistvalues,Calculatedformula,Defaultvalue,Controllername,Relationshipname,Referenceto,Inlinehelptext,Nillable,Createable,Custom,Dependentpicklist
+"ContentDocument ID","ContentDocumentId","reference","18","","","","","","","","ContentDocument","ContentDocument","","","True","",""
+"ContentDocumentLink ID","Id","id","18","","","","","","","","","","","","","",""
+"Is Deleted","IsDeleted","boolean","","","","","","","","","","","","","","",""
+"Linked Entity ID","LinkedEntityId","reference","18","","","","","","","","LinkedEntity","Account","","","True","",""
+"Share Type","ShareType","picklist","40","","","","V
+C
+I
+","","","","","","","True","True","",""
+"System Modstamp","SystemModstamp","datetime","","","","","","","","","","","","","","",""
+"Visibility","Visibility","picklist","40","","","","AllUsers
+InternalUsers
+SharedUsers
+","","","","","","","True","True","",""

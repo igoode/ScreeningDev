@@ -1,0 +1,66 @@
+﻿Label,Name,Type,Length,Unique,Externalid,Precision,Picklistvalues,Calculatedformula,Defaultvalue,Controllername,Relationshipname,Referenceto,Inlinehelptext,Nillable,Createable,Custom,Dependentpicklist
+"Changed Field","Field","picklist","255","","","","siteActive
+Admin
+AnalyticsTrackingCode
+siteOverride401
+siteOverrideChangePassword
+ClickjackProtectionLevel
+created
+SiteDeleteDomain
+siteNewDomain
+DefaultDomain
+siteSetPrimaryDomain
+Description
+siteBTDisabled
+siteEnableFeeds
+siteAllowStandardAnswersPages
+siteAllowHomePage
+siteAllowStandardIdeasPages
+siteAllowStandardSearch
+siteAllowStandardLookups
+FavoriteIcon
+feedEvent
+siteOverride500
+GuestUser
+Guid
+siteOverrideInactive
+IndexPage
+Language
+siteOverride509
+siteOverride503
+MasterLabel
+sitePageLimitExceeded
+siteOverrideMyProfile
+Name
+NewPassTemplate
+NewUserTemplate
+Options
+ownerAccepted
+ownerAssignment
+siteOverride404
+Portal
+locked
+unlocked
+siteNewRedirect
+siteDeleteRedirect
+siteChangeRedirect
+siteRequireInsecurePortalAccess
+siteRequireHttps
+siteOverrideSelfReg
+ServerIsDown
+siteOverrideRobotsTxt
+siteOverrideTemplate
+SiteType
+Status
+Subdomain
+TopLevelDomain
+UrlPathPrefix
+UrlRewriterClass
+","","","","","","","","","",""
+"Created By ID","CreatedById","reference","18","","","","","","","","CreatedBy","User","","","","",""
+"Created Date","CreatedDate","datetime","","","","","","","","","","","","","","",""
+"Custom Site ID","Id","id","18","","","","","","","","","","","","","",""
+"Deleted","IsDeleted","boolean","","","","","","","","","","","","","","",""
+"New Value","NewValue","anyType","255","","","","","","","","","","","True","","",""
+"Old Value","OldValue","anyType","255","","","","","","","","","","","True","","",""
+"Site ID","SiteId","reference","18","","","","","","","","Site","Site","","","","",""

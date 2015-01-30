@@ -1,0 +1,174 @@
+﻿Label,Name,Type,Length,Unique,Externalid,Precision,Picklistvalues,Calculatedformula,Defaultvalue,Controllername,Relationshipname,Referenceto,Inlinehelptext,Nillable,Createable,Custom,Dependentpicklist
+"Account ID","AccountId","reference","18","","","","","","","","Account","Account","","True","","",""
+"Activity ID","Id","id","18","","","","","","","","","","","","","",""
+"All-Day Event","IsAllDayEvent","boolean","","","","","","","","","","","","","True","",""
+"Archived","IsArchived","boolean","","","","","","","","","","","","","","",""
+"Assigned To ID","OwnerId","reference","18","","","","","","","","Owner","User","","","True","",""
+"Contact/Lead ID","WhoId","reference","18","","","","","","","","Who","Contact","","True","True","",""
+"Create Recurring Series of Events","IsRecurrence","boolean","","","","","","","","","","","","","True","",""
+"Created By ID","CreatedById","reference","18","","","","","","","","CreatedBy","User","","","","",""
+"Created Date","CreatedDate","datetime","","","","","","","","","","","","","","",""
+"Deleted","IsDeleted","boolean","","","","","","","","","","","","","","",""
+"Description","Description","textarea","32000","","","","","","","","","","","True","True","",""
+"Due Date Only","ActivityDate","date","","","","","","","","","","","","True","True","",""
+"Due Date Time","ActivityDateTime","datetime","","","","","","","","","","","","True","True","",""
+"Duration","DurationInMinutes","int","","","","","","","","","","","","True","True","",""
+"End Date","RecurrenceEndDateOnly","date","","","","","","","","","","","","True","True","",""
+"End Date Time","EndDateTime","datetime","","","","","","","","","","","","True","True","",""
+"Group Event Type","GroupEventType","picklist","40","","","","0
+1
+2
+","","","","","","","True","","",""
+"Is Child","IsChild","boolean","","","","","","","","","","","","","","",""
+"Is Group Event","IsGroupEvent","boolean","","","","","","","","","","","","","","",""
+"Last Modified By ID","LastModifiedById","reference","18","","","","","","","","LastModifiedBy","User","","","","",""
+"Last Modified Date","LastModifiedDate","datetime","","","","","","","","","","","","","","",""
+"Location","Location","string","255","","","","","","","","","","","True","True","",""
+"Opportunity/Account ID","WhatId","reference","18","","","","","","","","What","Account","","True","True","",""
+"Private","IsPrivate","boolean","","","","","","","","","","","","","True","",""
+"Recurrence Activity ID","RecurrenceActivityId","reference","18","","","","","","","","","Event","","True","","",""
+"Recurrence Day of Month","RecurrenceDayOfMonth","int","","","","","","","","","","","","True","True","",""
+"Recurrence Day of Week Mask","RecurrenceDayOfWeekMask","int","","","","","","","","","","","","True","True","",""
+"Recurrence Instance","RecurrenceInstance","picklist","40","","","","First
+Second
+Third
+Fourth
+Last
+","","","","","","","True","True","",""
+"Recurrence Interval","RecurrenceInterval","int","","","","","","","","","","","","True","True","",""
+"Recurrence Month of Year","RecurrenceMonthOfYear","picklist","40","","","","January
+February
+March
+April
+May
+June
+July
+August
+September
+October
+November
+December
+","","","","","","","True","True","",""
+"Recurrence Time Zone","RecurrenceTimeZoneSidKey","picklist","40","","","","Pacific/Kiritimati
+Pacific/Chatham
+Pacific/Auckland
+Pacific/Enderbury
+Pacific/Tongatapu
+Asia/Kamchatka
+Pacific/Fiji
+Pacific/Norfolk
+Australia/Lord_Howe
+Australia/Sydney
+Pacific/Guadalcanal
+Australia/Adelaide
+Australia/Brisbane
+Australia/Darwin
+Asia/Seoul
+Asia/Tokyo
+Asia/Hong_Kong
+Asia/Kuala_Lumpur
+Asia/Manila
+Asia/Shanghai
+Asia/Singapore
+Asia/Taipei
+Australia/Perth
+Asia/Bangkok
+Asia/Ho_Chi_Minh
+Asia/Jakarta
+Asia/Rangoon
+Asia/Dhaka
+Asia/Kathmandu
+Asia/Colombo
+Asia/Kolkata
+Asia/Karachi
+Asia/Tashkent
+Asia/Yekaterinburg
+Asia/Kabul
+Asia/Baku
+Asia/Dubai
+Asia/Tbilisi
+Asia/Yerevan
+Asia/Tehran
+Africa/Nairobi
+Asia/Baghdad
+Asia/Kuwait
+Asia/Riyadh
+Europe/Minsk
+Europe/Moscow
+Africa/Cairo
+Africa/Johannesburg
+Asia/Beirut
+Asia/Jerusalem
+Europe/Athens
+Europe/Bucharest
+Europe/Helsinki
+Europe/Istanbul
+Africa/Algiers
+Europe/Amsterdam
+Europe/Berlin
+Europe/Brussels
+Europe/Paris
+Europe/Prague
+Europe/Rome
+Africa/Casablanca
+Europe/Dublin
+Europe/Lisbon
+Europe/London
+GMT
+America/Scoresbysund
+Atlantic/Azores
+Atlantic/Cape_Verde
+America/Sao_Paulo
+Atlantic/South_Georgia
+America/Argentina/Buenos_Aires
+America/Santiago
+America/St_Johns
+America/Halifax
+America/Puerto_Rico
+Atlantic/Bermuda
+America/Caracas
+America/Bogota
+America/Indiana/Indianapolis
+America/Lima
+America/New_York
+America/Panama
+America/Chicago
+America/El_Salvador
+America/Mexico_City
+America/Denver
+America/Mazatlan
+America/Phoenix
+America/Los_Angeles
+America/Tijuana
+Pacific/Pitcairn
+America/Anchorage
+Pacific/Gambier
+Pacific/Marquesas
+America/Adak
+Pacific/Honolulu
+Pacific/Niue
+Pacific/Pago_Pago
+","","","","","","","True","True","",""
+"Recurrence Type","RecurrenceType","picklist","40","","","","RecursDaily
+RecursEveryWeekday
+RecursMonthly
+RecursMonthlyNth
+RecursWeekly
+RecursYearly
+RecursYearlyNth
+","","","","","","","True","True","",""
+"Reminder Date/Time","ReminderDateTime","datetime","","","","","","","","","","","","True","True","",""
+"Reminder Set","IsReminderSet","boolean","","","","","","","","","","","","","True","",""
+"Show Time As","ShowAs","picklist","40","","","","Busy
+OutOfOffice
+Free
+","","","","","","","True","True","",""
+"Start Date","RecurrenceStartDateTime","datetime","","","","","","","","","","","","True","True","",""
+"Start Date Time","StartDateTime","datetime","","","","","","","","","","","","True","True","",""
+"Subject","Subject","combobox","255","","","","Call
+Email
+Meeting
+Send Letter/Quote
+Other
+","","","","","","","True","True","",""
+"System Modstamp","SystemModstamp","datetime","","","","","","","","","","","","","","",""

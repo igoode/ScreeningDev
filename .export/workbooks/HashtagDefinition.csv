@@ -1,0 +1,7 @@
+﻿Label,Name,Type,Length,Unique,Externalid,Precision,Picklistvalues,Calculatedformula,Defaultvalue,Controllername,Relationshipname,Referenceto,Inlinehelptext,Nillable,Createable,Custom,Dependentpicklist
+"Created Date","CreatedDate","datetime","","","","","","","","","","","","","","",""
+"Hashtag Count","HashtagCount","int","","","","","","","","","","","","True","","",""
+"Hashtag Definition ID","Id","id","18","","","","","","","","","","","","","",""
+"Hashtag Text","Name","string","765","","","","","","","","","","","True","","",""
+"Normalized Hashtag Text","NameNorm","string","765","","","","","","","","","","","True","","",""
+"System Modstamp","SystemModstamp","datetime","","","","","","","","","","","","","","",""

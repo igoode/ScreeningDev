@@ -1,0 +1,38 @@
+﻿Label,Name,Type,Length,Unique,Externalid,Precision,Picklistvalues,Calculatedformula,Defaultvalue,Controllername,Relationshipname,Referenceto,Inlinehelptext,Nillable,Createable,Custom,Dependentpicklist
+"Analytics Tracking Code","AnalyticsTrackingCode","string","40","","","","","","","","","","","True","","",""
+"Clickjack Protection Level","ClickjackProtectionLevel","picklist","40","","","","AllowAllFraming
+SameOriginOnly
+NoFraming
+","","","","","","","","","",""
+"Created By ID","CreatedById","reference","18","","","","","","","","CreatedBy","User","","","","",""
+"Created Date","CreatedDate","datetime","","","","","","","","","","","","","","",""
+"Daily Bandwidth Limit (MB)","DailyBandwidthLimit","int","","","","","","","","","","","","True","","",""
+"Daily Bandwidth Used","DailyBandwidthUsed","int","","","","","","","","","","","","True","","",""
+"Daily Request Time Limit (min)","DailyRequestTimeLimit","int","","","","","","","","","","","","True","","",""
+"Daily Request Time Used","DailyRequestTimeUsed","int","","","","","","","","","","","","True","","",""
+"Default Web Address","UrlPathPrefix","string","40","","","","","","","","","","","True","","",""
+"Enable Feeds","OptionsEnableFeeds","boolean","","","","","","","","","","","","","","",""
+"Enable Standard Answers Pages","OptionsAllowStandardAnswersPages","boolean","","","","","","","","","","","","","","",""
+"Enable Standard Home Page","OptionsAllowHomePage","boolean","","","","","","","","","","","","","","",""
+"Enable Standard Ideas Pages","OptionsAllowStandardIdeasPages","boolean","","","","","","","","","","","","","","",""
+"Enable Standard Lookup Pages","OptionsAllowStandardSearch","boolean","","","","","","","","","","","","","","",""
+"Enable Standard Search Pages","OptionsAllowStandardLookups","boolean","","","","","","","","","","","","","","",""
+"Last Modified By ID","LastModifiedById","reference","18","","","","","","","","LastModifiedBy","User","","","","",""
+"Last Modified Date","LastModifiedDate","datetime","","","","","","","","","","","","","","",""
+"Monthly Page Views Allowed","MonthlyPageViewsEntitlement","int","","","","","","","","","","","","True","","",""
+"Require Secure Connections (HTTPS)","OptionsRequireHttps","boolean","","","","","","","","","","","","","","",""
+"Site Description","Description","textarea","1000","","","","","","","","","","","True","","",""
+"Site ID","Id","id","18","","","","","","","","","","","","","",""
+"Site Label","MasterLabel","string","255","","","","","","","","","","","","","",""
+"Site Name","Name","string","80","","","","","","","","","","","","","",""
+"Site Status","Status","picklist","40","","","","Active
+Inactive
+","","","","","","","","","",""
+"Site Subdomain Prefix","Subdomain","string","80","","","","","","","","","","","True","","",""
+"Site Type","SiteType","picklist","40","","","","Siteforce
+Visualforce
+User
+","","","","","","","","","",""
+"System Modstamp","SystemModstamp","datetime","","","","","","","","","","","","","","",""
+"User ID","GuestUserId","reference","18","","","","","","","","GuestUser","User","","True","","",""
+"User ID","AdminId","reference","18","","","","","","","","Admin","User","","","","",""

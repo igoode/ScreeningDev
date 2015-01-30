@@ -1,0 +1,50 @@
+﻿Label,Name,Type,Length,Unique,Externalid,Precision,Picklistvalues,Calculatedformula,Defaultvalue,Controllername,Relationshipname,Referenceto,Inlinehelptext,Nillable,Createable,Custom,Dependentpicklist
+"Changed Field","Field","picklist","255","","","","AvgRating
+ContentModifiedBy
+ContentModifiedDate
+ContentUrl
+created
+Description
+ExternalDataSource
+ExternalDocumentInfo1
+ExternalDocumentInfo2
+FeaturedContentBoost
+FeaturedContentDate
+feedEvent
+FileType
+FirstPublishLocation
+IsMajorVersion
+IsPublic
+Language
+MaxRating
+MinRating
+NegativeRatingCount
+Owner
+ownerAccepted
+ownerAssignment
+PositiveRatingCount
+PublishStatus
+RatingCount
+ReasonForChange
+locked
+unlocked
+Reference
+SuggestedTags
+Title
+contentVersionCommented
+contentVersionCreated
+contentVersionDataReplaced
+contentVersionDeleted
+contentVersionDownloaded
+VersionNumber
+contentVersionRated
+contentVersionUpdated
+contentVersionViewed
+","","","","","","","","","",""
+"Content Version ID","Id","id","18","","","","","","","","","","","","","",""
+"ContentVersion ID","ContentVersionId","reference","18","","","","","","","","ContentVersion","ContentVersion","","","","",""
+"Created By ID","CreatedById","reference","18","","","","","","","","CreatedBy","User","","","","",""
+"Created Date","CreatedDate","datetime","","","","","","","","","","","","","","",""
+"Deleted","IsDeleted","boolean","","","","","","","","","","","","","","",""
+"New Value","NewValue","anyType","255","","","","","","","","","","","True","","",""
+"Old Value","OldValue","anyType","255","","","","","","","","","","","True","","",""

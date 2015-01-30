@@ -1,0 +1,7 @@
+﻿Label,Name,Type,Length,Unique,Externalid,Precision,Picklistvalues,Calculatedformula,Defaultvalue,Controllername,Relationshipname,Referenceto,Inlinehelptext,Nillable,Createable,Custom,Dependentpicklist
+"License Def. ID","LicenseDefinitionKey","string","40","","","","","","","","","","","","","",""
+"Monthly Logins Allotted","MonthlyLoginsEntitlement","int","","","","","","","","","","","","True","","",""
+"Monthly Logins Used","MonthlyLoginsUsed","int","","","","","","","","","","","","True","","",""
+"Name","Name","string","40","","","","","","","","","","","","","",""
+"System Modstamp","SystemModstamp","datetime","","","","","","","","","","","","","","",""
+"User License ID","Id","id","18","","","","","","","","","","","","","",""

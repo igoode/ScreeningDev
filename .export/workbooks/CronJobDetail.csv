@@ -1,0 +1,11 @@
+﻿Label,Name,Type,Length,Unique,Externalid,Precision,Picklistvalues,Calculatedformula,Defaultvalue,Controllername,Relationshipname,Referenceto,Inlinehelptext,Nillable,Createable,Custom,Dependentpicklist
+"Job ID","Id","id","18","","","","","","","","","","","","","",""
+"Job Name","Name","string","255","","","","","","","","","","","","","",""
+"Type","JobType","picklist","40","","","","1
+3
+4
+7
+8
+9
+A
+","","","","","","","True","","",""

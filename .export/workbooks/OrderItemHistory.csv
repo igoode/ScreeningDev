@@ -1,0 +1,20 @@
+﻿Label,Name,Type,Length,Unique,Externalid,Precision,Picklistvalues,Calculatedformula,Defaultvalue,Controllername,Relationshipname,Referenceto,Inlinehelptext,Nillable,Createable,Custom,Dependentpicklist
+"Changed Field","Field","picklist","255","","","","created
+Description
+EndDate
+feedEvent
+ownerAccepted
+ownerAssignment
+Quantity
+locked
+unlocked
+ServiceDate
+UnitPrice
+","","","","","","","","","",""
+"Created By ID","CreatedById","reference","18","","","","","","","","CreatedBy","User","","","","",""
+"Created Date","CreatedDate","datetime","","","","","","","","","","","","","","",""
+"Deleted","IsDeleted","boolean","","","","","","","","","","","","","","",""
+"New Value","NewValue","anyType","255","","","","","","","","","","","True","","",""
+"Old Value","OldValue","anyType","255","","","","","","","","","","","True","","",""
+"Order Product History ID","Id","id","18","","","","","","","","","","","","","",""
+"Order Product ID","OrderItemId","reference","18","","","","","","","","OrderItem","OrderItem","","","","",""

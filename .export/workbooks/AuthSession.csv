@@ -1,0 +1,24 @@
+﻿Label,Name,Type,Length,Unique,Externalid,Precision,Picklistvalues,Calculatedformula,Defaultvalue,Controllername,Relationshipname,Referenceto,Inlinehelptext,Nillable,Createable,Custom,Dependentpicklist
+"Auth Session ID","Id","id","18","","","","","","","","","","","","","",""
+"Auth Session ID","ParentId","reference","18","","","","","","","","","AuthSession","","True","","",""
+"Created","CreatedDate","datetime","","","","","","","","","","","","","","",""
+"Login","LoginType","picklist","1","","","","","","","","","","","True","","",""
+"Logout URL","LogoutUrl","string","1500","","","","","","","","","","","True","","",""
+"Session Security Level","SessionSecurityLevel","picklist","40","","","","LOW
+STANDARD
+HIGH_ASSURANCE
+","","","","","","","True","","",""
+"Session Type","SessionType","picklist","40","","","","","","","","","","","True","","",""
+"Source IP","SourceIp","string","39","","","","","","","","","","","","","",""
+"Updated","LastModifiedDate","datetime","","","","","","","","","","","","","","",""
+"User ID","UsersId","reference","18","","","","","","","","Users","User","","True","","",""
+"User Type","UserType","picklist","40","","","","Standard
+PowerPartner
+PowerCustomerSuccess
+CustomerSuccess
+Guest
+CspLitePortal
+CsnOnly
+SelfService
+","","","","","","","","","",""
+"Valid For","NumSecondsValid","int","","","","","","","","","","","","","","",""

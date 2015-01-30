@@ -1,0 +1,7 @@
+﻿Label,Name,Type,Length,Unique,Externalid,Precision,Picklistvalues,Calculatedformula,Defaultvalue,Controllername,Relationshipname,Referenceto,Inlinehelptext,Nillable,Createable,Custom,Dependentpicklist
+"Client Browser ID","Id","id","18","","","","","","","","","","","","","",""
+"Created Date","CreatedDate","datetime","","","","","","","","","","","","","","",""
+"Full User Agent","FullUserAgent","string","1024","","","","","","","","","","","True","","",""
+"Last Update","LastUpdate","datetime","","","","","","","","","","","","True","","",""
+"Proxy Info","ProxyInfo","string","1024","","","","","","","","","","","True","","",""
+"User ID","UsersId","reference","18","","","","","","","","Users","User","","","","",""

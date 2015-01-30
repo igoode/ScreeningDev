@@ -1,0 +1,28 @@
+﻿Label,Name,Type,Length,Unique,Externalid,Precision,Picklistvalues,Calculatedformula,Defaultvalue,Controllername,Relationshipname,Referenceto,Inlinehelptext,Nillable,Createable,Custom,Dependentpicklist
+"Application","Application__c","reference","18","","","","","","","","Application__r","Application__c","","","True","True",""
+"Country","Country__c","string","255","","","","","","","","","","","True","True","True",""
+"Created By ID","CreatedById","reference","18","","","","","","","","CreatedBy","User","","","","",""
+"Created Date","CreatedDate","datetime","","","","","","","","","","","","","","",""
+"Deleted","IsDeleted","boolean","","","","","","","","","","","","","","",""
+"Last Activity Date","LastActivityDate","date","","","","","","","","","","","","True","","",""
+"Last Modified By ID","LastModifiedById","reference","18","","","","","","","","LastModifiedBy","User","","","","",""
+"Last Modified Date","LastModifiedDate","datetime","","","","","","","","","","","","","","",""
+"Period of Residence From","Period_of_Residence_From__c","date","","","","","","","","","","","","True","True","True",""
+"Period of Residence To","Period_of_Residence_To__c","date","","","","","","","","","","","","True","True","True",""
+"Postcode","Postcode__c","string","4","","","","","","","","","","","True","True","True",""
+"Previous Address ID","Name","string","80","","","","","","","","","","","","","",""
+"Record ID","Id","id","18","","","","","","","","","","","","","",""
+"State","State__c","picklist","255","","","","SA
+VIC
+NSW
+QLD
+TAS
+WA
+NT
+ACT
+","","","","","","","True","True","True",""
+"Street Name","Street_Name__c","string","255","","","","","","","","","","","True","True","True",""
+"Street No","Street_No__c","string","20","","","","","","","","","","","True","True","True",""
+"Suburb","Suburb__c","string","255","","","","","","","","","","","True","True","True",""
+"System Modstamp","SystemModstamp","datetime","","","","","","","","","","","","","","",""
+"Unit No","Unit_No__c","string","20","","","","","","","","","","","True","True","True",""

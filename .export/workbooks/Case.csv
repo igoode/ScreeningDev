@@ -1,0 +1,69 @@
+﻿Label,Name,Type,Length,Unique,Externalid,Precision,Picklistvalues,Calculatedformula,Defaultvalue,Controllername,Relationshipname,Referenceto,Inlinehelptext,Nillable,Createable,Custom,Dependentpicklist
+"Account ID","AccountId","reference","18","","","","","","","","Account","Account","","True","True","",""
+"Asset ID","AssetId","reference","18","","","","","","","","Asset","Asset","","True","True","",""
+"Case ID","Id","id","18","","","","","","","","","","","","","",""
+"Case Number","CaseNumber","string","30","","","","","","","","","","","","","",""
+"Case Origin","Origin","picklist","40","","","","Phone
+Email
+Web
+","","","","","","","True","True","",""
+"Case Reason","Reason","picklist","40","","","","Installation
+Equipment Complexity
+Performance
+Breakdown
+Equipment Design
+Feedback
+Other
+","","","","","","","True","True","",""
+"Case Type","Type","picklist","40","","","","Mechanical
+Electrical
+Electronic
+Structural
+Other
+","","","","","","","True","True","",""
+"Closed","IsClosed","boolean","","","","","","","","","","","","","","",""
+"Closed Date","ClosedDate","datetime","","","","","","","","","","","","True","","",""
+"Company","SuppliedCompany","string","80","","","","","","","","","","","True","True","",""
+"Contact ID","ContactId","reference","18","","","","","","","","Contact","Contact","","True","True","",""
+"Created By ID","CreatedById","reference","18","","","","","","","","CreatedBy","User","","","","",""
+"Created Date","CreatedDate","datetime","","","","","","","","","","","","","","",""
+"Deleted","IsDeleted","boolean","","","","","","","","","","","","","","",""
+"Description","Description","textarea","32000","","","","","","","","","","","True","True","",""
+"Email Address","SuppliedEmail","email","80","","","","","","","","","","","True","True","",""
+"Engineering Req Number","EngineeringReqNumber__c","string","12","","","","","","","","","","","True","True","True",""
+"Escalated","IsEscalated","boolean","","","","","","","","","","","","","True","",""
+"Last Modified By ID","LastModifiedById","reference","18","","","","","","","","LastModifiedBy","User","","","","",""
+"Last Modified Date","LastModifiedDate","datetime","","","","","","","","","","","","","","",""
+"Last Referenced Date","LastReferencedDate","datetime","","","","","","","","","","","","True","","",""
+"Last Viewed Date","LastViewedDate","datetime","","","","","","","","","","","","True","","",""
+"Name","SuppliedName","string","80","","","","","","","","","","","True","True","",""
+"Owner ID","OwnerId","reference","18","","","","","","","","Owner","Group","","","True","",""
+"Parent Case ID","ParentId","reference","18","","","","","","","","Parent","Case","","True","True","",""
+"Phone","SuppliedPhone","string","40","","","","","","","","","","","True","True","",""
+"Potential Liability","PotentialLiability__c","picklist","255","","","","No
+Yes
+","","","","","","","True","True","True",""
+"Priority","Priority","picklist","40","","","","High
+Medium
+Low
+","","","","","","","True","True","",""
+"Product","Product__c","picklist","255","","","","GC1040
+GC1060
+GC3020
+GC3040
+GC3060
+GC5020
+GC5040
+GC5060
+GC1020
+","","","","","","","True","True","True",""
+"SLA Violation","SLAViolation__c","picklist","255","","","","No
+Yes
+","","","","","","","True","True","True",""
+"Status","Status","picklist","40","","","","New
+Working
+Escalated
+Closed
+","","","","","","","True","True","",""
+"Subject","Subject","string","255","","","","","","","","","","","True","True","",""
+"System Modstamp","SystemModstamp","datetime","","","","","","","","","","","","","","",""

@@ -1,0 +1,11 @@
+﻿Label,Name,Type,Length,Unique,Externalid,Precision,Picklistvalues,Calculatedformula,Defaultvalue,Controllername,Relationshipname,Referenceto,Inlinehelptext,Nillable,Createable,Custom,Dependentpicklist
+"Access Token","AccessToken","string","255","","","","","","","","","","","True","","",""
+"AppMenuItem ID","AppMenuItemId","reference","18","","","","","","","","AppMenuItem","AppMenuItem","","True","","",""
+"Application Name","AppName","string","255","","","","","","","","","","","True","","",""
+"Created Date","CreatedDate","datetime","","","","","","","","","","","","True","","",""
+"Delete Token","DeleteToken","string","255","","","","","","","","","","","True","","",""
+"Last Used Date","LastUsedDate","datetime","","","","","","","","","","","","True","","",""
+"Oauth Token ID","Id","id","18","","","","","","","","","","","","","",""
+"Request Token","RequestToken","string","255","","","","","","","","","","","True","","",""
+"Use Count","UseCount","int","","","","","","","","","","","","True","","",""
+"User ID","UserId","reference","18","","","","","","","","User","User","","True","","",""

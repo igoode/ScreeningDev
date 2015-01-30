@@ -1,0 +1,17 @@
+﻿Label,Name,Type,Length,Unique,Externalid,Precision,Picklistvalues,Calculatedformula,Defaultvalue,Controllername,Relationshipname,Referenceto,Inlinehelptext,Nillable,Createable,Custom,Dependentpicklist
+"Preference","Preference","picklist","40","","","","57
+58
+91
+92
+93
+94
+96
+97
+98
+99
+100
+","","","","","","","","","",""
+"System Modstamp","SystemModstamp","datetime","","","","","","","","","","","","","","",""
+"User ID","UserId","reference","18","","","","","","","","","User","","","","",""
+"User Preference ID","Id","id","18","","","","","","","","","","","","","",""
+"Value","Value","string","1333","","","","","","","","","","","True","","",""

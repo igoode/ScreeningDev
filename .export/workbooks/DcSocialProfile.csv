@@ -1,0 +1,11 @@
+﻿Label,Name,Type,Length,Unique,Externalid,Precision,Picklistvalues,Calculatedformula,Defaultvalue,Controllername,Relationshipname,Referenceto,Inlinehelptext,Nillable,Createable,Custom,Dependentpicklist
+"BlueTail Master ID","ExternalId","string","255","","","","","","","","","","","True","","",""
+"City","City","string","255","","","","","","","","","","","True","","",""
+"Company Name","CompanyName","string","255","","","","","","","","","","","","","",""
+"Country","Country","string","255","","","","","","","","","","","True","","",""
+"Data.com Contact ID","ContactId","string","25","","","","","","","","","","","True","","",""
+"Email","Email","email","80","","","","","","","","","","","True","","",""
+"First Name","FirstName","string","255","","","","","","","","","","","True","","",""
+"Last Name","LastName","string","255","","","","","","","","","","","True","","",""
+"State","State","string","255","","","","","","","","","","","True","","",""
+"System ID","Id","id","18","","","","","","","","","","","","","",""

@@ -1,0 +1,17 @@
+﻿Label,Name,Type,Length,Unique,Externalid,Precision,Picklistvalues,Calculatedformula,Defaultvalue,Controllername,Relationshipname,Referenceto,Inlinehelptext,Nillable,Createable,Custom,Dependentpicklist
+"Application","Application","string","64","","","","","","","","","","","","","",""
+"Date","LastModifiedDate","datetime","","","","","","","","","","","","","","",""
+"Duration (ms)","DurationMilliseconds","int","","","","","","","","","","","","","","",""
+"Location","Location","picklist","40","","","","Monitoring
+SystemLog
+HeapDump
+Preserved
+","","","","","","","True","","",""
+"Log ID","Id","id","18","","","","","","","","","","","","","",""
+"Log Size (bytes)","LogLength","int","","","","","","","","","","","","","","",""
+"Log User ID","LogUserId","reference","18","","","","","","","","LogUser","User","","True","","",""
+"Operation","Operation","string","128","","","","","","","","","","","","","",""
+"Request Type","Request","string","16","","","","","","","","","","","","","",""
+"Start Time","StartTime","datetime","","","","","","","","","","","","","","",""
+"Status","Status","string","255","","","","","","","","","","","","","",""
+"System Modstamp","SystemModstamp","datetime","","","","","","","","","","","","","","",""

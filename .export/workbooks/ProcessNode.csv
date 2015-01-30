@@ -1,0 +1,7 @@
+﻿Label,Name,Type,Length,Unique,Externalid,Precision,Picklistvalues,Calculatedformula,Defaultvalue,Controllername,Relationshipname,Referenceto,Inlinehelptext,Nillable,Createable,Custom,Dependentpicklist
+"Approval Process ID","ProcessDefinitionId","reference","18","","","","","","","","ProcessDefinition","ProcessDefinition","","","","",""
+"Description","Description","textarea","1000","","","","","","","","","","","True","","",""
+"Name","Name","string","255","","","","","","","","","","","","","",""
+"Process Node ID","Id","id","18","","","","","","","","","","","","","",""
+"System Modstamp","SystemModstamp","datetime","","","","","","","","","","","","","","",""
+"Unique Name","DeveloperName","string","80","","","","","","","","","","","","","",""
