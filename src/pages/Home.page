@@ -1,4 +1,5 @@
-<apex:page docType="html-5.0" 
+<apex:page controller="ScreeningApplicationController"
+		docType="html-5.0" 
 		standardStylesheets="false" 
 		sidebar="false" 
 		showHeader="false"  
@@ -6,17 +7,20 @@
 		applyBodyTag="false" 
 		cache="true">	
 	<apex:remoteObjects jsNameSpace="RemoteObjectModel">
+	    <apex:remoteObjectModel name="Applicant_Detail__c" 
+	    		jsShorthand="ApplDetail" 
+	        	fields="Id,Name,RecordTypeId,Title__c,Current_Last_Name__c,Current_First_Name__c,Current_Middle_Names__c,Gender__c,Date_of_Birth__c,Town_City_of_Birth__c,State_Territory_of_Birth__c,Country_of_Birth__c,Aboriginal_or_Torres_Strait_Islander__c,Unit_No__c,Street_No__c,Street_Name__c,Suburb_Town__c,State__c,Postcode__c,Period_of_Residence_From__c,Period_of_Residence_To__c,Telephone_H__c,Telephone_W__c,Telephone_M__c,Email_Address__c,Current_Postal_Address__c,Current_Postal_Suburb__c,Current_Postal_State__c,Current_Postal_Postcode__c" />
 	    <apex:remoteObjectModel name="Application__c" 
 	    		jsShorthand="Appl" 
-	        	fields="Id,Name,RecordTypeId,Title__c,Current_Last_Name__c,Current_First_Name__c,Current_Middle_Names__c,Gender__c,Date_of_Birth__c,Town_City_of_Birth__c,State_Territory_of_Birth__c,Country_of_Birth__c,Aboriginal_or_Torres_Strait_Islander__c,Unit_No__c,Street_No__c,Street_Name__c,Suburb_Town__c,State__c,Postcode__c,Period_of_Residence_From__c,Period_of_Residence_To__c,Telephone_H__c,Telephone_W__c,Telephone_M__c,Email_Address__c,Current_Postal_Address__c,Current_Postal_Suburb__c,Current_Postal_State__c,Current_Postal_Postcode__c,Application_Type__c,Declaration_1__c,Declaration_2__c,Declaration_3__c,Declaration_4__c,Declaration_5__c,Declaration_6__c,Declaration_7__c,Declaration_8__c,Declaration_9__c,Consent_to_obtain_personal_information__c" />
-	    <apex:remoteObjectModel name="Previous_Address__c" 
-	    		jsShorthand="PrevAddr" 
+	    		fields="Id,Name,Application_Type__c"/>
+	    <apex:remoteObjectModel name="Previous_Detail__c" 
+	    		jsShorthand="PrevRecord" 
 	        	fields="Id,Name,Unit_No__c,Street_No__c,Street_Name__c,Suburb__c,State__c,Postcode__c,Period_of_Residence_From__c,Period_of_Residence_To__c" />
-	    <apex:remoteObjectModel name="Previous_Name__c" 
+	    <!--<apex:remoteObjectModel name="Previous_Name__c" 
 	    		jsShorthand="PrevName" 
 	        	fields="ID,Name,Application__c,First_and_Middle_Names__c,Last_Name__c" />
 	    <apex:remoteObjectModel name="RecordType" 
-	        	fields="ID,Name" />
+	        	fields="ID,Name" />-->
 	</apex:remoteObjects>  
   	<apex:composition template="SiteTemplate">
   	
@@ -30,7 +34,7 @@
     		{
     			font-weight:bold;
     		}
-	    	.prevName
+	    	.firstName, .prevName
 	    	{
 	    		width:100% !important;
 	    	}
@@ -42,17 +46,52 @@
     	</style>
     	<script>
     		j$(document).ready(function()
-				{  
-		    		j$('.menuGrp a.list-group-item').click(function(e)
-					{
-						j$('.menuGrp a').removeClass('active');
-						j$(this).toggleClass('active');
-						j$('.collapse.in').collapse('hide');
-						var target = j$(this).data('target');
-						j$('#' + target).collapse('show');
+			{  
+	    		j$('.menuGrp a.list-group-item').click(function(e)
+				{
+					j$('.menuGrp a').removeClass('active');
+					j$(this).toggleClass('active');
+					j$('.collapse.in').collapse('hide');
+					var target = j$(this).data('target');
+					j$('#' + target).collapse('show');
 
-					});
 				});
+				getDeclarations();
+			});
+
+			function getDeclarations() 
+			{
+				if(j$('#form5').children().length == 0)
+				{
+			        Visualforce.remoting.Manager.invokeAction(
+			            '{!$RemoteAction.ScreeningApplicationController.getQuestions}',
+			            applicationId, 
+			            'Declaration',
+			            j$('#selApplType').val(), 
+			            function(result, event){
+			                if (event.status) 
+			                {
+			                	for(i=0; i < result.length; i++)			                		
+			                	{
+			                		//alert(result[i]);
+			                		var el = '<div class="form-group"><div><label class="col-sm-1 control-label">' + result[i].Question_Number__c + '</label>';
+			                		el += '</div>' + result[i].Question_Text__c +  '</div>';
+			                		j$('#form5').append(el);
+			                	}
+			                } 
+			                else if (event.type === 'exception') 
+			                {
+			                    alert(event.message);
+			                } 
+			                else 
+			                {
+			                    alert(event.message);
+			                }
+			            }, 
+			            {escape: true}
+			        );
+		        }
+		    }
     	</script>
 	    <!-- Main component for a primary marketing message or call to action -->
 	    <div class="row row-offcanvas row-offcanvas-left main">
@@ -257,18 +296,20 @@
 												</tr>
 											</thead>
 											<tbody>
-												<tr id='prevName0'>
+												<tr id='prevName0' data-sfid="">
 													<td>
 														1
 													</td>
 													<td>
 														<input type="hidden" name='prevNameID0' />
 														<input type="text" name='prevFirstName0'  
-																placeholder='Previous First Name' class="form-control input-md prevName"/>
+																placeholder='Previous First Name' 
+																class="form-control input-md firstName"/>
 													</td>
 													<td>
 														<input type="text" name='prevLastName0' 
-																placeholder='Previous Last Name' class="form-control input-md prevName"/>
+																placeholder='Previous Last Name' 
+																class="form-control input-md prevName"/>
 													</td>
 												</tr>
 							                    <tr id='prevName1'></tr>
@@ -428,7 +469,8 @@
 				            <div id="acc5" class="panel-collapse collapse">
 				                <div class="panel-body">                                                                                    
 							      	<form class="form-horizontal" role="form" id="form5">	
-							      		<div class="form-group">
+										
+							      		<!--<div class="form-group">
 							      			<div>
 							      				<label class="col-sm-1 control-label">1</label>
 							      			</div>
@@ -520,7 +562,7 @@
 									    			next »
 									    		</button>
 								    		</div>								    		
-									  	</div>
+									  	</div>-->
 							      	</form>
 					            </div>
 					        </div>

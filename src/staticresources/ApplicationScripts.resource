@@ -1,3 +1,4 @@
+var applicationDetailId;
 var applicationId;
 var activeCallback;
 j$ = jQuery.noConflict();
@@ -86,7 +87,7 @@ j$(document).ready(function()
 			switch (this.id)
 			{
 				case 'nextBtn1':
-					saveApplication();
+					saveApplicationDetails();					
 					break;		
 				case 'nextBtn2':
 					savePrevNames();
@@ -122,7 +123,7 @@ j$(document).ready(function()
 	});	      		
 });
 
-function saveApplication()
+function saveApplicationDetails()
 {
 	var title = j$("input[name=titleRadioOptions]:checked").val();
 	if(title == 'Other')
@@ -130,8 +131,7 @@ function saveApplication()
 		title = j$("input[name=other_text]").val();
 	}
 	var applDetails = 	{ 
-							Id: applicationId,
-							Application_Type__c: j$("#selApplType option:selected").text(),
+							Id: applicationDetailId,
 							Current_First_Name__c: j$("#firstName").val(), 
 							Current_Last_Name__c: j$("#lastName").val(),
 							Current_Middle_Names__c: j$("#middleName").val(),
@@ -143,6 +143,23 @@ function saveApplication()
 							Country_of_Birth__c: j$("#selBirthCountry option:selected").text(),
 							Aboriginal_or_Torres_Strait_Islander__c: getBooleanRadioValue(j$("input[name=atsiRadioOptions]:checked").val())
 						};
+	var save = new RemoteObjectModel.ApplDetail(applDetails);
+	activeCallback = 'ApplicationDetail';
+	save.upsert(saveCallback); 			
+}
+
+function saveApplication()
+{
+	var title = j$("input[name=titleRadioOptions]:checked").val();
+	if(title == 'Other')
+	{
+		title = j$("input[name=other_text]").val();
+	}
+	var applDetails = 	{ 
+							Id: applicationId,
+							Applicant_Detail__c: applicationDetailId,
+							Application_Type__c: j$('#selApplType').val()
+						};
 	var save = new RemoteObjectModel.Appl(applDetails);
 	activeCallback = 'Application';
 	save.upsert(saveCallback); 			
@@ -151,7 +168,7 @@ function saveApplication()
 function saveContactDetails()
 {
 	var applDetails = 	{ 
-							Id: applicationId,
+							Id: applicationDetailId,
 							Unit_No__c: j$('#form3 input[data-name=Unit_No__c]').val(),
 							Street_No__c: j$('#form3 input[data-name=Street_No__c]').val(),
 							Street_Name__c: j$('#form3 input[data-name=Street_Name__c]').val(),
@@ -168,37 +185,45 @@ function saveContactDetails()
 							Current_Postal_Suburb__c: j$('#inputConPostSurburb').val(),
 							Current_Postal_State__c: j$('#selConPostState option:selected').val(),
 							Current_Postal_Postcode__c: j$('#inputConPostPostcode').val()
-						};	
-	updateApplication('ContactDetail', applDetails);			
+						};
+
+	var save = new RemoteObjectModel.Appl(applDetails);
+	activeCallback = 'ContactDetail';
+	save.upsert(saveCallback); 									
 }
 
 function saveConsent()
 {
 	
-	var applDetails = 	{ 
+	/*var applDetails = 	{ 
 							Id: applicationId,
 							Consent_to_obtain_personal_information__c: getBooleanRadioValue(j$('#form5 input[name=inputConsent]:checked').val())
 						}; 	
-	updateApplication('Consent', applDetails);				
+	updateApplication('Consent', applDetails);*/				
 }
 
 function savePrevNames()
 {
 	j$('#prevNameTbl tr').each(function(index,element)
 		{
-			if(element.id)
+			if(j$(element).find("input").length > 0)
 			{
-				var lastName = j$("[name='prevLastName" + index + "]").val();
+				var lastName = j$(element).find(".prevName").val();
 				if(lastName && lastName.length > 0)
 				{
 					var prevNameDetails = 	{ 
+												Id: j$(element).data('sfID'),
 												Application__c: applicationId,
-												First_and_Middle_Names__c: j$("[name='prevFirstName" + index + "]").val(), 
+												First_and_Middle_Names__c: j$(element).find(".firstName").val(), 
 												Last_Name__c: lastName, 
+												Type__c: 'Name'
 											};		
-					var save = new RemoteObjectModel.PrevName(prevNameDetails);
+					var save = new RemoteObjectModel.PrevRecord(prevNameDetails);
 					activeCallback = 'PrevName';
-					save.upsert(saveCallback);
+					if(applicationId)
+					{
+						save.upsert(saveCallback);
+					}
 				}
 			}  
 		}); 	
@@ -206,7 +231,7 @@ function savePrevNames()
 
 function savePrevAddresses()
 {
-	j$('#prevAddrTbl tr').each(function (index, element)
+	/*j$('#prevAddrTbl tr').each(function (index, element)
 		{
 			var addrDetails = 	{ 
 									Application__c: applicationId,
@@ -218,17 +243,26 @@ function savePrevAddresses()
 									State__c: j$(element).find('select[data-name=State__c] option:selected').val(),
 									Postcode__c:  j$(element).find('input[data-name=Postcode__c]').val(),
 									Period_of_Residence_From__c: getDateObject(j$(element).find('input[data-name=Period_of_Residence_From__c]').val()),
-									Period_of_Residence_To__c: getDateObject(j$(element).find('input[data-name=Period_of_Residence_To__c]').val())
+									Period_of_Residence_To__c: getDateObject(j$(element).find('input[data-name=Period_of_Residence_To__c]').val()),
+									Type__c: 'Address'
 								};
-			var save = new RemoteObjectModel.PrevAddr(addrDetails);
+			var save = new RemoteObjectModel.PrevRecord(addrDetails);
 			activeCallback = 'PrevAddr';
-			save.upsert(saveCallback); 
-		});		
+			if(applicationId)
+			{
+				save.update(saveCallback);
+			}
+			else
+			{
+				save.upsert(saveCallback);
+			}
+		});		*/
+j$('#acc5').collapse('toggle');
 }	
 
 function saveDeclaration()
 {
-	var declDetails = 	{ 
+	/*var declDetails = 	{ 
 							Id: applicationId,
 							Declaration_1__c: getBooleanRadioValue(j$('#form5 input[name=inputDec1]:checked').val()),
 							Declaration_2__c: getBooleanRadioValue(j$('#form5 input[name=inputDec2]:checked').val()),
@@ -240,7 +274,7 @@ function saveDeclaration()
 							Declaration_8__c: getBooleanRadioValue(j$('#form5 input[name=inputDec8]:checked').val()),
 							Declaration_9__c: getBooleanRadioValue(j$('#form5 input[name=inputDec9]:checked').val())									
 						};
-	updateApplication('Declaration', declDetails);	
+	updateApplication('Declaration', declDetails);	*/
 }	
 
 function updateApplication(currentStep, applDetails)
@@ -260,18 +294,24 @@ function saveCallback(err, record, event)
 	j$('.panel-collapse').removeClass('in');
 	switch(activeCallback)
 	{
+		case 'ApplicationDetail':
+			applicationDetailId = record[0];
+			saveApplication();
+			break;
 		case 'Application':
 			j$('#acc2').collapse('toggle');
 			applicationId = record[0];
 			break;
 		case 'PrevName':
 			j$('#acc3').collapse('toggle');
+			return record[0];
 			break;
 		case 'ContactDetail': 
 			j$('#acc4').collapse('toggle');
 			break;
 		case 'PrevAddr':
 			j$('#acc5').collapse('toggle');
+			return record[0];
 			break;
 		case 'Declaration': 
 			j$('#acc6').collapse('toggle');

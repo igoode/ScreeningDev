@@ -1,0 +1,9 @@
+<apex:page controller="ApplicationsController">
+	{!ThisUser.NAme}|{!ThisUser.Account_ID__c}|{!ThisUser.Contact.AccountID}
+	{!Applications.size}<br/>
+	-------------------------------------------------------
+	<br/>
+    <apex:repeat value="{!Applications}" var="a">
+    	{!a.Name}|{!a.Current_Last_Name__c}|{!a.Current_First_Name__c}<br/>
+	</apex:repeat>
+</apex:page>
