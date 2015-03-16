@@ -3,7 +3,7 @@ public class PaymentController
  
 	private final String PAYMENT_URL = 'https://www.bpoint.com.au/evolve/service.asmx';
 	private final String AUTHENTICATION_URL = 'https://www.bpoint.com.au/payconnect/auth.aspx';
-	private final String MERCHANT_NUMBER = '5353165922228100';
+	private final String MERCHANT_NUMBER = '5353109591290903';
 	private final String USERNAME =  'apiuser';//'admin';
 	private final String PASSWORD = 'A36yioU3G2';//'vfCHH685g63';
 

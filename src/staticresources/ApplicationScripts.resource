@@ -1,4 +1,4 @@
-var applicationDetailId;
+var applicantId;
 var applicationId;
 var activeCallback;
 j$ = jQuery.noConflict();
@@ -131,7 +131,8 @@ function saveApplicationDetails()
 		title = j$("input[name=other_text]").val();
 	}
 	var applDetails = 	{ 
-							Id: applicationDetailId,
+							Id: applicantId,
+							Application_Type__c : getApplicationTypes(),
 							Current_First_Name__c: j$("#firstName").val(), 
 							Current_Last_Name__c: j$("#lastName").val(),
 							Current_Middle_Names__c: j$("#middleName").val(),
@@ -144,31 +145,14 @@ function saveApplicationDetails()
 							Aboriginal_or_Torres_Strait_Islander__c: getBooleanRadioValue(j$("input[name=atsiRadioOptions]:checked").val())
 						};
 	var save = new RemoteObjectModel.ApplDetail(applDetails);
-	activeCallback = 'ApplicationDetail';
-	save.upsert(saveCallback); 			
-}
-
-function saveApplication()
-{
-	var title = j$("input[name=titleRadioOptions]:checked").val();
-	if(title == 'Other')
-	{
-		title = j$("input[name=other_text]").val();
-	}
-	var applDetails = 	{ 
-							Id: applicationId,
-							Applicant_Detail__c: applicationDetailId,
-							Application_Type__c: j$('#selApplType').val()
-						};
-	var save = new RemoteObjectModel.Appl(applDetails);
-	activeCallback = 'Application';
+	activeCallback = 'Applicant';
 	save.upsert(saveCallback); 			
 }
 
 function saveContactDetails()
 {
-	var applDetails = 	{ 
-							Id: applicationDetailId,
+	var contactDetails = { 
+							Id: applicantId,
 							Unit_No__c: j$('#form3 input[data-name=Unit_No__c]').val(),
 							Street_No__c: j$('#form3 input[data-name=Street_No__c]').val(),
 							Street_Name__c: j$('#form3 input[data-name=Street_Name__c]').val(),
@@ -187,9 +171,9 @@ function saveContactDetails()
 							Current_Postal_Postcode__c: j$('#inputConPostPostcode').val()
 						};
 
-	var save = new RemoteObjectModel.Appl(applDetails);
+	var save = new RemoteObjectModel.Appl(contactDetails);
 	activeCallback = 'ContactDetail';
-	save.upsert(saveCallback); 									
+	save.upsert(saveCallback); 						
 }
 
 function saveConsent()
@@ -206,24 +190,26 @@ function savePrevNames()
 {
 	j$('#prevNameTbl tr').each(function(index,element)
 		{
+			var i = 0;
 			if(j$(element).find("input").length > 0)
 			{
 				var lastName = j$(element).find(".prevName").val();
 				if(lastName && lastName.length > 0)
 				{
 					var prevNameDetails = 	{ 
-												Id: j$(element).data('sfID'),
-												Application__c: applicationId,
+												Form_Index__c: i,
+												Applicant__c: applicantId,
 												First_and_Middle_Names__c: j$(element).find(".firstName").val(), 
 												Last_Name__c: lastName, 
 												Type__c: 'Name'
 											};		
 					var save = new RemoteObjectModel.PrevRecord(prevNameDetails);
 					activeCallback = 'PrevName';
-					if(applicationId)
+					if(applicantId)
 					{
 						save.upsert(saveCallback);
 					}
+					i++;
 				}
 			}  
 		}); 	
@@ -231,33 +217,35 @@ function savePrevNames()
 
 function savePrevAddresses()
 {
-	/*j$('#prevAddrTbl tr').each(function (index, element)
+	j$('#prevAddrTbl tr').each(function (index, element)
 		{
-			var addrDetails = 	{ 
-									Application__c: applicationId,
-									Unit_No__c: j$(element).find('input[data-name=Unit_No__c]').val(),
-									Street_No__c: j$(element).find('input[data-name=Street_No__c]').val(),
-									Street_Name__c: j$(element).find('input[data-name=Street_Name__c]').val(),
-									Suburb__c: j$(element).find('input[data-name=Suburb__c]').val(),
-									Country__c: j$(element).find('select[data-name=Country__c] option:selected').val(),
-									State__c: j$(element).find('select[data-name=State__c] option:selected').val(),
-									Postcode__c:  j$(element).find('input[data-name=Postcode__c]').val(),
-									Period_of_Residence_From__c: getDateObject(j$(element).find('input[data-name=Period_of_Residence_From__c]').val()),
-									Period_of_Residence_To__c: getDateObject(j$(element).find('input[data-name=Period_of_Residence_To__c]').val()),
-									Type__c: 'Address'
-								};
-			var save = new RemoteObjectModel.PrevRecord(addrDetails);
-			activeCallback = 'PrevAddr';
-			if(applicationId)
+			var i = 0;
+			if(j$(element).find("input").length > 0)
 			{
-				save.update(saveCallback);
+				var addrDetails = 	{ 
+										Form_Index__c: i,
+										Applicant__c: applicantId,
+										Unit_No__c: j$(element).find('input[data-name=Unit_No__c]').val(),
+										Street_No__c: j$(element).find('input[data-name=Street_No__c]').val(),
+										Street_Name__c: j$(element).find('input[data-name=Street_Name__c]').val(),
+										Suburb__c: j$(element).find('input[data-name=Suburb__c]').val(),
+										Country__c: j$(element).find('select[data-name=Country__c] option:selected').val(),
+										State__c: j$(element).find('select[data-name=State__c] option:selected').val(),
+										Postcode__c:  j$(element).find('input[data-name=Postcode__c]').val(),
+										Period_of_Residence_From__c: getDateObject(j$(element).find('input[data-name=Period_of_Residence_From__c]').val()),
+										Period_of_Residence_To__c: getDateObject(j$(element).find('input[data-name=Period_of_Residence_To__c]').val()),
+										Type__c: 'Address'
+									};
+				var save = new RemoteObjectModel.PrevRecord(addrDetails);
+				activeCallback = 'PrevAddr';
+				if(applicantId)
+				{
+					save.update(saveCallback);
+				}
+				i++;
 			}
-			else
-			{
-				save.upsert(saveCallback);
-			}
-		});		*/
-j$('#acc5').collapse('toggle');
+		});		
+		j$('#acc5').collapse('toggle');
 }	
 
 function saveDeclaration()
@@ -294,9 +282,8 @@ function saveCallback(err, record, event)
 	j$('.panel-collapse').removeClass('in');
 	switch(activeCallback)
 	{
-		case 'ApplicationDetail':
+		case 'Applicant':
 			applicationDetailId = record[0];
-			saveApplication();
 			break;
 		case 'Application':
 			j$('#acc2').collapse('toggle');
@@ -326,6 +313,16 @@ function saveCallback(err, record, event)
 function showError(msg)
 {
 	j$('#errMsg span').html(msg).parent().show();    
+}
+
+function getApplicationTypes()
+{
+	var applTypes = '';
+	j$("input[name=applTypes]:checked").each(function(index, el)
+	{
+		applTypes += j$(el).val() + ';';
+	});
+	return applTypes;
 }
 
 function calc100PtTotal()

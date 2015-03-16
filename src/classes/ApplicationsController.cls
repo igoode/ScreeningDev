@@ -1,6 +1,6 @@
 public without sharing class ApplicationsController 
 {
-    public List<Applicant_Detail__c> Applications 
+    public List<Applicant__c> Applications 
     {
     	get
     	{
@@ -20,7 +20,7 @@ system.debug(accountIDs);
 				accountIDs.remove(null); 			
 	    		Applications = [SELECT ID, NAme,Current_Last_Name__c,Current_First_Name__c
 
-	    				FROM Applicant_Detail__c
+	    				FROM Applicant__c
 	    				WHERE Referring_Organisation__c IN :accountIDs];
 	    	}
 	    	return Applications;

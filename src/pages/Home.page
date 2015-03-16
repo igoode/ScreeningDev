@@ -7,15 +7,12 @@
 		applyBodyTag="false" 
 		cache="true">	
 	<apex:remoteObjects jsNameSpace="RemoteObjectModel">
-	    <apex:remoteObjectModel name="Applicant_Detail__c" 
+	    <apex:remoteObjectModel name="Applicant__c" 
 	    		jsShorthand="ApplDetail" 
 	        	fields="Id,Name,RecordTypeId,Title__c,Current_Last_Name__c,Current_First_Name__c,Current_Middle_Names__c,Gender__c,Date_of_Birth__c,Town_City_of_Birth__c,State_Territory_of_Birth__c,Country_of_Birth__c,Aboriginal_or_Torres_Strait_Islander__c,Unit_No__c,Street_No__c,Street_Name__c,Suburb_Town__c,State__c,Postcode__c,Period_of_Residence_From__c,Period_of_Residence_To__c,Telephone_H__c,Telephone_W__c,Telephone_M__c,Email_Address__c,Current_Postal_Address__c,Current_Postal_Suburb__c,Current_Postal_State__c,Current_Postal_Postcode__c" />
-	    <apex:remoteObjectModel name="Application__c" 
-	    		jsShorthand="Appl" 
-	    		fields="Id,Name,Application_Type__c"/>
 	    <apex:remoteObjectModel name="Previous_Detail__c" 
 	    		jsShorthand="PrevRecord" 
-	        	fields="Id,Name,Unit_No__c,Street_No__c,Street_Name__c,Suburb__c,State__c,Postcode__c,Period_of_Residence_From__c,Period_of_Residence_To__c" />
+	        	fields="Id,Name,Applicant__c,Unit_No__c,Street_No__c,Street_Name__c,Suburb__c,State__c,Postcode__c,Period_of_Residence_From__c,Period_of_Residence_To__c" />
 	    <!--<apex:remoteObjectModel name="Previous_Name__c" 
 	    		jsShorthand="PrevName" 
 	        	fields="ID,Name,Application__c,First_and_Middle_Names__c,Last_Name__c" />
@@ -56,28 +53,35 @@
 					j$('#' + target).collapse('show');
 
 				});
-				getDeclarations();
+
+				j$('#selApplType').change(function(e)
+				{
+					getDeclarations();
+				});
 			});
 
 			function getDeclarations() 
 			{
-				if(j$('#form5').children().length == 0)
+				var selectedTypes = getApplicationTypes();
+				var appId = applicationId ? applicationId : '';
+				if(j$('#form5').children().length == 0 && selectedType != '')
 				{
 			        Visualforce.remoting.Manager.invokeAction(
 			            '{!$RemoteAction.ScreeningApplicationController.getQuestions}',
-			            applicationId, 
+			            appId, 
 			            'Declaration',
-			            j$('#selApplType').val(), 
+			            selectedTypes, 
 			            function(result, event){
 			                if (event.status) 
 			                {
+			                	var el = '';
 			                	for(i=0; i < result.length; i++)			                		
 			                	{
 			                		//alert(result[i]);
-			                		var el = '<div class="form-group"><div><label class="col-sm-1 control-label">' + result[i].Question_Number__c + '</label>';
-			                		el += '</div>' + result[i].Question_Text__c +  '</div>';
-			                		j$('#form5').append(el);
+			                		el += '<div class="form-group"><div><label class="col-sm-1 control-label">' + result[i].Question_Number__c + '</label>';
+			                		el += '</div>' + unescape(result[i].Question_Text__c).replace(/<span/g, "<div") +  '</div>';
 			                	}
+			                	j$('#form5').html(el);
 			                } 
 			                else if (event.type === 'exception') 
 			                {
@@ -92,6 +96,7 @@
 			        );
 		        }
 		    }
+
     	</script>
 	    <!-- Main component for a primary marketing message or call to action -->
 	    <div class="row row-offcanvas row-offcanvas-left main">
@@ -133,9 +138,37 @@
 				                	</em>
 			                	</p>
 						    	<form class="form-horizontal" role="form" id="form1">
-						    		<div class="form-group">
-								    	<label for="selApplType" class="col-sm-3 control-label">Application for</label>
-							    		<div class="col-sm-9">
+						    		<div class="form-group" style="border">
+						    			<label for="inlineRadioOptions" class="col-sm-3 control-label">Application For<br/>(select all that apply)</label>
+										<div class="col-sm-9 bg-info">
+										    <div class="input-group">
+										   		<input name="applTypes" type="checkbox" value="Aged Care Sector Employment">
+										   			Aged Care Sector Employment
+										   		</input>
+											</div>
+											<div class="input-group">
+										   		<input name="applTypes" type="checkbox" value="Child Related Employment">
+										   			Child Related Employment
+										   		</input>
+											</div>
+											<div class="input-group">
+										   		<input name="applTypes" type="checkbox" value="Disability Services Employment">
+										   			Disability Services Employment
+										   		</input>
+											</div>
+											<div class="input-group">
+										   		<input name="applTypes" type="checkbox" value="General Employment Probity">
+										   			General Employment Probity
+										   		</input>
+											</div>
+											<div class="input-group">
+												<input name="applTypes" type="checkbox" value="Vulnerable Person Related Employment">
+													Vulnerable Person Related Employment
+												</input>
+											</div>
+										</div>
+									</div>
+							    		<!--<div class="col-sm-9">
 										  	<select class="form-control" id="selApplType" required="true">
 										    	<option></option>
 										    	<option>Aged Care Sector Employment</option>
@@ -145,7 +178,8 @@
 										    	<option>Vulnerable Person Related Employment</option>
 										  	</select>	
 										</div>
-								  	</div>
+								  	</div>-->
+								  	
 						      	  	<div class="form-group">
 								    	<label for="inlineRadioOptions" class="col-sm-3 control-label">Title</label>
 								     	<div class="col-sm-9">
@@ -296,8 +330,8 @@
 												</tr>
 											</thead>
 											<tbody>
-												<tr id='prevName0' data-sfid="">
-													<td>
+												<tr>
+													<td data-id="1">
 														1
 													</td>
 													<td>
@@ -430,7 +464,7 @@
 							      	<form class="form-horizontal" role="form" id="form4">	
 							      		<table class="table table-bordered table-hover" id="prevAddrTbl">
 											<tr>
-												<td data-id="rowId">
+												<td data-id="1">
 													1
 												</td>
 												<td>

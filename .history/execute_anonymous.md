@@ -407,3 +407,32 @@ PaymentController c = new PaymentController();
 system.debug(c.getPaymentToken(30.0, 'abcdef'));
 ```
 
+2015-03-12 12:25:19
+```java
+select text__c from Declaration_and_Consent__c
+```
+
+2015-03-16 10:32:21
+```java
+PaymentController c = new PaymentController();
+system.debug(c.getPaymentToken(10.0, '1'));
+```
+
+2015-03-16 10:33:21
+```java
+PaymentController c = new PaymentController();
+system.debug(c.getPaymentToken(1000, '1'));
+```
+
+2015-03-16 10:34:05
+```java
+PaymentController c = new PaymentController();
+system.debug(c.getPaymentToken(1000, '1'));
+```
+
+2015-03-16 10:36:39
+```java
+PaymentController c = new PaymentController();
+system.debug(c.getPaymentToken(1000, '1'));
+```
+
